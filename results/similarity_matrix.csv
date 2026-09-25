@@ -1,0 +1,191 @@
+primula_constituent,protac_reference,protac_module,tanimoto_ecfp4,tanimoto_maccs
+Primulaverin,Thalidomide,E3 ligand (CRBN),0.093,0.323
+Primulaverin,Lenalidomide,E3 ligand (CRBN),0.082,0.329
+Primulaverin,Pomalidomide,E3 ligand (CRBN),0.084,0.319
+Primulaverin,VH032,E3 ligand (VHL),0.118,0.378
+Primulaverin,Bavdegalutamide (ARV-110),full PROTAC,0.133,0.357
+Primulaverin,Vepdegestrant (ARV-471),full PROTAC,0.075,0.429
+Primulaverin,Cyclosporin A,cyclic peptide benchmark,0.067,0.418
+Primulaverin,PEG3 linker,linker,0.067,0.378
+Primulaverin,C8 alkyl linker,linker,0.052,0.318
+Primulaverin,Piperazine-piperidine linker,linker,0.043,0.228
+Primverin,Thalidomide,E3 ligand (CRBN),0.079,0.323
+Primverin,Lenalidomide,E3 ligand (CRBN),0.07,0.329
+Primverin,Pomalidomide,E3 ligand (CRBN),0.071,0.319
+Primverin,VH032,E3 ligand (VHL),0.118,0.378
+Primverin,Bavdegalutamide (ARV-110),full PROTAC,0.124,0.357
+Primverin,Vepdegestrant (ARV-471),full PROTAC,0.075,0.429
+Primverin,Cyclosporin A,cyclic peptide benchmark,0.067,0.418
+Primverin,PEG3 linker,linker,0.067,0.378
+Primverin,C8 alkyl linker,linker,0.052,0.318
+Primverin,Piperazine-piperidine linker,linker,0.043,0.228
+Gaultherin,Thalidomide,E3 ligand (CRBN),0.13,0.328
+Gaultherin,Lenalidomide,E3 ligand (CRBN),0.1,0.333
+Gaultherin,Pomalidomide,E3 ligand (CRBN),0.117,0.324
+Gaultherin,VH032,E3 ligand (VHL),0.122,0.365
+Gaultherin,Bavdegalutamide (ARV-110),full PROTAC,0.11,0.361
+Gaultherin,Vepdegestrant (ARV-471),full PROTAC,0.087,0.435
+Gaultherin,Cyclosporin A,cyclic peptide benchmark,0.07,0.403
+Gaultherin,PEG3 linker,linker,0.071,0.386
+Gaultherin,C8 alkyl linker,linker,0.056,0.326
+Gaultherin,Piperazine-piperidine linker,linker,0.045,0.232
+Androsin,Thalidomide,E3 ligand (CRBN),0.081,0.323
+Androsin,Lenalidomide,E3 ligand (CRBN),0.071,0.329
+Androsin,Pomalidomide,E3 ligand (CRBN),0.073,0.319
+Androsin,VH032,E3 ligand (VHL),0.12,0.378
+Androsin,Bavdegalutamide (ARV-110),full PROTAC,0.1,0.357
+Androsin,Vepdegestrant (ARV-471),full PROTAC,0.076,0.429
+Androsin,Cyclosporin A,cyclic peptide benchmark,0.068,0.418
+Androsin,PEG3 linker,linker,0.069,0.378
+Androsin,C8 alkyl linker,linker,0.054,0.318
+Androsin,Piperazine-piperidine linker,linker,0.044,0.228
+Primeverose,Thalidomide,E3 ligand (CRBN),0.035,0.295
+Primeverose,Lenalidomide,E3 ligand (CRBN),0.03,0.303
+Primeverose,Pomalidomide,E3 ligand (CRBN),0.031,0.292
+Primeverose,VH032,E3 ligand (VHL),0.058,0.319
+Primeverose,Bavdegalutamide (ARV-110),full PROTAC,0.052,0.321
+Primeverose,Vepdegestrant (ARV-471),full PROTAC,0.039,0.388
+Primeverose,Cyclosporin A,cyclic peptide benchmark,0.051,0.375
+Primeverose,PEG3 linker,linker,0.079,0.447
+Primeverose,C8 alkyl linker,linker,0.056,0.378
+Primeverose,Piperazine-piperidine linker,linker,0.064,0.26
+Methyl 4-methoxysalicylate,Thalidomide,E3 ligand (CRBN),0.078,0.236
+Methyl 4-methoxysalicylate,Lenalidomide,E3 ligand (CRBN),0.066,0.19
+Methyl 4-methoxysalicylate,Pomalidomide,E3 ligand (CRBN),0.068,0.217
+Methyl 4-methoxysalicylate,VH032,E3 ligand (VHL),0.101,0.254
+Methyl 4-methoxysalicylate,Bavdegalutamide (ARV-110),full PROTAC,0.103,0.215
+Methyl 4-methoxysalicylate,Vepdegestrant (ARV-471),full PROTAC,0.085,0.262
+Methyl 4-methoxysalicylate,Cyclosporin A,cyclic peptide benchmark,0.042,0.262
+Methyl 4-methoxysalicylate,PEG3 linker,linker,0.057,0.189
+Methyl 4-methoxysalicylate,C8 alkyl linker,linker,0.03,0.111
+Methyl 4-methoxysalicylate,Piperazine-piperidine linker,linker,0.0,0.04
+Methyl salicylate,Thalidomide,E3 ligand (CRBN),0.133,0.222
+Methyl salicylate,Lenalidomide,E3 ligand (CRBN),0.089,0.197
+Methyl salicylate,Pomalidomide,E3 ligand (CRBN),0.113,0.203
+Methyl salicylate,VH032,E3 ligand (VHL),0.107,0.224
+Methyl salicylate,Bavdegalutamide (ARV-110),full PROTAC,0.086,0.205
+Methyl salicylate,Vepdegestrant (ARV-471),full PROTAC,0.089,0.25
+Methyl salicylate,Cyclosporin A,cyclic peptide benchmark,0.055,0.23
+Methyl salicylate,PEG3 linker,linker,0.065,0.167
+Methyl salicylate,C8 alkyl linker,linker,0.034,0.118
+Methyl salicylate,Piperazine-piperidine linker,linker,0.0,0.042
+Apocynin,Thalidomide,E3 ligand (CRBN),0.08,0.2
+Apocynin,Lenalidomide,E3 ligand (CRBN),0.067,0.177
+Apocynin,Pomalidomide,E3 ligand (CRBN),0.069,0.183
+Apocynin,VH032,E3 ligand (VHL),0.103,0.242
+Apocynin,Bavdegalutamide (ARV-110),full PROTAC,0.073,0.19
+Apocynin,Vepdegestrant (ARV-471),full PROTAC,0.074,0.231
+Apocynin,Cyclosporin A,cyclic peptide benchmark,0.042,0.23
+Apocynin,PEG3 linker,linker,0.059,0.2
+Apocynin,C8 alkyl linker,linker,0.031,0.118
+Apocynin,Piperazine-piperidine linker,linker,0.0,0.042
+Protoprimulagenin A,Thalidomide,E3 ligand (CRBN),0.057,0.323
+Protoprimulagenin A,Lenalidomide,E3 ligand (CRBN),0.05,0.368
+Protoprimulagenin A,Pomalidomide,E3 ligand (CRBN),0.051,0.319
+Protoprimulagenin A,VH032,E3 ligand (VHL),0.06,0.378
+Protoprimulagenin A,Bavdegalutamide (ARV-110),full PROTAC,0.054,0.31
+Protoprimulagenin A,Vepdegestrant (ARV-471),full PROTAC,0.052,0.389
+Protoprimulagenin A,Cyclosporin A,cyclic peptide benchmark,0.044,0.377
+Protoprimulagenin A,PEG3 linker,linker,0.018,0.319
+Protoprimulagenin A,C8 alkyl linker,linker,0.019,0.349
+Protoprimulagenin A,Piperazine-piperidine linker,linker,0.066,0.207
+Priverogenin B 22-acetate (model),Thalidomide,E3 ligand (CRBN),0.065,0.343
+Priverogenin B 22-acetate (model),Lenalidomide,E3 ligand (CRBN),0.057,0.366
+Priverogenin B 22-acetate (model),Pomalidomide,E3 ligand (CRBN),0.059,0.338
+Priverogenin B 22-acetate (model),VH032,E3 ligand (VHL),0.075,0.395
+Priverogenin B 22-acetate (model),Bavdegalutamide (ARV-110),full PROTAC,0.066,0.341
+Priverogenin B 22-acetate (model),Vepdegestrant (ARV-471),full PROTAC,0.049,0.405
+Priverogenin B 22-acetate (model),Cyclosporin A,cyclic peptide benchmark,0.05,0.394
+Priverogenin B 22-acetate (model),PEG3 linker,linker,0.032,0.347
+Priverogenin B 22-acetate (model),C8 alkyl linker,linker,0.017,0.319
+Priverogenin B 22-acetate (model),Piperazine-piperidine linker,linker,0.074,0.194
+Flavonoid: quercetin,Thalidomide,E3 ligand (CRBN),0.086,0.339
+Flavonoid: quercetin,Lenalidomide,E3 ligand (CRBN),0.074,0.302
+Flavonoid: quercetin,Pomalidomide,E3 ligand (CRBN),0.076,0.333
+Flavonoid: quercetin,VH032,E3 ligand (VHL),0.08,0.264
+Flavonoid: quercetin,Bavdegalutamide (ARV-110),full PROTAC,0.059,0.304
+Flavonoid: quercetin,Vepdegestrant (ARV-471),full PROTAC,0.089,0.391
+Flavonoid: quercetin,Cyclosporin A,cyclic peptide benchmark,0.049,0.254
+Flavonoid: quercetin,PEG3 linker,linker,0.023,0.186
+Flavonoid: quercetin,C8 alkyl linker,linker,0.024,0.119
+Flavonoid: quercetin,Piperazine-piperidine linker,linker,0.0,0.113
+Flavonoid: kaempferol,Thalidomide,E3 ligand (CRBN),0.089,0.345
+Flavonoid: kaempferol,Lenalidomide,E3 ligand (CRBN),0.076,0.306
+Flavonoid: kaempferol,Pomalidomide,E3 ligand (CRBN),0.078,0.339
+Flavonoid: kaempferol,VH032,E3 ligand (VHL),0.081,0.268
+Flavonoid: kaempferol,Bavdegalutamide (ARV-110),full PROTAC,0.06,0.308
+Flavonoid: kaempferol,Vepdegestrant (ARV-471),full PROTAC,0.102,0.397
+Flavonoid: kaempferol,Cyclosporin A,cyclic peptide benchmark,0.05,0.239
+Flavonoid: kaempferol,PEG3 linker,linker,0.024,0.19
+Flavonoid: kaempferol,C8 alkyl linker,linker,0.026,0.122
+Flavonoid: kaempferol,Piperazine-piperidine linker,linker,0.0,0.115
+Flavonoid: rutin,Thalidomide,E3 ligand (CRBN),0.071,0.371
+Flavonoid: rutin,Lenalidomide,E3 ligand (CRBN),0.064,0.353
+Flavonoid: rutin,Pomalidomide,E3 ligand (CRBN),0.065,0.364
+Flavonoid: rutin,VH032,E3 ligand (VHL),0.099,0.347
+Flavonoid: rutin,Bavdegalutamide (ARV-110),full PROTAC,0.085,0.378
+Flavonoid: rutin,Vepdegestrant (ARV-471),full PROTAC,0.087,0.456
+Flavonoid: rutin,Cyclosporin A,cyclic peptide benchmark,0.071,0.343
+Flavonoid: rutin,PEG3 linker,linker,0.043,0.298
+Flavonoid: rutin,C8 alkyl linker,linker,0.03,0.239
+Flavonoid: rutin,Piperazine-piperidine linker,linker,0.025,0.169
+"Primula-type saponin model, 1 sugar residue",Thalidomide,E3 ligand (CRBN),0.047,0.329
+"Primula-type saponin model, 1 sugar residue",Lenalidomide,E3 ligand (CRBN),0.042,0.351
+"Primula-type saponin model, 1 sugar residue",Pomalidomide,E3 ligand (CRBN),0.043,0.325
+"Primula-type saponin model, 1 sugar residue",VH032,E3 ligand (VHL),0.061,0.412
+"Primula-type saponin model, 1 sugar residue",Bavdegalutamide (ARV-110),full PROTAC,0.062,0.359
+"Primula-type saponin model, 1 sugar residue",Vepdegestrant (ARV-471),full PROTAC,0.054,0.423
+"Primula-type saponin model, 1 sugar residue",Cyclosporin A,cyclic peptide benchmark,0.055,0.413
+"Primula-type saponin model, 1 sugar residue",PEG3 linker,linker,0.059,0.404
+"Primula-type saponin model, 1 sugar residue",C8 alkyl linker,linker,0.045,0.353
+"Primula-type saponin model, 1 sugar residue",Piperazine-piperidine linker,linker,0.066,0.266
+"Primula-type saponin model, 2 sugar residues",Thalidomide,E3 ligand (CRBN),0.042,0.329
+"Primula-type saponin model, 2 sugar residues",Lenalidomide,E3 ligand (CRBN),0.038,0.351
+"Primula-type saponin model, 2 sugar residues",Pomalidomide,E3 ligand (CRBN),0.039,0.325
+"Primula-type saponin model, 2 sugar residues",VH032,E3 ligand (VHL),0.056,0.412
+"Primula-type saponin model, 2 sugar residues",Bavdegalutamide (ARV-110),full PROTAC,0.059,0.359
+"Primula-type saponin model, 2 sugar residues",Vepdegestrant (ARV-471),full PROTAC,0.05,0.423
+"Primula-type saponin model, 2 sugar residues",Cyclosporin A,cyclic peptide benchmark,0.051,0.413
+"Primula-type saponin model, 2 sugar residues",PEG3 linker,linker,0.052,0.404
+"Primula-type saponin model, 2 sugar residues",C8 alkyl linker,linker,0.04,0.353
+"Primula-type saponin model, 2 sugar residues",Piperazine-piperidine linker,linker,0.059,0.266
+"Primula-type saponin model, 3 sugar residues",Thalidomide,E3 ligand (CRBN),0.039,0.329
+"Primula-type saponin model, 3 sugar residues",Lenalidomide,E3 ligand (CRBN),0.035,0.351
+"Primula-type saponin model, 3 sugar residues",Pomalidomide,E3 ligand (CRBN),0.036,0.325
+"Primula-type saponin model, 3 sugar residues",VH032,E3 ligand (VHL),0.053,0.412
+"Primula-type saponin model, 3 sugar residues",Bavdegalutamide (ARV-110),full PROTAC,0.056,0.359
+"Primula-type saponin model, 3 sugar residues",Vepdegestrant (ARV-471),full PROTAC,0.048,0.423
+"Primula-type saponin model, 3 sugar residues",Cyclosporin A,cyclic peptide benchmark,0.063,0.413
+"Primula-type saponin model, 3 sugar residues",PEG3 linker,linker,0.047,0.404
+"Primula-type saponin model, 3 sugar residues",C8 alkyl linker,linker,0.036,0.353
+"Primula-type saponin model, 3 sugar residues",Piperazine-piperidine linker,linker,0.054,0.266
+"Primula-type saponin model, 4 sugar residues",Thalidomide,E3 ligand (CRBN),0.038,0.329
+"Primula-type saponin model, 4 sugar residues",Lenalidomide,E3 ligand (CRBN),0.035,0.351
+"Primula-type saponin model, 4 sugar residues",Pomalidomide,E3 ligand (CRBN),0.035,0.325
+"Primula-type saponin model, 4 sugar residues",VH032,E3 ligand (VHL),0.052,0.412
+"Primula-type saponin model, 4 sugar residues",Bavdegalutamide (ARV-110),full PROTAC,0.055,0.359
+"Primula-type saponin model, 4 sugar residues",Vepdegestrant (ARV-471),full PROTAC,0.047,0.423
+"Primula-type saponin model, 4 sugar residues",Cyclosporin A,cyclic peptide benchmark,0.062,0.413
+"Primula-type saponin model, 4 sugar residues",PEG3 linker,linker,0.046,0.404
+"Primula-type saponin model, 4 sugar residues",C8 alkyl linker,linker,0.035,0.353
+"Primula-type saponin model, 4 sugar residues",Piperazine-piperidine linker,linker,0.053,0.266
+"Primula-type saponin model, 5 sugar residues",Thalidomide,E3 ligand (CRBN),0.038,0.329
+"Primula-type saponin model, 5 sugar residues",Lenalidomide,E3 ligand (CRBN),0.035,0.351
+"Primula-type saponin model, 5 sugar residues",Pomalidomide,E3 ligand (CRBN),0.035,0.325
+"Primula-type saponin model, 5 sugar residues",VH032,E3 ligand (VHL),0.052,0.412
+"Primula-type saponin model, 5 sugar residues",Bavdegalutamide (ARV-110),full PROTAC,0.055,0.359
+"Primula-type saponin model, 5 sugar residues",Vepdegestrant (ARV-471),full PROTAC,0.047,0.423
+"Primula-type saponin model, 5 sugar residues",Cyclosporin A,cyclic peptide benchmark,0.062,0.413
+"Primula-type saponin model, 5 sugar residues",PEG3 linker,linker,0.046,0.404
+"Primula-type saponin model, 5 sugar residues",C8 alkyl linker,linker,0.035,0.353
+"Primula-type saponin model, 5 sugar residues",Piperazine-piperidine linker,linker,0.053,0.266
+"Primula-type saponin model, 6 sugar residues",Thalidomide,E3 ligand (CRBN),0.038,0.329
+"Primula-type saponin model, 6 sugar residues",Lenalidomide,E3 ligand (CRBN),0.035,0.351
+"Primula-type saponin model, 6 sugar residues",Pomalidomide,E3 ligand (CRBN),0.035,0.325
+"Primula-type saponin model, 6 sugar residues",VH032,E3 ligand (VHL),0.052,0.412
+"Primula-type saponin model, 6 sugar residues",Bavdegalutamide (ARV-110),full PROTAC,0.055,0.359
+"Primula-type saponin model, 6 sugar residues",Vepdegestrant (ARV-471),full PROTAC,0.047,0.423
+"Primula-type saponin model, 6 sugar residues",Cyclosporin A,cyclic peptide benchmark,0.062,0.413
+"Primula-type saponin model, 6 sugar residues",PEG3 linker,linker,0.046,0.404
+"Primula-type saponin model, 6 sugar residues",C8 alkyl linker,linker,0.035,0.353
+"Primula-type saponin model, 6 sugar residues",Piperazine-piperidine linker,linker,0.053,0.266

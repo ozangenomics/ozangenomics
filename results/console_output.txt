@@ -1,0 +1,112 @@
+============================================================================================================
+FORMULA VALIDATION (drawn structures vs literature-reported molecular formulas)
+============================================================================================================
+  MATCH         Primulaverin                                   lit=C20H28O13    calc=C20H28O13
+  MATCH         Primverin                                      lit=C20H28O13    calc=C20H28O13
+  MATCH         Gaultherin                                     lit=C19H26O12    calc=C19H26O12
+  MATCH         Androsin                                       lit=C20H28O12    calc=C20H28O12
+  MATCH         Primeverose                                    lit=C11H20O10    calc=C11H20O10
+  MATCH         Methyl 4-methoxysalicylate                     lit=C9H10O4      calc=C9H10O4
+  MATCH         Methyl salicylate                              lit=C8H8O3       calc=C8H8O3
+  MATCH         Apocynin                                       lit=C9H10O3      calc=C9H10O3
+  MATCH         Protoprimulagenin A                            lit=C30H50O3     calc=C30H50O3
+  MATCH         Priverogenin B 22-acetate (model)              lit=C32H52O5     calc=C32H52O5
+  MATCH         Flavonoid: quercetin                           lit=C15H10O7     calc=C15H10O7
+  MATCH         Flavonoid: kaempferol                          lit=C15H10O6     calc=C15H10O6
+  MATCH         Flavonoid: rutin                               lit=C27H30O16    calc=C27H30O16
+
+============================================================================================================
+PROPERTY SPACE
+============================================================================================================
+compound                                                   MW   cLogP    TPSA  HBD  HBA  RTB   Fsp3    QED  space
+------------------------------------------------------------------------------------------------------------
+--- PROTAC ref ----------------------------------------------------------------------------------------------
+Thalidomide                                             258.2    0.09    83.6    1    4    1   0.23   0.72  Ro5
+Lenalidomide                                            259.3    0.03    92.5    2    4    1   0.31   0.55  Ro5
+Pomalidomide                                            273.2   -0.33   109.6    2    5    1   0.23   0.54  Ro5
+VH032                                                   472.6    2.25   111.6    3    6    6   0.50   0.60  Ro5
+Bavdegalutamide (ARV-110)                               812.3    3.70   181.2    2   12    9   0.46   0.30  bRo5 (PROTAC-like envelope)
+Vepdegestrant (ARV-471)                                 723.9    6.05    96.4    2    7    7   0.40   0.22  bRo5 (PROTAC-like envelope)
+Cyclosporin A                                          1202.6    3.27   278.8    5   12   15   0.79   0.15  beyond bRo5
+PEG3 linker                                             150.2   -1.00    58.9    2    4    7   1.00   0.46  Ro5
+C8 alkyl linker                                         146.2    1.31    40.5    2    2    7   1.00   0.53  Ro5
+Piperazine-piperidine linker                            183.3   -0.11    27.3    2    3    2   1.00   0.62  Ro5
+--- PRIMULA -------------------------------------------------------------------------------------------------
+Primulaverin                                            476.4   -2.88   193.8    6   13    7   0.65   0.22  bRo5 (PROTAC-like envelope)
+Primverin                                               476.4   -2.88   193.8    6   13    7   0.65   0.22  bRo5 (PROTAC-like envelope)
+Gaultherin                                              446.4   -2.88   184.6    6   12    6   0.63   0.25  bRo5 (PROTAC-like envelope)
+Androsin                                                460.4   -2.46   184.6    6   12    7   0.65   0.24  bRo5 (PROTAC-like envelope)
+Primeverose                                             312.3   -4.76   169.3    7   10    3   1.00   0.27  bRo5 (PROTAC-like envelope)
+Methyl 4-methoxysalicylate                              182.2    1.19    55.8    1    4    2   0.22   0.70  Ro5
+Methyl salicylate                                       152.2    1.18    46.5    1    3    1   0.12   0.61  Ro5
+Apocynin                                                166.2    1.60    46.5    1    3    2   0.22   0.68  Ro5
+Protoprimulagenin A                                     458.7    6.35    49.7    2    3    0   1.00   0.44  bRo5 (PROTAC-like envelope)
+Priverogenin B 22-acetate (model)                       516.8    5.89    76.0    2    5    1   0.97   0.42  bRo5 (PROTAC-like envelope)
+Flavonoid: quercetin                                    302.2    1.99   131.4    5    7    1   0.00   0.43  Ro5
+Flavonoid: kaempferol                                   286.2    2.28   111.1    4    6    1   0.00   0.55  Ro5
+Flavonoid: rutin                                        610.5   -1.69   269.4   10   16    6   0.44   0.14  beyond bRo5
+Primula-type saponin model, 1 sugar residue             620.9    4.18   128.8    5    8    3   1.00   0.30  bRo5 (PROTAC-like envelope)
+Primula-type saponin model, 2 sugar residues            753.0    2.64   187.8    7   12    5   1.00   0.20  bRo5 (PROTAC-like envelope)
+Primula-type saponin model, 3 sugar residues            899.1    1.49   246.7    9   16    7   1.00   0.16  bRo5 (PROTAC-like envelope)
+Primula-type saponin model, 4 sugar residues           1061.3   -0.68   325.8   12   21   10   1.00   0.12  beyond bRo5
+Primula-type saponin model, 5 sugar residues           1193.4   -2.22   384.8   14   25   12   1.00   0.09  beyond bRo5
+Primula-type saponin model, 6 sugar residues           1339.5   -3.37   443.7   16   29   14   1.00   0.08  beyond bRo5
+
+============================================================================================================
+MAXIMUM ECFP4 TANIMOTO OF EACH PRIMULA CONSTITUENT TO ANY PROTAC REFERENCE
+============================================================================================================
+  Primulaverin                                               max Tc = 0.133  (vs Bavdegalutamide (ARV-110))
+  Primverin                                                  max Tc = 0.124  (vs Bavdegalutamide (ARV-110))
+  Gaultherin                                                 max Tc = 0.130  (vs Thalidomide)
+  Androsin                                                   max Tc = 0.120  (vs VH032)
+  Primeverose                                                max Tc = 0.079  (vs PEG3 linker)
+  Methyl 4-methoxysalicylate                                 max Tc = 0.103  (vs Bavdegalutamide (ARV-110))
+  Methyl salicylate                                          max Tc = 0.133  (vs Thalidomide)
+  Apocynin                                                   max Tc = 0.103  (vs VH032)
+  Protoprimulagenin A                                        max Tc = 0.066  (vs Piperazine-piperidine linker)
+  Priverogenin B 22-acetate (model)                          max Tc = 0.075  (vs VH032)
+  Flavonoid: quercetin                                       max Tc = 0.089  (vs Vepdegestrant (ARV-471))
+  Flavonoid: kaempferol                                      max Tc = 0.102  (vs Vepdegestrant (ARV-471))
+  Flavonoid: rutin                                           max Tc = 0.099  (vs VH032)
+  Primula-type saponin model, 1 sugar residue                max Tc = 0.066  (vs Piperazine-piperidine linker)
+  Primula-type saponin model, 2 sugar residues               max Tc = 0.059  (vs Piperazine-piperidine linker)
+  Primula-type saponin model, 3 sugar residues               max Tc = 0.063  (vs Cyclosporin A)
+  Primula-type saponin model, 4 sugar residues               max Tc = 0.062  (vs Cyclosporin A)
+  Primula-type saponin model, 5 sugar residues               max Tc = 0.062  (vs Cyclosporin A)
+  Primula-type saponin model, 6 sugar residues               max Tc = 0.062  (vs Cyclosporin A)
+
+============================================================================================================
+EXIT-VECTOR / LINKER-ATTACHMENT HANDLE COUNT
+============================================================================================================
+compound                                              alkOH  ArOH  COOH  ArNH2  amine  TOTAL
+Primulaverin                                              6     0     0      0      0      6
+Primverin                                                 6     0     0      0      0      6
+Gaultherin                                                6     0     0      0      0      6
+Androsin                                                  6     0     0      0      0      6
+Primeverose                                               7     0     0      0      0      7
+Methyl 4-methoxysalicylate                                0     1     0      0      0      1
+Methyl salicylate                                         0     1     0      0      0      1
+Apocynin                                                  0     1     0      0      0      1
+Protoprimulagenin A                                       2     0     0      0      0      2
+Priverogenin B 22-acetate (model)                         2     0     0      0      0      2
+Flavonoid: quercetin                                      0     5     0      0      0      5
+Flavonoid: kaempferol                                     0     4     0      0      0      4
+Flavonoid: rutin                                          6     4     0      0      0     10
+Primula-type saponin model, 1 sugar residue               5     0     0      0      0      5
+Primula-type saponin model, 2 sugar residues              7     0     0      0      0      7
+Primula-type saponin model, 3 sugar residues              9     0     0      0      0      9
+Primula-type saponin model, 4 sugar residues             12     0     0      0      0     12
+Primula-type saponin model, 5 sugar residues             14     0     0      0      0     14
+Primula-type saponin model, 6 sugar residues             16     0     0      0      0     16
+Thalidomide                                               0     0     0      0      0      0
+Lenalidomide                                              0     0     0      1      1      2
+Pomalidomide                                              0     0     0      1      1      2
+VH032                                                     1     0     0      0      0      1
+Bavdegalutamide (ARV-110)                                 0     0     0      0      0      0
+Vepdegestrant (ARV-471)                                   0     1     0      0      0      1
+Cyclosporin A                                             1     0     0      0      0      1
+PEG3 linker                                               2     0     0      0      0      2
+C8 alkyl linker                                           2     0     0      0      0      2
+Piperazine-piperidine linker                              0     0     0      0      2      2
+
+Wrote: results/descriptors.csv, results/similarity_matrix.csv, results/formula_validation.csv

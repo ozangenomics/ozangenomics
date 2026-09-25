@@ -1,0 +1,30 @@
+dataset,name,formula,mw,heavy_atoms,clogp,tpsa,hbd,hba,rotatable_bonds,rings,aromatic_rings,fsp3,stereocentres,qed,ro5_violations,space,aliphatic_OH,phenol_OH,carboxylic_acid,primary_aromatic_amine,aliphatic_amine,ester,anomeric_glycosidic,total_handles,chemical_class,plant_part,structure_provenance
+primula,Primulaverin,C20H28O13,476.43,33,-2.88,193.8,6,13,7,3,1,0.65,9,0.22,2,bRo5 (PROTAC-like envelope),6,0,0,0,0,1,2,6,phenolic glycoside (primeveroside),root,drawn-high-confidence
+primula,Primverin,C20H28O13,476.43,33,-2.88,193.8,6,13,7,3,1,0.65,9,0.22,2,bRo5 (PROTAC-like envelope),6,0,0,0,0,1,2,6,phenolic glycoside (primeveroside),root,drawn-high-confidence
+primula,Gaultherin,C19H26O12,446.41,31,-2.88,184.6,6,12,6,3,1,0.632,9,0.246,2,bRo5 (PROTAC-like envelope),6,0,0,0,0,1,2,6,phenolic glycoside (primeveroside),root,drawn-high-confidence
+primula,Androsin,C20H28O12,460.43,32,-2.46,184.6,6,12,7,3,1,0.65,9,0.236,2,bRo5 (PROTAC-like envelope),6,0,0,0,0,0,2,6,phenolic glycoside (primeveroside),root,drawn-high-confidence
+primula,Primeverose,C11H20O10,312.27,21,-4.76,169.3,7,10,3,2,0,1.0,9,0.268,1,bRo5 (PROTAC-like envelope),7,0,0,0,0,0,2,7,disaccharide,root,drawn-model
+primula,Methyl 4-methoxysalicylate,C9H10O4,182.17,13,1.19,55.8,1,4,2,1,1,0.222,0,0.698,0,Ro5,0,1,0,0,0,1,0,1,phenolic aglycone,root (hydrolysis product),drawn-high-confidence
+primula,Methyl salicylate,C8H8O3,152.15,11,1.18,46.5,1,3,1,1,1,0.125,0,0.614,0,Ro5,0,1,0,0,0,1,0,1,phenolic aglycone,root (hydrolysis product),drawn-high-confidence
+primula,Apocynin,C9H10O3,166.18,12,1.6,46.5,1,3,2,1,1,0.222,0,0.679,0,Ro5,0,1,0,0,0,0,0,1,phenolic aglycone,root (hydrolysis product),drawn-high-confidence
+primula,Protoprimulagenin A,C30H50O3,458.73,33,6.35,49.7,2,3,0,6,0,1.0,10,0.444,1,bRo5 (PROTAC-like envelope),2,0,0,0,0,0,0,2,triterpenoid sapogenin (13;28-epoxy-oleanane),root,constitution-only-model
+primula,Priverogenin B 22-acetate (model),C32H52O5,516.76,37,5.89,76.0,2,5,1,6,0,0.969,11,0.425,2,bRo5 (PROTAC-like envelope),2,0,0,0,0,1,0,2,triterpenoid sapogenin,root,constitution-only-model
+primula,Flavonoid: quercetin,C15H10O7,302.24,22,1.99,131.4,5,7,1,3,3,0.0,0,0.434,0,Ro5,0,5,0,0,0,0,0,5,flavonol,aerial parts (trace in root),drawn-high-confidence
+primula,Flavonoid: kaempferol,C15H10O6,286.24,21,2.28,111.1,4,6,1,3,3,0.0,0,0.546,0,Ro5,0,4,0,0,0,0,0,4,flavonol,aerial parts,drawn-high-confidence
+primula,Flavonoid: rutin,C27H30O16,610.52,43,-1.69,269.4,10,16,6,5,3,0.444,10,0.14,3,beyond bRo5,6,4,0,0,0,0,2,10,flavonol glycoside,aerial parts,drawn-high-confidence
+primula,"Primula-type saponin model, 1 sugar residue",C36H60O8,620.87,44,4.18,128.8,5,8,3,7,0,1.0,15,0.298,1,bRo5 (PROTAC-like envelope),5,0,0,0,0,0,1,5,triterpenoid saponin (class model),root,constructed-class-model
+primula,"Primula-type saponin model, 2 sugar residues",C41H68O12,752.98,53,2.64,187.8,7,12,5,8,0,1.0,19,0.204,3,bRo5 (PROTAC-like envelope),7,0,0,0,0,0,2,7,triterpenoid saponin (class model),root,constructed-class-model
+primula,"Primula-type saponin model, 3 sugar residues",C47H78O16,899.13,63,1.49,246.7,9,16,7,9,0,1.0,24,0.164,3,bRo5 (PROTAC-like envelope),9,0,0,0,0,0,3,9,triterpenoid saponin (class model),root,constructed-class-model
+primula,"Primula-type saponin model, 4 sugar residues",C53H88O21,1061.27,74,-0.68,325.8,12,21,10,10,0,1.0,29,0.121,3,beyond bRo5,12,0,0,0,0,0,4,12,triterpenoid saponin (class model),root,constructed-class-model
+primula,"Primula-type saponin model, 5 sugar residues",C58H96O25,1193.38,83,-2.22,384.8,14,25,12,11,0,1.0,33,0.092,3,beyond bRo5,14,0,0,0,0,0,5,14,triterpenoid saponin (class model),root,constructed-class-model
+primula,"Primula-type saponin model, 6 sugar residues",C64H106O29,1339.52,93,-3.37,443.7,16,29,14,12,0,1.0,38,0.076,3,beyond bRo5,16,0,0,0,0,0,6,16,triterpenoid saponin (class model),root,constructed-class-model
+protac_reference,Thalidomide,C13H10N2O4,258.23,19,0.09,83.6,1,4,1,3,1,0.231,1,0.723,0,Ro5,0,0,0,0,0,0,0,0,E3 ligand (CRBN),-,ChEMBL:CHEMBL468
+protac_reference,Lenalidomide,C13H13N3O3,259.26,19,0.03,92.5,2,4,1,3,1,0.308,1,0.549,0,Ro5,0,0,0,1,1,0,0,2,E3 ligand (CRBN),-,ChEMBL:CHEMBL848
+protac_reference,Pomalidomide,C13H11N3O4,273.25,20,-0.33,109.6,2,5,1,3,1,0.231,1,0.538,0,Ro5,0,0,0,1,1,0,0,2,E3 ligand (CRBN),-,ChEMBL:CHEMBL43452
+protac_reference,VH032,C24H32N4O4S,472.61,33,2.25,111.6,3,6,6,3,2,0.5,3,0.597,0,Ro5,1,0,0,0,0,0,0,1,E3 ligand (VHL),-,literature
+protac_reference,Bavdegalutamide (ARV-110),C41H43ClFN9O6,812.3,58,3.7,181.2,2,12,9,8,3,0.463,3,0.3,2,bRo5 (PROTAC-like envelope),0,0,0,0,0,0,0,0,full PROTAC,-,ChEMBL:CHEMBL4862963
+protac_reference,Vepdegestrant (ARV-471),C45H49N5O4,723.92,54,6.05,96.4,2,7,7,9,4,0.4,3,0.224,2,bRo5 (PROTAC-like envelope),0,1,0,0,0,0,0,1,full PROTAC,-,ChEMBL:CHEMBL5095210
+protac_reference,Cyclosporin A,C62H111N11O12,1202.63,85,3.27,278.8,5,12,15,1,0,0.79,12,0.148,2,beyond bRo5,1,0,0,0,0,0,0,1,cyclic peptide benchmark,-,ChEMBL:CHEMBL160
+protac_reference,PEG3 linker,C6H14O4,150.17,10,-1.0,58.9,2,4,7,0,0,1.0,0,0.457,0,Ro5,2,0,0,0,0,0,0,2,linker,-,model
+protac_reference,C8 alkyl linker,C8H18O2,146.23,10,1.31,40.5,2,2,7,0,0,1.0,0,0.532,0,Ro5,2,0,0,0,0,0,0,2,linker,-,model
+protac_reference,Piperazine-piperidine linker,C10H21N3,183.3,13,-0.11,27.3,2,3,2,2,0,1.0,0,0.625,0,Ro5,0,0,0,0,2,0,0,2,linker,-,model

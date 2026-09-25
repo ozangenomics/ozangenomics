@@ -1,0 +1,11 @@
+name,protac_module,target_or_e3,smiles,source,notes
+Thalidomide,E3 ligand (CRBN),CRBN,O=C1CCC(N2C(=O)c3ccccc3C2=O)C(=O)N1,ChEMBL:CHEMBL468,Parent glutarimide CRBN binder
+Lenalidomide,E3 ligand (CRBN),CRBN,Nc1cccc2c1CN(C1CCC(=O)NC1=O)C2=O,ChEMBL:CHEMBL848,CRBN binder with aniline exit vector
+Pomalidomide,E3 ligand (CRBN),CRBN,Nc1cccc2c1C(=O)N(C1CCC(=O)NC1=O)C2=O,ChEMBL:CHEMBL43452,Most used CRBN handle; C4-NH2 is the linker attachment point
+VH032,E3 ligand (VHL),VHL,CC(=O)N[C@H](C(=O)N1C[C@H](O)C[C@H]1C(=O)NCc1ccc(-c2scnc2C)cc1)C(C)(C)C,literature,Hydroxyproline VHL ligand; t-Bu / acetyl cap is the usual exit vector
+Bavdegalutamide (ARV-110),full PROTAC,AR / CRBN,N#Cc1ccc(O[C@H]2CC[C@H](NC(=O)c3ccc(N4CCC(CN5CCN(c6cc7c(cc6F)C(=O)N(C6CCC(=O)NC6=O)C7=O)CC5)CC4)nn3)CC2)cc1Cl,ChEMBL:CHEMBL4862963,Clinical AR degrader; CRBN-recruiting
+Vepdegestrant (ARV-471),full PROTAC,ER / CRBN,O=C1CC[C@H](N2Cc3cc(N4CCN(CC5CCN(c6ccc([C@@H]7c8ccc(O)cc8CC[C@@H]7c7ccccc7)cc6)CC5)CC4)ccc3C2=O)C(=O)N1,ChEMBL:CHEMBL5095210,Clinical ER degrader; CRBN-recruiting
+Cyclosporin A,cyclic peptide benchmark,cyclophilin A,C/C=C/C[C@@H](C)[C@@H](O)[C@H]1C(=O)N[C@@H](CC)C(=O)N(C)CC(=O)N(C)[C@@H](CC(C)C)C(=O)N[C@@H](C(C)C)C(=O)N(C)[C@@H](CC(C)C)C(=O)N[C@@H](C)C(=O)N[C@H](C)C(=O)N(C)[C@@H](CC(C)C)C(=O)N(C)[C@@H](CC(C)C)C(=O)N(C)[C@@H](C(C)C)C(=O)N1C,ChEMBL:CHEMBL160,Orally bioavailable macrocycle; the permeability benchmark for cyclic-peptide warheads
+PEG3 linker,linker,-,OCCOCCOCCO,model,Canonical flexible hydrophilic PROTAC linker unit
+C8 alkyl linker,linker,-,OCCCCCCCCO,model,Canonical flexible lipophilic PROTAC linker unit
+Piperazine-piperidine linker,linker,-,C1CN(CCN1)CC1CCNCC1,model,Canonical semi-rigid sp3-rich PROTAC linker unit
