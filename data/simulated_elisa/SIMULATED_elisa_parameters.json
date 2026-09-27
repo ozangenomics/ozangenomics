@@ -1,0 +1,39 @@
+{
+  "data_status": "SIMULATED - not from any experiment",
+  "generator": "src/simulate_elisa.py",
+  "seed": 20260927,
+  "plates": 3,
+  "four_pl": {
+    "A": 0.06,
+    "B": 1.15,
+    "C": 260.0,
+    "D": 3.1
+  },
+  "four_pl_form": "OD = D + (A - D) / (1 + (x / C)^B), x in pg/mL",
+  "standards_pg_mL": [
+    2000.0,
+    1000.0,
+    500.0,
+    250.0,
+    125.0,
+    62.5,
+    31.25,
+    15.625
+  ],
+  "qc_levels_pg_mL": {
+    "QC-LOW": 60.0,
+    "QC-HIGH": 900.0
+  },
+  "noise_model": {
+    "well_cv": 0.04,
+    "read_sd_od": 0.008,
+    "plate_drift_sd": 0.03,
+    "edge_bias": 0.02,
+    "saturation_od": 4.0,
+    "sample_conc_log10_range": [
+      1.0,
+      3.5
+    ]
+  },
+  "layout": "cols 1-2 standards S1-S8 in duplicate; cols 3-12 duplicate pairs: 1 blank, 2 QC, 37 unknowns per plate"
+}
