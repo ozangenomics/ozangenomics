@@ -42,7 +42,7 @@ plate,sample_id,role,wells,n,mean_od,cv_pct,conc_pg_mL,reportable,qc_target_pg_m
 1,SIM-035,unknown,F11;F12,2,0.237,12.2,20.97,yes,,,
 1,SIM-036,unknown,G11;G12,2,0.253,4.2,22.83,yes,,,
 1,SIM-037,unknown,H11;H12,2,0.203,8.0,16.60,yes,,,
-2,BLANK,blank,A3;A4,2,0.059,9.6,1.60,yes,,,
+2,BLANK,blank,A3;A4,2,0.059,9.6,1.60,no,,,
 2,QC-LOW,qc,B3;B4,2,0.542,0.9,58.08,yes,60.0,96.8,
 2,QC-HIGH,qc,C3;C4,2,2.477,4.5,752.78,yes,900.0,83.6,
 2,SIM-038,unknown,D3;D4,2,0.609,1.5,66.88,yes,,,

@@ -256,7 +256,7 @@ def main():
                 rec = 100.0 * conc / float(qc_targets[sid])
                 if not rec_lo <= rec <= rec_hi:
                     flags.append("QC_RECOVERY")
-            reportable = conc is not None and not any(
+            reportable = role != "blank" and conc is not None and not any(
                 f in flags for f in ("SATURATED", "BELOW_LLOQ", "ABOVE_ULOQ", "BELOW_A", "ABOVE_D"))
             sample_rows.append({
                 "plate": plate, "sample_id": sid, "role": role,
