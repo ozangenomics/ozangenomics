@@ -1,0 +1,7 @@
+# SIMULATED DATA - not from any experiment.
+# No instrument, kit, lot, operator, or storage location is represented.
+# Derived by src/process_elisa.py from data/simulated_elisa/SIMULATED_elisa_long.csv
+plate,A,B,C,D,weighting,r2,sse,n_standards,lloq_pg_mL,uloq_pg_mL,blank_mean_od,blank_vs_A_od
+1,0.0809,1.1326,283.74,3.2315,1/y2,0.99655,0.05469,16,15.62,2000.0,0.062,-0.019
+2,0.0475,1.0901,282.37,3.3113,1/y2,0.99309,0.11468,16,15.62,2000.0,0.059,0.012
+3,0.0742,1.1470,277.16,3.2335,1/y2,0.99895,0.01695,16,15.62,2000.0,0.066,-0.009

@@ -50,7 +50,10 @@ src/build_models.py             programmatic glycosylation of the sapogenin, 1-6
                                 to bracket the saponin class property envelope
 src/run_analysis.py             orchestration; writes results/ and the console report
 src/simulate_elisa.py           SIMULATED ELISA plate generator (4PL curve + noise); not data
-results/                        descriptors, similarity matrix, formula validation
+src/process_elisa.py            ELISA pipeline: weighted 4PL fit, back-calculation, QC flags,
+                                scoring against ground truth
+results/                        descriptors, similarity matrix, formula validation;
+                                SIMULATED_elisa_*.csv are pipeline outputs on simulated input
 data/simulated_elisa/           SIMULATED ELISA dataset for pipeline development; not
                                 experimental data (see README_SIMULATED.md there)
 docs/PROTAC_primula_SAR.md      the full analysis
@@ -74,7 +77,19 @@ storage location is represented. Every file name, header, and column is marked S
 
 ```bash
 python3 src/simulate_elisa.py          # regenerate; --plates, --seed, --cv
+python3 src/process_elisa.py           # fit, back-calculate, flag, score
 ```
+
+`src/process_elisa.py` is the pipeline the dataset exists to test. Per plate it fits a
+four-parameter logistic to the standards by Levenberg-Marquardt with `1/y²` response
+weighting (`--weighting none|1/y|1/y2`), back-calculates every well, and flags duplicate
+CV, saturation, and results below the lowest or above the highest standard. It reports
+standard and QC recovery and, when a ground-truth file sits beside the input, scores the
+back-calculated unknowns against it. Outputs derived from simulated input are written to
+`results/SIMULATED_elisa_*.csv` with the same SIMULATED header lines. On the shipped
+dataset the median absolute bias of reportable unknowns is about 5%, and the run
+demonstrates the expected weakness of a top standard placed near the upper plateau:
+its duplicate recoveries diverge, and high QC recovers low on two of three plates.
 
 ## Verification built into the run
 
