@@ -4,7 +4,7 @@ Two self-contained studies. Each carries its own data, code, generated results a
 
 | Study | Question | Report |
 |---|---|---|
-| **DNA stress and repair panel** | Can 8-OHdG be extended into a panel that quantifies DNA damage *and* the repair capacity protecting against it? | [`docs/DNA_stress_repair_panel.md`](docs/DNA_stress_repair_panel.md) |
+| **DNA stress and repair panel** | Can 8-OHdG be extended into a panel that quantifies DNA damage *and* the repair capacity protecting against it? | [markdown](docs/DNA_stress_repair_panel.md) · [PDF](docs/DNA_stress_repair_panel.pdf) |
 | **PROTAC vs *Primula* SAR** | Can any constituent of primrose root serve as a PROTAC module? | [`docs/PROTAC_primula_SAR.md`](docs/PROTAC_primula_SAR.md) |
 
 ---
@@ -17,7 +17,7 @@ and the capacity of the pathways that protect against mutation — mismatch repa
 excision repair, nucleotide excision repair, homologous recombination, end joining,
 direct alkylation reversal, crosslink repair and translesion synthesis.
 
-**Read the design: [`docs/DNA_stress_repair_panel.md`](docs/DNA_stress_repair_panel.md)**
+**Read the design: [`docs/DNA_stress_repair_panel.md`](docs/DNA_stress_repair_panel.md)** — also typeset as [`DNA_stress_repair_panel.pdf`](docs/DNA_stress_repair_panel.pdf) (13 pages)
 
 ## The design problem
 
@@ -32,9 +32,10 @@ modular by analyte class and matrix, with each module genuinely multiplexed inte
 
 | Module | Measures | Platform | Matrix | Plex |
 |---|---|---|---|---|
-| **A** | oxidative + alkylation adducts | LC-MS/MS, one MRM method | urine, DNA hydrolysate | 14 analytes |
+| **A** | oxidative, alkylation, halogenation, deamination adducts | LC-MS/MS, one MRM method | urine, DNA hydrolysate | 18 analytes |
+| **A2** | markers whose chemistry bars them from that method | IHC, qPCR, flow, sequencing | tissue, blood, plasma | 11 markers |
 | **B** | cellular damage response | flow cytometry, one stained tube | PBMC | 10 parameters |
-| **C** | repair capacity | IHC + MSI/HRD + expression array | tissue, PBMC | 8 tests + 75 targets |
+| **C** | repair capacity | IHC + MSI/HRD + expression array | tissue, PBMC | 9 tests + 83 targets |
 
 ## Headline design decisions
 
@@ -46,13 +47,27 @@ modular by analyte class and matrix, with each module genuinely multiplexed inte
   Fenton chemistry. The FPG/OGG1-modified comet assay measures the same lesion class
   inside intact cells, so divergence between the two flags an extraction artefact. No
   single-analyte assay can do this.
-- **Ten damage analytes, four lesion chemistries, three bases, DNA and RNA.** A panel of
-  ten guanine-oxidation markers would be ten measurements of one thing. This one spans
-  closed-ring and ring-opened purine oxidation, pyrimidine oxidation, alkylation and
-  aldehyde-derived exocyclic adducts.
+- **Nine damage chemistries, not one.** A panel of ten guanine-oxidation markers would be
+  ten measurements of one thing. This one spans closed-ring, ring-opened and tandem-cyclised
+  purine oxidation, pyrimidine oxidation, nitration, halogenation, alkylation,
+  aldehyde-derived exocyclic adducts and deamination. The chemistries point at different
+  causes: halogenation implicates neutrophils, nitration implicates chronic inflammation,
+  deamination implicates folate status.
+- **Cyclopurines let one oxidant interrogate two repair pathways.** 8-oxodG and 8,5'-cyclo-dA
+  come from the same hydroxyl radical, but the cyclopurine's C5'-C8 bond makes it a
+  nucleotide-excision-repair substrate rather than a base-excision one. Normal 8-oxodG with
+  elevated cdA localises the fault to NER, which no guanine-oxidation marker can do alone.
+- **Mismatch repair is not the only mutation-protection pathway, and testing it alone leaves
+  a hole.** Polymerase proofreading failure (POLE/POLD1 exonuclease domain) produces
+  ultramutated tumours that are nonetheless *microsatellite stable*, so an MMR and MSI
+  workup calls them normal. The panel treats replication fidelity as two layers and tests
+  both.
+- **The panel measures mutation, not only damage and machinery.** PIG-A mutant frequency and
+  error-corrected duplex sequencing report fixed mutations, which is the outcome everything
+  else is a proxy for.
 - **Every damage analyte is coupled to the enzyme that handles it** — 8-oxodG to
-  OGG1/MUTYH, O6-methyl-dG to MGMT, thymidine glycol to NTHL1. An abnormal composite
-  therefore names the enzyme to follow up instead of just flagging a number.
+  OGG1/MUTYH, O6-methyl-dG to MGMT, thymidine glycol to NTHL1, cyclopurines to the NER
+  core. An abnormal composite therefore names the enzyme to follow up, not just a number.
 - **The headline index is a difference of z-scores, not a ratio.** A z-scored denominator
   crosses zero by construction, so damage/repair is undefined at the population median
   and explodes near it. On the log scale a difference is exactly what a ratio reaches
@@ -66,33 +81,39 @@ modular by analyte class and matrix, with each module genuinely multiplexed inte
 
 `src/dna_stress_panel.py` recomputes every mass transition from molecular formula,
 validates every internal standard, checks the flow panel for spectral crowding, and
-confirms damage-to-repair coupling. Current state: **0 failures across 9 computable
-transitions, 0 transition collisions, 10 of 10 damage analytes coupled.**
+confirms damage-to-repair coupling. Current state: **0 failures across 11 computable
+transitions, 0 transition collisions, 14 of 14 damage analytes coupled.**
 
-Two findings from those checks changed the design rather than being written up
+Three findings from those checks changed the design rather than being written up
 afterwards. The internal-standard check initially tested *exact* mass shift against
 3.0 Da and wrongly failed four `[13C1,15N2]` and `[15N3]` standards at 2.991–2.997 Da —
 these are +3 *nominal* shifts, fully resolvable on a unit-resolution quadrupole. The
 check now works on nominal mass and issues a bleed-through advisory at exactly +3.
 Separately, two internal standards were upgraded to `[15N5]` once the check made the
-+3 crowding visible. Section 8 of the report documents both.
++3 crowding visible. Third, the neutral-loss rule correctly *refuses* to apply to the two
+cyclopurines, because the C5'-C8 bond that defines those lesions is exactly what stops the
+sugar leaving as a neutral fragment. Section 8 of the report documents all three.
 
 ## Reproduce
 
 ```bash
 python3 src/dna_stress_panel.py     # no dependencies beyond the standard library
+python3 src/build_report_pdf.py     # typeset the report to PDF (needs reportlab)
 ```
 
 ## Layout
 
 ```
-data/dna_damage_adducts.csv        14 Module A analytes: formula, transition, internal standard
+data/dna_damage_adducts.csv        18 Module A analytes: formula, transition, internal standard
+data/dna_stress_other_markers.csv  11 Module A2 markers on other platforms
 data/ddr_flow_panel.csv            10 Module B flow parameters with laser/emission assignment
 data/ddr_cytogenetic_assays.csv     5 cytogenetic and comet endpoints
-data/repair_clinical_tests.csv      8 clinically established repair tests with pitfalls
-data/repair_expression_panel.csv   75 repair genes across 9 pathways, 2 tiers
+data/repair_clinical_tests.csv      9 clinically established repair tests with pitfalls
+data/repair_expression_panel.csv   83 repair genes across 11 pathways, 2 tiers
 src/dna_stress_panel.py            builder, validator and scoring framework
+src/build_report_pdf.py            markdown-to-PDF renderer for the report
 docs/DNA_stress_repair_panel.md    the full design document
+docs/DNA_stress_repair_panel.pdf   the same report, typeset
 ```
 
 ## Status

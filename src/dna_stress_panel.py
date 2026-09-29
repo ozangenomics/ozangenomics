@@ -46,6 +46,7 @@ MASS = {
     "N": 14.0030740052, "15N": 15.0001088984,
     "O": 15.9949146221, "18O": 17.9991604,
     "P": 30.97376151,   "S": 31.97207069,
+    "Cl": 34.96885268,  "37Cl": 36.96590259,
 }
 PROTON = 1.00727646688
 
@@ -135,6 +136,10 @@ def validate_module_a(adducts, tol_ppm=5.0, tol_nominal=0.15):
         elif st == "ribonucleoside":
             calc = prec - LOSS_RIBOSE
             row["product_basis"] = "loss of C5H8O4 (132.0423)"
+        elif st.startswith("cyclic nucleoside"):
+            calc = None
+            row["product_basis"] = ("C5'-C8 covalent bond blocks glycosidic cleavage - "
+                                    "literature transition, confirm on instrument")
         else:
             calc = None
             row["product_basis"] = "not glycosidic - literature transition, confirm on instrument"
@@ -350,6 +355,7 @@ def main():
     cyto = load("ddr_cytogenetic_assays.csv")
     clin = load("repair_clinical_tests.csv")
     genes = load("repair_expression_panel.csv")
+    other = load("dna_stress_other_markers.csv")
 
     lines = []
     def say(s=""):
@@ -436,6 +442,19 @@ def main():
     for c in cyto:
         say("    %-42s %s" % (c["assay"][:42], c["role_in_panel"]))
 
+    # ---- Module A2: markers whose chemistry dictates another platform ---------
+    say()
+    say("MODULE A2 - DNA stress markers that cannot go in the MRM method")
+    say("-" * 78)
+    say("  Each of these is excluded from Module A for a chemical or compartmental reason,")
+    say("  not an arbitrary one. %d markers:" % len(other))
+    bygenome = Counter(o["genome"] for o in other)
+    for o in other:
+        say("    %-46s %-22s %s" % (o["marker"][:46], o["genome"][:22], o["platform"].split(";")[0][:30]))
+    say()
+    say("  genome compartment coverage: %s"
+        % ", ".join("%s:%d" % (k, v) for k, v in bygenome.most_common()))
+
     # ---- Module C -------------------------------------------------------------
     say()
     say("MODULE C - repair capacity")
@@ -457,6 +476,7 @@ def main():
     say()
     say("  pathway coverage:")
     PATHNAME = {"MMR": "mismatch repair", "BER": "base excision repair",
+                "PROOF": "polymerase proofreading", "TEL": "telomere maintenance",
                 "NER": "nucleotide excision repair", "HR": "homologous recombination",
                 "NHEJ": "non-homologous end joining", "DR": "direct damage reversal",
                 "ICL": "interstrand crosslink repair", "TLS": "translesion synthesis",
@@ -539,6 +559,7 @@ def main():
     say("  Module B spillover-critical pairs     %d" % len(crit))
     say("  Module B cytogenetic endpoints        %d" % len(cyto))
     say("  Module C clinical tests               %d" % len(clin))
+    say("  Module A2 non-MRM stress markers      %d" % len(other))
     say("  Module C expression targets           %d" % len(genes))
     say("  Repair pathways covered               %d" % len([k for k in bypath if k != "REF"]))
     say("  Damage analytes enzymatically coupled %d of %d" % (len(pairs) - len(unc), len(pairs)))

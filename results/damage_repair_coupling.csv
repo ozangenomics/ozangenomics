@@ -9,3 +9,7 @@ O6-medG,alkylation,1,MGMT,DR,COUPLED
 N7-meGua,alkylation,1,MPG,BER,COUPLED
 M1dG,exocyclic lipid-peroxidation adduct,3,XPC; ERCC1; ERCC4,NER,COUPLED
 edA,exocyclic adduct,3,XPC; ERCC1; ERCC4,NER,COUPLED
+cdA,tandem cyclopurine,7,XPA; XPC; ERCC1; ERCC2; ERCC4; ERCC5; DDB2,NER,COUPLED
+cdG,tandem cyclopurine,7,XPA; XPC; ERCC1; ERCC2; ERCC4; ERCC5; DDB2,NER,COUPLED
+5-Cl-dC,halogenated base,2,SMUG1; TDG,BER,COUPLED
+dU,deaminated base,4,UNG; SMUG1; DUT; TYMS,BER,COUPLED

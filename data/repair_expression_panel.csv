@@ -16,23 +16,23 @@ POLB,DNA polymerase beta,base excision repair,BER,core,gap-filling synthesis,all
 XRCC1,X-ray repair cross-complementing 1,base excision repair,BER,core,scaffold coordinating POLB and LIG3,all BER lesions,Non-enzymatic scaffold; loss uncouples incision from ligation
 LIG3,DNA ligase 3,base excision repair,BER,core,seals the repaired nick,all BER lesions,Final BER step
 PARP1,Poly-ADP-ribose polymerase 1,single-strand break signalling,BER,core,detects strand breaks and recruits repair factors,none (functional PAR read-out),Transcript abundance pairs with the PAR flow channel to separate expression from activity
-UNG,Uracil-DNA glycosylase,base excision repair,BER,extended,excises uracil from deaminated cytosine,none,Deamination arm rather than oxidation arm
+UNG,Uracil-DNA glycosylase,base excision repair,BER,extended,excises uracil from deaminated cytosine,dU,Deamination arm rather than oxidation arm
 MPG,N-methylpurine DNA glycosylase,base excision repair,BER,extended,excises alkylated purines including N7-methylguanine,N7-meGua,Alkylation arm of BER; partner analyte is the urinary N7-methylguanine dosimeter
 NEIL2,Nei-like DNA glycosylase 2,base excision repair,BER,extended,transcription-coupled oxidised base removal,FapyGua,Preference for lesions in single-stranded and transcribed DNA
 NEIL3,Nei-like DNA glycosylase 3,base excision repair,BER,extended,unhooks interstrand crosslinks; oxidised bases in single-stranded DNA,none,Bridges BER and crosslink repair
-SMUG1,Single-strand-selective monofunctional uracil glycosylase,base excision repair,BER,extended,uracil and 5-hydroxymethyluracil removal,5-hmdC,Relevant to oxidised-pyrimidine turnover
+SMUG1,Single-strand-selective monofunctional uracil glycosylase,base excision repair,BER,extended,uracil and 5-hydroxymethyluracil removal,5-hmdC / dU / 5-Cl-dC,Relevant to oxidised-pyrimidine turnover
 MBD4,Methyl-CpG binding domain 4,base excision repair,BER,extended,removes thymine from G:T mismatches at CpG,5-medC,Couples methylation status to repair
-TDG,Thymine-DNA glycosylase,base excision repair,BER,extended,processes TET oxidation products,5-hmdC,Essential for interpreting 5-hmdC as epigenetic rather than damage signal
+TDG,Thymine-DNA glycosylase,base excision repair,BER,extended,processes TET oxidation products,5-hmdC / 5-Cl-dC,Essential for interpreting 5-hmdC as epigenetic rather than damage signal
 MGMT,O6-methylguanine DNA methyltransferase,direct damage reversal,DR,core,transfers the methyl group off O6-methylguanine in one step,O6-medG,Single-turnover suicide protein; the tightest analyte-to-enzyme pairing available. Pair the transcript with the promoter-methylation clinical test
 ALKBH2,AlkB homolog 2,direct damage reversal,DR,extended,oxidative demethylation of 1-methyladenine and 3-methylcytosine,none,Handles alkylation lesions MGMT does not
 ALKBH3,AlkB homolog 3,direct damage reversal,DR,extended,single-stranded DNA alkylation reversal,none,Complements ALKBH2
-XPA,XPA DNA damage recognition and repair factor,nucleotide excision repair,NER,core,verifies the lesion and organises the incision complex,none (bulky adducts),Rate-limiting NER factor
-XPC,XPC complex subunit,nucleotide excision repair,NER,core,global-genome damage recognition,M1dG / edA,Recognises helix-distorting bulky adducts; partner to the exocyclic adducts in the panel
-ERCC1,Excision repair cross-complementation 1,nucleotide excision repair,NER,core,5-prime incision with ERCC4,M1dG / edA,Expression level has been studied extensively as a platinum-response marker
-ERCC2,ERCC excision repair 2 (XPD),nucleotide excision repair,NER,core,helicase within TFIIH; opens the bubble,none,Also a transcription factor subunit
-ERCC4,ERCC excision repair 4 (XPF),nucleotide excision repair,NER,core,structure-specific endonuclease,M1dG / edA,Shared with interstrand crosslink repair
-ERCC5,ERCC excision repair 5 (XPG),nucleotide excision repair,NER,extended,3-prime incision,none,Also stimulates certain glycosylases
-DDB2,Damage-specific DNA binding protein 2,nucleotide excision repair,NER,extended,UV photoproduct recognition,none,Chromatin-context damage recognition
+XPA,XPA DNA damage recognition and repair factor,nucleotide excision repair,NER,core,verifies the lesion and organises the incision complex,cdA / cdG,Rate-limiting NER factor
+XPC,XPC complex subunit,nucleotide excision repair,NER,core,global-genome damage recognition,M1dG / edA / cdA / cdG,Recognises helix-distorting bulky adducts; partner to the exocyclic adducts in the panel
+ERCC1,Excision repair cross-complementation 1,nucleotide excision repair,NER,core,5-prime incision with ERCC4,M1dG / edA / cdA / cdG,Expression level has been studied extensively as a platinum-response marker
+ERCC2,ERCC excision repair 2 (XPD),nucleotide excision repair,NER,core,helicase within TFIIH; opens the bubble,cdA / cdG,Also a transcription factor subunit
+ERCC4,ERCC excision repair 4 (XPF),nucleotide excision repair,NER,core,structure-specific endonuclease,M1dG / edA / cdA / cdG,Shared with interstrand crosslink repair
+ERCC5,ERCC excision repair 5 (XPG),nucleotide excision repair,NER,extended,3-prime incision,cdA / cdG,Also stimulates certain glycosylases
+DDB2,Damage-specific DNA binding protein 2,nucleotide excision repair,NER,extended,UV photoproduct recognition,cdA / cdG,Chromatin-context damage recognition
 ERCC6,ERCC excision repair 6 (CSB),nucleotide excision repair,NER,extended,transcription-coupled repair initiation,none,Distinguishes transcription-coupled from global-genome NER
 BRCA1,Breast cancer type 1 susceptibility protein,homologous recombination,HR,core,end resection and RAD51 loading control,none (double-strand break),Clinically actionable; pairs with the HRD score
 BRCA2,Breast cancer type 2 susceptibility protein,homologous recombination,HR,core,loads RAD51 onto single-stranded DNA,none (double-strand break),Clinically actionable
@@ -74,3 +74,11 @@ RPLP0,Ribosomal protein lateral stalk subunit P0,reference,REF,normaliser,housek
 B2M,Beta-2-microglobulin,reference,REF,normaliser,housekeeping,not applicable,Normalisation candidate; caution because it is interferon-responsive and inflammation shifts it
 TBP,TATA-box binding protein,reference,REF,normaliser,housekeeping,not applicable,Low-abundance normalisation candidate
 PPIA,Peptidylprolyl isomerase A,reference,REF,normaliser,housekeeping,not applicable,Normalisation candidate
+POLE,DNA polymerase epsilon catalytic subunit,polymerase proofreading,PROOF,core,replicates the leading strand; its exonuclease domain removes misinserted bases,none (replication error),Exonuclease domain mutation gives an ULTRAMUTATED but microsatellite-STABLE tumour. This is the mutator phenotype an MMR/MSI-only panel misses entirely
+POLD1,DNA polymerase delta catalytic subunit,polymerase proofreading,PROOF,core,replicates the lagging strand; proofreads via its exonuclease domain,none (replication error),Exonuclease domain mutation predisposes to colorectal and endometrial cancer; the lagging-strand counterpart of POLE
+PCNA,Proliferating cell nuclear antigen,polymerase proofreading,PROOF,extended,processivity clamp coupling replication to mismatch recognition,none,Links the replication machinery to MMR strand discrimination; the mechanistic bridge between PROOF and MMR
+NUDT15,Nudix hydrolase 15,nucleotide pool sanitisation,BER,extended,hydrolyses oxidised and thiopurine nucleotides from the pool,none,Pool-level protection; also a pharmacogenetic determinant of thiopurine toxicity
+DUT,Deoxyuridine triphosphatase,base excision repair,BER,extended,hydrolyses dUTP to prevent uracil misincorporation,dU,Prevents the uracil-in-DNA lesion at the precursor level rather than repairing it afterwards
+TYMS,Thymidylate synthase,nucleotide metabolism,BER,extended,supplies dTMP; its inhibition raises the dUTP:dTTP ratio,dU,Explains uracil-in-DNA under folate deficiency or antifolate therapy; a metabolic rather than repair determinant
+TERT,Telomerase reverse transcriptase,telomere maintenance,TEL,core,extends telomeric repeats,none (telomere length read-out),Pairs with the leukocyte telomere length measurement; telomerase activity and telomere length answer different questions
+TERF2,Telomeric repeat-binding factor 2,telomere maintenance,TEL,extended,protects chromosome ends from being read as double-strand breaks,none,"Loss causes telomeres to trigger the DSB response, which is how telomere attrition enters the damage signalling module"

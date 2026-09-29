@@ -20,11 +20,15 @@ edA          276.1091  160.0618    160.06 PASS     [15N5]-edA            +4.985 
 dG           268.1040  152.0567    152.06 PASS     [13C10;15N5]-dG      +15.019 PASS          
 CRE          114.0662         -     44.05 lit.     [D3]-creatinine       +3.019 PASS_VERIFY_M3
 8-isoPGF2a   353.2333         -    193.12 lit.     [D4]-8-iso-PGF2a      +4.025 PASS          
+cdA          250.0935         -    164.06 lit.     [15N5]-cdA            +4.985 PASS          
+cdG          266.0884         -    180.05 lit.     [15N5]-cdG            +4.985 PASS          
+5-Cl-dC      262.0589  146.0116    146.01 PASS     [15N3]-5-Cl-dC        +2.991 PASS_VERIFY_M3
+dU           229.0819  113.0346    113.03 PASS     [13C9;15N2]-dU       +11.024 PASS          
 
   glycosidic losses used: deoxyribose 116.0473 Da, ribose 132.0423 Da
-  transitions recomputed from formula: 9 of 14 analytes verifiable this way
-  5 free bases / non-nucleosides carry literature transitions marked 'lit.'
-  failures: 0    internal standards at +3 needing M+3 bleed check: 6
+  transitions recomputed from formula: 11 of 18 analytes verifiable this way
+  7 free bases / non-nucleosides carry literature transitions marked 'lit.'
+  failures: 0    internal standards at +3 needing M+3 bleed check: 7
 
   transition collisions: none - every analyte has a unique precursor/product pair
   shared-ion pairs requiring chromatographic resolution or distinct dwell:
@@ -32,7 +36,7 @@ CRE          114.0662         -     44.05 lit.     [D3]-creatinine       +3.019 
     FapyGua    dG         shared product, distinct precursor
 
   matrix partitioning:
-    DNA hydrolysate            8 analytes
+    DNA hydrolysate            12 analytes
     urine                      5 analytes
     urine + DNA hydrolysate    1 analytes
 
@@ -56,9 +60,27 @@ MODULE B - cellular damage response (one stained tube, flow cytometry)
     Ex-vivo challenge comet assay              functional repair-capacity read-out
     Chromosome aberration analysis             confirmatory instability endpoint
 
+MODULE A2 - DNA stress markers that cannot go in the MRM method
+------------------------------------------------------------------------------
+  Each of these is excluded from Module A for a chemical or compartmental reason,
+  not an arbitrary one. 11 markers:
+    8-nitroguanine                                 nuclear                immunohistochemistry with spec
+    Abasic (AP) sites                              nuclear                aldehyde-reactive probe (ARP) 
+    Mitochondrial DNA copy number                  mitochondrial          duplex qPCR (mtDNA target vs n
+    mtDNA 4977 bp common deletion                  mitochondrial          deletion-specific qPCR or drop
+    mtDNA lesion frequency                         mitochondrial          long-amplicon qPCR (amplificat
+    Leukocyte telomere length                      nuclear (telomeric)    qPCR T/S ratio
+    PIG-A mutant frequency                         nuclear                flow cytometry for loss of GPI
+    Error-corrected (duplex) sequencing mutation f nuclear                duplex consensus sequencing of
+    Cell-free DNA concentration and integrity inde nuclear and mitochondr quantitative PCR or fragment a
+    Mutational signature attribution (SBS)         nuclear                whole-genome or whole-exome se
+    Cyclobutane pyrimidine dimers and 6-4 photopro nuclear                antibody-based ELISA or immuno
+
+  genome compartment coverage: nuclear:6, mitochondrial:3, nuclear (telomeric):1, nuclear and mitochondrial:1
+
 MODULE C - repair capacity
 ------------------------------------------------------------------------------
-  established clinical tests carried into the panel: 8
+  established clinical tests carried into the panel: 9
     MMR protein immunohistochemistry       mismatch repair        anchor MMR read-out
     Microsatellite instability PCR         mismatch repair        orthogonal MMR confirmation
     MSI by next-generation sequencing      mismatch repair        scalable MMR read-out
@@ -67,13 +89,14 @@ MODULE C - repair capacity
     BRCA1/BRCA2 sequencing                 homologous recombinati HR genetic basis
     Tumour mutational burden               downstream consequence integrative consequence measure
     Mutational signature deconvolution     pathway-specific repai pathway attribution layer
+    POLE / POLD1 exonuclease domain sequen polymerase proofreadin the mutation-protection pathway MSI testing cannot see
 
-  expression panel: 75 targets (core 37, extended 32, normalisers 6)
-    Core clinical         43 targets -> 48-plex qPCR array               spare wells: 5
-    Extended research     75 targets -> 96-plex qPCR / nCounter panel    spare wells: 21
+  expression panel: 83 targets (core 40, extended 37, normalisers 6)
+    Core clinical         46 targets -> 48-plex qPCR array               spare wells: 2
+    Extended research     83 targets -> 96-plex qPCR / nCounter panel    spare wells: 13
 
   pathway coverage:
-    BER   base excision repair           17 genes
+    BER   base excision repair           20 genes
     HR    homologous recombination       11 genes
     SIG   damage signalling               9 genes
     NER   nucleotide excision repair      8 genes
@@ -83,6 +106,8 @@ MODULE C - repair capacity
     ICL   interstrand crosslink repair    4 genes
     DR    direct damage reversal          3 genes
     TLS   translesion synthesis           3 genes
+    PROOF polymerase proofreading         3 genes
+    TEL   telomere maintenance            2 genes
 
 DAMAGE-TO-REPAIR COUPLING
 ------------------------------------------------------------------------------
@@ -96,8 +121,12 @@ DAMAGE-TO-REPAIR COUPLING
   N7-meGua   alkylation                       BER    MPG
   M1dG       exocyclic lipid-peroxidation add NER    XPC; ERCC1; ERCC4
   edA        exocyclic adduct                 NER    XPC; ERCC1; ERCC4
+  cdA        tandem cyclopurine               NER    XPA; XPC; ERCC1; ERCC2; ERCC4; ERCC5; DDB2
+  cdG        tandem cyclopurine               NER    XPA; XPC; ERCC1; ERCC2; ERCC4; ERCC5; DDB2
+  5-Cl-dC    halogenated base                 BER    SMUG1; TDG
+  dU         deaminated base                  BER    UNG; SMUG1; DUT; TYMS
 
-  damage analytes with a named enzymatic partner in Module C: 10 of 10
+  damage analytes with a named enzymatic partner in Module C: 14 of 14
 
 COMPOSITE SCORING FRAMEWORK (worked example on SYNTHETIC values)
 ------------------------------------------------------------------------------
@@ -129,14 +158,15 @@ COMPOSITE SCORING FRAMEWORK (worked example on SYNTHETIC values)
 ==============================================================================
 BUILD SUMMARY
 ==============================================================================
-  Module A analytes                     14 (incl. 1 normalisers)
+  Module A analytes                     18 (incl. 1 normalisers)
   Module A transition failures          0
   Module A transition collisions        0
   Module B flow parameters              10
   Module B spillover-critical pairs     1
   Module B cytogenetic endpoints        5
-  Module C clinical tests               8
-  Module C expression targets           75
-  Repair pathways covered               9
-  Damage analytes enzymatically coupled 10 of 10
+  Module C clinical tests               9
+  Module A2 non-MRM stress markers      11
+  Module C expression targets           83
+  Repair pathways covered               11
+  Damage analytes enzymatically coupled 14 of 14
   Verdict                               ALL CHECKS PASSED

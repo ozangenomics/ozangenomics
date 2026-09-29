@@ -26,9 +26,10 @@ module is, however, genuinely multiplexed internally:
 
 | Module | What it measures | Platform | Matrix | Plex |
 |---|---|---|---|---|
-| **A** | oxidative + alkylation adducts | LC-MS/MS, one MRM method | urine, DNA hydrolysate | 14 analytes |
+| **A** | oxidative, alkylation, halogenation and deamination adducts | LC-MS/MS, one MRM method | urine, DNA hydrolysate | 18 analytes |
+| **A2** | stress markers whose chemistry bars them from the MRM method | IHC, qPCR, flow, sequencing | tissue, blood, plasma | 11 markers |
 | **B** | cellular damage response | flow cytometry, one stained tube | PBMC | 10 parameters |
-| **C** | repair capacity | IHC + MSI/HRD + expression array | tissue, PBMC | 8 tests + 75 targets |
+| **C** | repair capacity | IHC + MSI/HRD + expression array | tissue, PBMC | 9 tests + 83 targets |
 
 **Headline readout** is the Stress-to-Repair Index, defined in Section 5 as a
 difference of robust z-scores rather than a ratio, and reported *pathway-resolved* so
@@ -39,8 +40,8 @@ number.
 mass-spectrometric transition from the molecular formula, checks every internal
 standard for a resolvable mass shift and an intact elemental backbone, tests the flow
 panel for spectral crowding, and confirms that every damage analyte has a named
-enzymatic partner in the repair module. It currently reports 0 failures across
-9 computable transitions and 10 of 10 damage analytes coupled. Two findings in
+enzymatic partner in the repair module. It currently reports **0 failures across
+11 computable transitions and 14 of 14 damage analytes coupled**. Three findings in
 Section 8 were produced by those checks and changed the design.
 
 ---
@@ -90,7 +91,7 @@ competent repair under load; low urinary with high genomic is repair failure.
 
 ## 2. Module A — the adduct panel
 
-Fourteen analytes in one liquid-chromatography tandem-mass-spectrometry method. All
+Eighteen analytes in one liquid-chromatography tandem-mass-spectrometry method. All
 transitions below were **recomputed from molecular formula** by the build script, not
 transcribed. For 2'-deoxynucleosides the product ion is the protonated base, formed by
 loss of the intact sugar (C5H8O3, 116.0473 Da); for the ribonucleoside the loss is
@@ -114,6 +115,10 @@ C5H8O4 (132.0423 Da).
 | **dG** | unmodified | 268.10 → 152.06 | Denominator. Lesions reported per 10⁶ dG. Also confirms hydrolysis went to completion |
 | **Creatinine** | normaliser | 114.07 → 44.05 | Mandatory for spot urine |
 | **8-iso-PGF2α** | lipid peroxidation | 353.23 → 193.12 (negative) | Separates systemic oxidative stress from DNA-specific damage. Pooled reference IQR 0.18–0.40 µg/g creatinine by chemical methods in adults with BMI under 25 |
+| **cdA** | 8,5'-cyclo-dA, tandem cyclopurine | 250.09 → 164.06 | Oxidative lesion repaired by **NER, not BER**. See 2.5 |
+| **cdG** | 8,5'-cyclo-dG | 266.09 → 180.05 | Guanine counterpart; R and S diastereomers must be resolved |
+| **5-Cl-dC** | chlorinated cytosine | 262.06 → 146.01 | Myeloperoxidase/HOCl product. Neutrophil-driven inflammation, chemically distinct from oxidation and nitration |
+| **dU** | uracil in DNA | 229.08 → 113.03 | Cytosine deamination and dUTP misincorporation. A third damage mechanism: neither oxidative nor alkylative |
 
 ### 2.2 The 5-hmdC trap
 
@@ -152,6 +157,121 @@ The build script identified two pairs sharing a product ion:
 
 Neither is a collision. No analyte pair shares *both* precursor and product, which the
 script verifies explicitly.
+
+### 2.5 The cyclopurines, and why they are the most useful addition
+
+8,5'-cyclo-2'-deoxyadenosine and its guanine counterpart form when a hydroxyl radical
+attacks the sugar and the resulting radical cyclises between C5' and C8. That covalent
+bond between sugar and base is the whole point:
+
+- It **distorts the duplex**, so the lesion is recognised as bulky helix-damaging injury.
+- It means these lesions are **repaired by nucleotide excision repair rather than base
+  excision repair**, unlike every other oxidative lesion in the panel.
+- It also means **the glycosidic bond cannot be cleaved**. The build script's neutral-loss
+  check correctly refuses to compute a product ion for these two analytes for exactly
+  this reason, and says so in its output.
+
+The design value is considerable. 8-oxodG and cdA are produced by the **same oxidant**
+but cleared by **different pathways**. Measuring both lets a single oxidative stress
+interrogate two repair systems at once. If 8-oxodG is normal while cdA is elevated, the
+oxidant load is ordinary and the NER arm is the problem — a conclusion no
+guanine-oxidation marker can reach on its own. These lesions block polymerases, inhibit
+gene expression, and accumulate in tissue in association with disease.
+
+### 2.6 Four damage chemistries, not one
+
+With these additions the adduct module spans mechanistically distinct injury types,
+each with its own biological source:
+
+| Chemistry | Analytes | Source |
+|---|---|---|
+| Oxidation, closed-ring purine | 8-oxodG, 8-oxoGuo, 8-oxoGua | general reactive oxygen species |
+| Oxidation, ring-opened purine | FapyGua | ROS at low oxygen tension |
+| Oxidation, tandem cyclisation | cdA, cdG | hydroxyl radical specifically |
+| Oxidation, pyrimidine | 5-hmdC, Tg | ROS |
+| **Nitration** | 8-nitroguanine (Module A2) | peroxynitrite, chronic inflammation |
+| **Halogenation** | 5-Cl-dC | myeloperoxidase/HOCl, neutrophils |
+| Alkylation | O6-medG, N7-meGua | nitrosamines, tobacco, chemotherapy |
+| Aldehyde exocyclic | M1dG, εdA | lipid peroxidation |
+| **Deamination** | dU | spontaneous, folate deficiency, antifolates |
+
+This matters because the chemistries point at different causes. Halogenation implicates
+neutrophils. Nitration implicates peroxynitrite and chronic inflammation. Deamination
+implicates folate status or thymidylate-synthase inhibition. Alkylation implicates
+exposure. A panel confined to guanine oxidation cannot distinguish any of these.
+
+---
+
+## 2A. Module A2 — markers that cannot go in the mass-spectrometry method
+
+Eleven markers in `data/dna_stress_other_markers.csv`. Each is excluded from Module A
+for a **chemical or compartmental reason**, not an arbitrary one, and several are as
+clinically familiar as 8-OHdG itself.
+
+### 2A.1 8-nitroguanine — the nitrative axis
+
+Nitration is a damage chemistry the adduct panel otherwise misses entirely. 8-nitroguanine
+is a mutagenic lesion formed during chronic inflammation via reactive nitrogen species.
+It has been demonstrated at sites of carcinogenesis, accumulates in cancer-prone
+inflammatory disease caused by several pathogens including human papillomavirus and
+Epstein-Barr virus, and strong formation in tumour tissue has been closely associated
+with poor prognosis. Given that chronic inflammation is estimated to account for
+roughly a quarter of cancer cases, an inflammation-specific DNA lesion earns its place.
+
+**Why it is not in the MRM method:** 8-nitroguanine is chemically labile and depurinates
+rapidly, so immunohistochemistry with a specific antibody is the established detection
+route. The marker's own instability dictates its platform.
+
+### 2A.2 Abasic sites — measuring the bottleneck directly
+
+An abasic site is the obligate intermediate between glycosylase excision and gap
+filling, and it is **more mutagenic than the base lesion it replaced**. Section 4.2
+argues that high glycosylase activity with low APE1 is worse than low glycosylase
+activity; abasic site burden is how you measure that state instead of inferring it.
+Quantified by aldehyde-reactive probe, with methoxyamine binding abasic sites covalently.
+
+### 2A.3 The mitochondrial genome — a separate compartment
+
+Three markers cover it: copy number, the 4977 bp common deletion, and polymerase-blocking
+lesion frequency by long-amplicon qPCR. Mitochondrial DNA **lacks nucleotide excision
+repair** and sits adjacent to the electron transport chain, so it accumulates oxidative
+damage faster than nuclear DNA. The common deletion has been reported at higher levels
+in the blood of breast cancer patients with concurrently lower mitochondrial DNA
+content and higher oxidative damage markers.
+
+A nuclear DNA hydrolysate does not report this compartment at all. Copy number is read
+only alongside deletion burden, because copy number alone moves with both mitochondrial
+biogenesis and mitochondrial loss and is ambiguous by itself.
+
+### 2A.4 Telomere length — a different time constant
+
+Telomeric DNA is guanine-rich, disproportionately sensitive to oxidation, and refractory
+to repair. Psychological stress has been associated with higher oxidative stress, lower
+telomerase activity and shorter telomeres, with the highest-stress group shorter by the
+equivalent of at least a decade of additional ageing.
+
+Its role here is **temporal**. Adducts integrate hours to days. Telomere length
+integrates months to years. Including both separates an acute insult from a chronic
+burden, which no single-timescale marker can do. The panel pairs it with TERT and TERF2
+transcripts, since telomerase activity and telomere length answer different questions.
+
+### 2A.5 Mutation outcome — what the whole panel is actually about
+
+Every other marker is a lesion or an enzyme. These two are fixed mutations:
+
+- **PIG-A mutant frequency**, by flow cytometry for loss of GPI-anchored proteins on
+  erythrocytes. Reported background is roughly 2.9 to 5.56 per million mutant
+  erythrocytes in healthy subjects, with increases after cigarette smoking, radiotherapy
+  and occupational exposures including lead. A low, stable background is what makes
+  induced mutation detectable.
+- **Error-corrected (duplex) sequencing**, which returns mutation frequency *and*
+  spectrum — an outcome measure and a mechanism attribution in one assay. Inter-individual
+  variability in clonally expanded mutations is a known analytical challenge.
+
+A panel that measures damage and repair but never mutation is measuring inputs and
+machinery while declining to check the output.
+
+---
 
 ---
 
@@ -235,7 +355,7 @@ functional deficiency readout.
 
 ### 4.1 The clinically established tests
 
-Eight tests in `data/repair_clinical_tests.csv`. These are the parts of the panel that
+Nine tests in `data/repair_clinical_tests.csv`. These are the parts of the panel that
 already have regulatory and guideline standing, and mismatch repair is where that
 standing is strongest.
 
@@ -274,6 +394,30 @@ high HRD score and have restored RAD51 loading — that is a PARP-inhibitor resi
 phenotype, and the scar score alone will misclassify it. Available HRD assays differ
 and each requires validation on clinical samples before clinical use.
 
+**POLE / POLD1 exonuclease domain sequencing** covers the mutation-protection pathway
+that mismatch repair testing cannot see, and it is the single most important addition to
+the repair module.
+
+> **Why an MMR-only panel is not enough.** Polymerases ε and δ replicate the genome and
+> proofread their own work through exonuclease domains. Exonuclease domain mutations
+> produce an **ultramutated** tumour — sometimes exceeding a million base substitutions —
+> that is nonetheless **apparently microsatellite stable**. An MMR immunohistochemistry
+> and MSI workup reports such a tumour as normal. The most extreme mutator phenotype in
+> human cancer is invisible to the tests that define the mismatch repair readout.
+> Germline exonuclease domain mutations in these genes define polymerase
+> proofreading-associated polyposis, with high penetrance and dominant inheritance.
+> Proofreading and mismatch repair defects can also co-occur, and that combination
+> produces the highest mutation rates observed — somatic POLE exonuclease mutations
+> arising on a background of biallelic mismatch repair deficiency have been reported with
+> tumour mutation rates of 237 and 123 per megabase.
+
+Framing the problem as mismatch repair *or other mutation-protection pathways* is the
+right framing, and proofreading is the pathway it points at. The panel therefore treats
+replication fidelity as a **two-layer system**: the polymerase proofreads as it goes, and
+mismatch repair corrects what proofreading missed. Testing only the second layer leaves
+the first unexamined, and the first is where the largest mutation burdens come from.
+POLE, POLD1 and PCNA are in the expression panel under pathway code `PROOF`.
+
 **Mutational signature deconvolution** is the only element that attributes observed
 mutations to a *specific failed pathway* — MMR deficiency, HR deficiency, oxidative
 damage and alkylation each leave distinguishable single-base-substitution signatures.
@@ -282,20 +426,20 @@ and is mechanistically uninformative on its own.
 
 ### 4.2 The multiplexed expression panel
 
-75 targets across nine repair pathways plus six normaliser candidates, in
+83 targets across eleven repair pathways plus six normaliser candidates, in
 `data/repair_expression_panel.csv`. Two tiers, sized by the build script against real
 plate formats:
 
 | Tier | Targets | Format | Spare wells |
 |---|---|---|---|
-| Core clinical | 43 | 48-plex qPCR array | 5 |
-| Extended research | 75 | 96-plex array | 21 |
+| Core clinical | 46 | 48-plex qPCR array | 2 |
+| Extended research | 83 | 96-plex array | 13 |
 
 Pathway coverage:
 
 | Code | Pathway | Genes |
 |---|---|---|
-| BER | base excision repair | 17 |
+| BER | base excision repair | 20 |
 | HR | homologous recombination | 11 |
 | SIG | damage signalling | 9 |
 | NER | nucleotide excision repair | 8 |
@@ -304,6 +448,8 @@ Pathway coverage:
 | ICL | interstrand crosslink repair | 4 |
 | DR | direct damage reversal | 3 |
 | TLS | translesion synthesis | 3 |
+| PROOF | **polymerase proofreading** | 3 |
+| TEL | telomere maintenance | 2 |
 
 Base excision repair carries the most genes deliberately: it is the pathway that
 handles the panel's anchor lesion, and it has enough sequential steps that knowing
@@ -328,7 +474,7 @@ this panel.
 ### 4.3 The damage-to-repair coupling, which is the point
 
 Every damage analyte is mapped to the enzymes that handle it. The build script verifies
-this mapping and reports **10 of 10 damage analytes coupled**:
+this mapping and reports **14 of 14 damage analytes coupled**:
 
 | Damage analyte | Pathway | Enzymatic partners in panel |
 |---|---|---|
@@ -342,6 +488,10 @@ this mapping and reports **10 of 10 damage analytes coupled**:
 | N7-meGua | BER | MPG |
 | M1dG | NER | XPC, ERCC1, ERCC4 |
 | εdA | NER | XPC, ERCC1, ERCC4 |
+| **cdA** | **NER** | XPA, XPC, ERCC1, ERCC2, ERCC4, ERCC5, DDB2 |
+| **cdG** | **NER** | XPA, XPC, ERCC1, ERCC2, ERCC4, ERCC5, DDB2 |
+| 5-Cl-dC | BER | SMUG1, TDG |
+| dU | BER | UNG, SMUG1, DUT, TYMS |
 
 The RNA analyte is the interesting case. **Oxidised RNA is not repaired in place** —
 there is no RNA equivalent of base excision repair. Its only enzymatic defence is
@@ -512,6 +662,13 @@ validation plan in Section 7.
 the build reports it as spillover-critical so that compensation controls are treated as
 mandatory for that pair.
 
+**A validation rule refused to apply itself, correctly.** The glycosidic neutral-loss
+check computes a product ion by subtracting the intact sugar from the precursor. For the
+two cyclopurines it declines to do so and reports the reason: the C5'-C8 covalent bond
+that defines the lesion is precisely what prevents the sugar leaving as a neutral
+fragment. The validator encoding that distinction is what stops a plausible-looking but
+chemically impossible transition from being accepted for cdA and cdG.
+
 **One coupling gap turned out to be biology.** The first coupling run reported 8-oxoGuo
 as uncoupled. That was correct as written but incomplete: MTH1 sanitises 8-oxo-GTP as
 well as 8-oxo-dGTP, so the RNA analyte does have an enzymatic partner. The annotation
@@ -542,6 +699,14 @@ stated explicitly in Section 4.3 instead of appearing as a missing entry.
 - **Mutational signature attribution needs mutation count.** Exome-scale data give
   unstable signature fits; the attribution layer in Section 4.1 needs genome-scale
   sequencing to be reliable.
+- **Module A2 spans wildly different maturity levels.** Telomere length and
+  mitochondrial copy number have large literatures and poor standardisation; PIG-A has a
+  well-characterised background frequency; error-corrected sequencing is still being
+  established for human biomonitoring. The nitrative and halogenative markers are
+  research-grade.
+- **Cell-free DNA is context, not a damage measure.** It reports that cells died, not
+  that their genomes were damaged, and leukocyte lysis during sample handling contaminates
+  the signal. It is included with that caveat attached rather than scored as damage.
 - **Cost and throughput are not addressed here.** A three-module panel requiring
   LC-MS/MS, flow cytometry, immunohistochemistry, fragment analysis and an expression
   array is a research instrument. Deciding which modules survive into a deployable
@@ -552,12 +717,14 @@ stated explicitly in Section 4.3 instead of appearing as a missing entry.
 ## 10. Files
 
 ```
-data/dna_damage_adducts.csv        14 Module A analytes: formula, transition, internal standard
+data/dna_damage_adducts.csv        18 Module A analytes: formula, transition, internal standard
+data/dna_stress_other_markers.csv  11 Module A2 markers on other platforms
 data/ddr_flow_panel.csv            10 Module B flow parameters with laser/emission assignment
 data/ddr_cytogenetic_assays.csv     5 cytogenetic and comet endpoints
-data/repair_clinical_tests.csv      8 clinically established repair tests with pitfalls
-data/repair_expression_panel.csv   75 repair genes across 9 pathways, 2 tiers
+data/repair_clinical_tests.csv      9 clinically established repair tests with pitfalls
+data/repair_expression_panel.csv   83 repair genes across 11 pathways, 2 tiers
 src/dna_stress_panel.py            builder, validator and scoring framework
+src/build_report_pdf.py            renders the report to PDF
 results/                           generated verification output
 ```
 
@@ -602,6 +769,29 @@ Literature located through PubMed. Key references, with DOI links:
 - Urinary 8-isoprostane reference values and BMI association, systematic review and
   meta-analysis — *Toxicol Lett*
   ([DOI](https://doi.org/10.1016/j.toxlet.2020.04.006))
+
+Markers added in the expansion:
+
+- 8-nitroguanine in inflammation-related carcinogenesis — Hiraku, *Environ Health Prev
+  Med* ([DOI](https://doi.org/10.1007/s12199-009-0118-5))
+- 8,5'-cyclopurine-2'-deoxynucleosides: formation, measurement, NER-dependent repair and
+  biological effects — Jaruga & Dizdaroglu, *DNA Repair*
+  ([DOI](https://doi.org/10.1016/j.dnarep.2008.06.005))
+- Polymerase ε and δ proofreading mutations defining a hypermutated, microsatellite-stable
+  cancer class — Briggs & Tomlinson, *J Pathol*
+  ([DOI](https://doi.org/10.1002/path.4185)); germline PMS2 with somatic POLE exonuclease
+  mutation and the resulting mutation rates — *J Pathol*
+  ([DOI](https://doi.org/10.1002/path.4957))
+- Mitochondrial common deletion elevated in blood with oxidative stress — *Mitochondrion*
+  ([DOI](https://doi.org/10.1016/j.mito.2015.12.001))
+- Telomere shortening with life stress, oxidative stress and telomerase activity — Epel
+  *et al.*, *PNAS* ([DOI](https://doi.org/10.1073/pnas.0407162101))
+- PIG-A gene mutation assay in human biomonitoring, including background mutant
+  frequencies — *Environ Mol Mutagen* ([DOI](https://doi.org/10.1002/em.22577))
+- Duplex (error-corrected) sequencing for in-vivo mutation measurement — *Biol Reprod*
+  ([DOI](https://doi.org/10.1093/biolre/ioaf029))
+- Direct detection and quantification of abasic sites, including methoxyamine binding —
+  *Nucl Med Biol* ([DOI](https://doi.org/10.1016/j.nucmedbio.2009.07.007))
 
 Mass-spectrometric transitions in Section 2 are computed from molecular formula by
 `src/dna_stress_panel.py`. Nominal transitions for free bases and for 8-isoprostane are
