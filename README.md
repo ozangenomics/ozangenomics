@@ -1,4 +1,110 @@
-# PROTAC architecture vs. *Primula* root constituents — a cheminformatics SAR assessment
+# ozangenomics — computational biology and cheminformatics analyses
+
+Two self-contained studies. Each carries its own data, code, generated results and report.
+
+| Study | Question | Report |
+|---|---|---|
+| **DNA stress and repair panel** | Can 8-OHdG be extended into a panel that quantifies DNA damage *and* the repair capacity protecting against it? | [`docs/DNA_stress_repair_panel.md`](docs/DNA_stress_repair_panel.md) |
+| **PROTAC vs *Primula* SAR** | Can any constituent of primrose root serve as a PROTAC module? | [`docs/PROTAC_primula_SAR.md`](docs/PROTAC_primula_SAR.md) |
+
+---
+
+# Study 1 — A multiplex panel for DNA stress and DNA repair capacity
+
+Built outward from **8-OHdG** (8-oxo-7,8-dihydro-2'-deoxyguanosine) to a three-module
+panel that measures oxidative and alkylation DNA damage, the cellular response to it,
+and the capacity of the pathways that protect against mutation — mismatch repair, base
+excision repair, nucleotide excision repair, homologous recombination, end joining,
+direct alkylation reversal, crosslink repair and translesion synthesis.
+
+**Read the design: [`docs/DNA_stress_repair_panel.md`](docs/DNA_stress_repair_panel.md)**
+
+## The design problem
+
+A raised 8-OHdG cannot distinguish the only two states that matter clinically: damage
+production is high and repair is keeping up, or damage production is high and repair is
+failing. Both give the same number. Separating them requires measuring repair in the
+same subject at the same time.
+
+A single cartridge cannot do both — 8-OHdG is a small molecule measured by mass
+spectrometry, MSH2 is a protein epitope measured by antibody. The panel is therefore
+modular by analyte class and matrix, with each module genuinely multiplexed internally.
+
+| Module | Measures | Platform | Matrix | Plex |
+|---|---|---|---|---|
+| **A** | oxidative + alkylation adducts | LC-MS/MS, one MRM method | urine, DNA hydrolysate | 14 analytes |
+| **B** | cellular damage response | flow cytometry, one stained tube | PBMC | 10 parameters |
+| **C** | repair capacity | IHC + MSI/HRD + expression array | tissue, PBMC | 8 tests + 75 targets |
+
+## Headline design decisions
+
+- **ELISA is excluded, not de-emphasised.** A multi-laboratory consensus exercise found
+  immunoassay returns systematically higher urinary 8-oxodG than chromatographic methods
+  with poor agreement between them. Every analyte carries a stable-isotope-labelled
+  internal standard and is quantified by LC-MS/MS.
+- **The panel can detect its own artefact.** DNA extraction manufactures 8-oxodG through
+  Fenton chemistry. The FPG/OGG1-modified comet assay measures the same lesion class
+  inside intact cells, so divergence between the two flags an extraction artefact. No
+  single-analyte assay can do this.
+- **Ten damage analytes, four lesion chemistries, three bases, DNA and RNA.** A panel of
+  ten guanine-oxidation markers would be ten measurements of one thing. This one spans
+  closed-ring and ring-opened purine oxidation, pyrimidine oxidation, alkylation and
+  aldehyde-derived exocyclic adducts.
+- **Every damage analyte is coupled to the enzyme that handles it** — 8-oxodG to
+  OGG1/MUTYH, O6-methyl-dG to MGMT, thymidine glycol to NTHL1. An abnormal composite
+  therefore names the enzyme to follow up instead of just flagging a number.
+- **The headline index is a difference of z-scores, not a ratio.** A z-scored denominator
+  crosses zero by construction, so damage/repair is undefined at the population median
+  and explodes near it. On the log scale a difference is exactly what a ratio reaches
+  for, and it is finite everywhere.
+- **Mismatch repair is the anchor** because it is where clinical standing is strongest.
+  The four-antibody IHC panel is enforced with pair-aware interpretation: MSH6 loss can
+  be secondary to MSH2 loss, and PMS2 loss secondary to MLH1 loss, so scoring the four
+  independently over-calls primary mutation.
+
+## Verification built into the run
+
+`src/dna_stress_panel.py` recomputes every mass transition from molecular formula,
+validates every internal standard, checks the flow panel for spectral crowding, and
+confirms damage-to-repair coupling. Current state: **0 failures across 9 computable
+transitions, 0 transition collisions, 10 of 10 damage analytes coupled.**
+
+Two findings from those checks changed the design rather than being written up
+afterwards. The internal-standard check initially tested *exact* mass shift against
+3.0 Da and wrongly failed four `[13C1,15N2]` and `[15N3]` standards at 2.991–2.997 Da —
+these are +3 *nominal* shifts, fully resolvable on a unit-resolution quadrupole. The
+check now works on nominal mass and issues a bleed-through advisory at exactly +3.
+Separately, two internal standards were upgraded to `[15N5]` once the check made the
++3 crowding visible. Section 8 of the report documents both.
+
+## Reproduce
+
+```bash
+python3 src/dna_stress_panel.py     # no dependencies beyond the standard library
+```
+
+## Layout
+
+```
+data/dna_damage_adducts.csv        14 Module A analytes: formula, transition, internal standard
+data/ddr_flow_panel.csv            10 Module B flow parameters with laser/emission assignment
+data/ddr_cytogenetic_assays.csv     5 cytogenetic and comet endpoints
+data/repair_clinical_tests.csv      8 clinically established repair tests with pitfalls
+data/repair_expression_panel.csv   75 repair genes across 9 pathways, 2 tiers
+src/dna_stress_panel.py            builder, validator and scoring framework
+docs/DNA_stress_repair_panel.md    the full design document
+```
+
+## Status
+
+No composite index here is clinically validated. The components differ enormously in
+maturity: mismatch repair IHC and MSI are routine diagnostics, the micronucleus assay
+has prospective cancer-incidence data in a 6718-subject cohort, and most adducts beyond
+8-oxodG are research-grade. Section 9 of the report states the limitations in full.
+
+---
+
+# Study 2 — PROTAC architecture vs. *Primula* root constituents
 
 Computational assessment of whether any constituent of primrose (*Primula*) root can
 serve as a module of a PROTAC degrader — warhead, linker, or E3 ligand — and what the

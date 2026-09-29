@@ -1,0 +1,11 @@
+damage_analyte,lesion_class,n_repair_partners,repair_genes,pathways,status
+8-oxodG,oxidised purine,2,OGG1; MUTYH,BER,COUPLED
+8-oxoGuo,oxidised purine,1,NUDT1,BER,COUPLED
+8-oxoGua,oxidised purine (free base),1,NUDT1,BER,COUPLED
+FapyGua,ring-opened purine,2,NEIL1; NEIL2,BER,COUPLED
+5-hmdC,oxidised pyrimidine,2,SMUG1; TDG,BER,COUPLED
+Tg,ring-saturated pyrimidine,1,NTHL1,BER,COUPLED
+O6-medG,alkylation,1,MGMT,DR,COUPLED
+N7-meGua,alkylation,1,MPG,BER,COUPLED
+M1dG,exocyclic lipid-peroxidation adduct,3,XPC; ERCC1; ERCC4,NER,COUPLED
+edA,exocyclic adduct,3,XPC; ERCC1; ERCC4,NER,COUPLED

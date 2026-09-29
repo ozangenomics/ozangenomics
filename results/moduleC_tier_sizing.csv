@@ -1,0 +1,3 @@
+tier,n_targets,fits_format,format_capacity,spare_wells
+Core clinical,43,48-plex qPCR array,48,5
+Extended research,75,96-plex qPCR / nCounter panel,96,21

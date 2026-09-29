@@ -1,0 +1,76 @@
+gene,protein,pathway,pathway_code,tier,function_in_pathway,damage_analyte_partner,notes
+MLH1,MutL homolog 1,mismatch repair,MMR,core,MutLalpha component; licences excision,none (replication error),Loss is the commonest cause of sporadic dMMR via promoter hypermethylation
+MSH2,MutS homolog 2,mismatch repair,MMR,core,MutSalpha/beta component; mismatch recognition,none (replication error),Obligate partner of MSH6 and MSH3
+MSH6,MutS homolog 6,mismatch repair,MMR,core,base-base mismatch and small loop recognition,none (replication error),Partner of MSH2; secondary loss follows MSH2 loss
+PMS2,PMS1 homolog 2,mismatch repair,MMR,core,MutLalpha endonuclease; nicks the error strand,none (replication error),Partner of MLH1; secondary loss follows MLH1 loss
+MSH3,MutS homolog 3,mismatch repair,MMR,extended,large insertion-deletion loop recognition,none,Loss produces elevated microsatellite alterations at selected tetranucleotides rather than classical MSI
+MLH3,MutL homolog 3,mismatch repair,MMR,extended,minor MutL complex,none,Contributes to meiotic recombination as well as repair
+EXO1,Exonuclease 1,mismatch repair,MMR,extended,excises the error-containing strand,none,Shared with other excision pathways
+OGG1,8-oxoguanine DNA glycosylase 1,base excision repair,BER,core,excises 8-oxoguanine opposite cytosine,8-oxodG,The direct enzymatic counterpart of the panel anchor analyte. High 8-oxodG with low OGG1 localises the bottleneck to the glycosylase step
+MUTYH,MutY homolog,base excision repair,BER,core,excises adenine mispaired with 8-oxoguanine,8-oxodG,Second line of defence against 8-oxoG mutagenesis; biallelic loss causes adenomatous polyposis
+NUDT1,Nudix hydrolase 1 (MTH1),nucleotide pool sanitisation,BER,core,hydrolyses 8-oxo-dGTP and 8-oxo-GTP before incorporation into DNA or RNA,8-oxoGua / 8-oxoGuo,"Prevents oxidised precursor incorporation into both DNA and RNA; the only panel enzyme that accounts for the RNA-oxidation analyte, since oxidised RNA is not repaired in place"
+NTHL1,Nth-like DNA glycosylase 1,base excision repair,BER,core,excises oxidised pyrimidines including thymine glycol,Tg,Pyrimidine arm of BER; germline biallelic loss is a cancer-predisposition syndrome
+NEIL1,Nei-like DNA glycosylase 1,base excision repair,BER,core,excises ring-opened purines including FapyG,FapyGua,Principal FapyG glycosylase; the reason FapyGua belongs in the adduct module
+APEX1,AP endonuclease 1 (APE1),base excision repair,BER,core,incises the abasic site left by glycosylases,all BER lesions,Downstream bottleneck; high glycosylase with low APE1 causes abasic-site accumulation which is more mutagenic than the original lesion
+POLB,DNA polymerase beta,base excision repair,BER,core,gap-filling synthesis,all BER lesions,Short-patch BER synthesis step
+XRCC1,X-ray repair cross-complementing 1,base excision repair,BER,core,scaffold coordinating POLB and LIG3,all BER lesions,Non-enzymatic scaffold; loss uncouples incision from ligation
+LIG3,DNA ligase 3,base excision repair,BER,core,seals the repaired nick,all BER lesions,Final BER step
+PARP1,Poly-ADP-ribose polymerase 1,single-strand break signalling,BER,core,detects strand breaks and recruits repair factors,none (functional PAR read-out),Transcript abundance pairs with the PAR flow channel to separate expression from activity
+UNG,Uracil-DNA glycosylase,base excision repair,BER,extended,excises uracil from deaminated cytosine,none,Deamination arm rather than oxidation arm
+MPG,N-methylpurine DNA glycosylase,base excision repair,BER,extended,excises alkylated purines including N7-methylguanine,N7-meGua,Alkylation arm of BER; partner analyte is the urinary N7-methylguanine dosimeter
+NEIL2,Nei-like DNA glycosylase 2,base excision repair,BER,extended,transcription-coupled oxidised base removal,FapyGua,Preference for lesions in single-stranded and transcribed DNA
+NEIL3,Nei-like DNA glycosylase 3,base excision repair,BER,extended,unhooks interstrand crosslinks; oxidised bases in single-stranded DNA,none,Bridges BER and crosslink repair
+SMUG1,Single-strand-selective monofunctional uracil glycosylase,base excision repair,BER,extended,uracil and 5-hydroxymethyluracil removal,5-hmdC,Relevant to oxidised-pyrimidine turnover
+MBD4,Methyl-CpG binding domain 4,base excision repair,BER,extended,removes thymine from G:T mismatches at CpG,5-medC,Couples methylation status to repair
+TDG,Thymine-DNA glycosylase,base excision repair,BER,extended,processes TET oxidation products,5-hmdC,Essential for interpreting 5-hmdC as epigenetic rather than damage signal
+MGMT,O6-methylguanine DNA methyltransferase,direct damage reversal,DR,core,transfers the methyl group off O6-methylguanine in one step,O6-medG,Single-turnover suicide protein; the tightest analyte-to-enzyme pairing available. Pair the transcript with the promoter-methylation clinical test
+ALKBH2,AlkB homolog 2,direct damage reversal,DR,extended,oxidative demethylation of 1-methyladenine and 3-methylcytosine,none,Handles alkylation lesions MGMT does not
+ALKBH3,AlkB homolog 3,direct damage reversal,DR,extended,single-stranded DNA alkylation reversal,none,Complements ALKBH2
+XPA,XPA DNA damage recognition and repair factor,nucleotide excision repair,NER,core,verifies the lesion and organises the incision complex,none (bulky adducts),Rate-limiting NER factor
+XPC,XPC complex subunit,nucleotide excision repair,NER,core,global-genome damage recognition,M1dG / edA,Recognises helix-distorting bulky adducts; partner to the exocyclic adducts in the panel
+ERCC1,Excision repair cross-complementation 1,nucleotide excision repair,NER,core,5-prime incision with ERCC4,M1dG / edA,Expression level has been studied extensively as a platinum-response marker
+ERCC2,ERCC excision repair 2 (XPD),nucleotide excision repair,NER,core,helicase within TFIIH; opens the bubble,none,Also a transcription factor subunit
+ERCC4,ERCC excision repair 4 (XPF),nucleotide excision repair,NER,core,structure-specific endonuclease,M1dG / edA,Shared with interstrand crosslink repair
+ERCC5,ERCC excision repair 5 (XPG),nucleotide excision repair,NER,extended,3-prime incision,none,Also stimulates certain glycosylases
+DDB2,Damage-specific DNA binding protein 2,nucleotide excision repair,NER,extended,UV photoproduct recognition,none,Chromatin-context damage recognition
+ERCC6,ERCC excision repair 6 (CSB),nucleotide excision repair,NER,extended,transcription-coupled repair initiation,none,Distinguishes transcription-coupled from global-genome NER
+BRCA1,Breast cancer type 1 susceptibility protein,homologous recombination,HR,core,end resection and RAD51 loading control,none (double-strand break),Clinically actionable; pairs with the HRD score
+BRCA2,Breast cancer type 2 susceptibility protein,homologous recombination,HR,core,loads RAD51 onto single-stranded DNA,none (double-strand break),Clinically actionable
+RAD51,RAD51 recombinase,homologous recombination,HR,core,forms the strand-invasion filament,none (functional foci read-out),Transcript pairs with the RAD51 foci flow channel to separate abundance from loading
+PALB2,Partner and localiser of BRCA2,homologous recombination,HR,core,bridges BRCA1 and BRCA2,none,Clinically actionable predisposition gene
+ATM,ATM serine/threonine kinase,damage signalling,SIG,core,apical kinase for double-strand break signalling,none (functional pATM read-out),Transcript pairs with the pATM flow channel
+NBN,Nibrin,homologous recombination,HR,extended,MRN complex component; end sensing,none,Upstream of ATM activation
+MRE11,MRE11 homolog,homologous recombination,HR,extended,MRN nuclease; initiates resection,none,Resection initiation
+RAD50,RAD50 double-strand break repair protein,homologous recombination,HR,extended,MRN structural subunit,none,Tethers broken ends
+RAD51C,RAD51 paralog C,homologous recombination,HR,extended,RAD51 filament stabilisation,none,Established predisposition gene
+RAD51D,RAD51 paralog D,homologous recombination,HR,extended,RAD51 paralog complex,none,Established predisposition gene
+BARD1,BRCA1-associated RING domain 1,homologous recombination,HR,extended,obligate BRCA1 heterodimer partner,none,Required for BRCA1 stability
+BRIP1,BRCA1-interacting helicase 1,homologous recombination,HR,extended,helicase acting with BRCA1,none,Predisposition gene
+PRKDC,DNA-dependent protein kinase catalytic subunit,non-homologous end joining,NHEJ,core,synapsis and end-joining kinase,none (double-strand break),Principal NHEJ kinase; the HR-independent repair route
+XRCC5,X-ray repair cross-complementing 5 (Ku80),non-homologous end joining,NHEJ,core,end binding with Ku70,none,Obligate Ku heterodimer subunit
+XRCC6,X-ray repair cross-complementing 6 (Ku70),non-homologous end joining,NHEJ,core,end binding with Ku80,none,Obligate Ku heterodimer subunit
+LIG4,DNA ligase 4,non-homologous end joining,NHEJ,core,final ligation of joined ends,none,Rate-limiting NHEJ ligation
+XRCC4,X-ray repair cross-complementing 4,non-homologous end joining,NHEJ,extended,stabilises and stimulates LIG4,none,Obligate LIG4 partner
+NHEJ1,Non-homologous end joining factor 1 (XLF),non-homologous end joining,NHEJ,extended,end-bridging,none,Works with the XRCC4-LIG4 complex
+DCLRE1C,DNA cross-link repair 1C (Artemis),non-homologous end joining,NHEJ,extended,hairpin and overhang processing nuclease,none,End-processing before ligation
+ATR,ATR serine/threonine kinase,damage signalling,SIG,core,replication stress and single-stranded DNA signalling,none,The replication-stress arm; distinguishes replication stress from frank breakage
+CHEK1,Checkpoint kinase 1,damage signalling,SIG,core,ATR effector; intra-S and G2 checkpoint,none,Replication checkpoint effector
+CHEK2,Checkpoint kinase 2,damage signalling,SIG,core,ATM effector; G1/S checkpoint,none (functional pCHK2 read-out),Transcript pairs with the pCHK2 flow channel
+TP53,Tumour protein p53,damage signalling,SIG,core,transcriptional damage response and apoptosis,none,Governs the consequence of damage; a repair-competent but p53-null cell tolerates damage rather than repairing it
+TP53BP1,p53-binding protein 1 (53BP1),damage signalling,SIG,core,break recognition and end-joining channel choice,none (functional foci read-out),Transcript pairs with the 53BP1 flow channel
+H2AX,H2A.X variant histone,damage signalling,SIG,core,substrate whose phosphorylation marks breaks,none (functional gamma-H2AX read-out),Baseline abundance is required to interpret gamma-H2AX signal; low total H2AX depresses the phospho-signal independently of damage
+MDC1,Mediator of DNA damage checkpoint 1,damage signalling,SIG,extended,reads gamma-H2AX and amplifies signalling,none,Signal amplification step
+ATRIP,ATR-interacting protein,damage signalling,SIG,extended,recruits ATR to single-stranded DNA,none,Obligate ATR partner
+FANCD2,FA complementation group D2,interstrand crosslink repair,ICL,core,monoubiquitinated hub of the FA pathway,none,Functional read-out available as the FANCD2 ubiquitination assay
+FANCA,FA complementation group A,interstrand crosslink repair,ICL,extended,core complex component,none,Commonest Fanconi anaemia gene
+UBE2T,Ubiquitin-conjugating enzyme E2T,interstrand crosslink repair,ICL,extended,FANCD2 ubiquitin conjugation,none,Required for pathway activation
+SLX4,SLX4 structure-specific endonuclease subunit,interstrand crosslink repair,ICL,extended,nuclease scaffold for crosslink unhooking,none,Coordinates multiple nucleases
+REV3L,DNA polymerase zeta catalytic subunit,translesion synthesis,TLS,core,extends past lesions; error-prone,all lesions,Damage tolerance rather than repair; high TLS with low repair is the actively mutagenic configuration
+POLH,DNA polymerase eta,translesion synthesis,TLS,extended,bypasses UV photoproducts,none,Error-prone bypass polymerase
+REV1,REV1 DNA-directed polymerase,translesion synthesis,TLS,extended,scaffolds bypass polymerase switching,all lesions,Bypass polymerase recruitment hub
+GAPDH,Glyceraldehyde-3-phosphate dehydrogenase,reference,REF,normaliser,housekeeping,not applicable,Include in the normalisation candidate set; do not use alone
+ACTB,Beta-actin,reference,REF,normaliser,housekeeping,not applicable,Normalisation candidate
+RPLP0,Ribosomal protein lateral stalk subunit P0,reference,REF,normaliser,housekeeping,not applicable,Normalisation candidate; generally stable across blood fractions
+B2M,Beta-2-microglobulin,reference,REF,normaliser,housekeeping,not applicable,Normalisation candidate; caution because it is interferon-responsive and inflammation shifts it
+TBP,TATA-box binding protein,reference,REF,normaliser,housekeeping,not applicable,Low-abundance normalisation candidate
+PPIA,Peptidylprolyl isomerase A,reference,REF,normaliser,housekeeping,not applicable,Normalisation candidate

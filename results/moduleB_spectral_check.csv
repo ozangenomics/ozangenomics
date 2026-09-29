@@ -1,0 +1,8 @@
+laser_nm,channel_low,channel_high,gap_nm,status
+405,"DNA content (DAPI, 450nm)","Cleaved caspase-3 (BV605, 605nm)",155,OK
+405,"Cleaved caspase-3 (BV605, 605nm)","Ki-67 (BV711, 711nm)",106,OK
+488,"Histone H2AX (AF488, 519nm)","53BP1 (PE, 578nm)",59,OK
+488,"53BP1 (PE, 578nm)","ATM (PE-Dazzle594, 610nm)",32,SPILLOVER_CRITICAL
+488,"ATM (PE-Dazzle594, 610nm)","CHEK2 (PerCP-Cy5.5, 695nm)",85,OK
+640,"RAD51 (APC, 660nm)","Poly-ADP-ribose (AF700, 720nm)",60,OK
+640,"Poly-ADP-ribose (AF700, 720nm)","TRIM28 (KAP1) (APC-Fire750, 780nm)",60,OK

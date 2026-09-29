@@ -1,0 +1,142 @@
+==============================================================================
+MULTIPLEX PANEL FOR DNA STRESS AND DNA REPAIR CAPACITY
+build and verification report
+==============================================================================
+
+MODULE A - oxidative and alkylation adducts (LC-MS/MS, single MRM method)
+------------------------------------------------------------------------------
+analyte     precursor prod_calc prod_decl product  internal standard      shift IS check      
+8-oxodG      284.0989  168.0516    168.05 PASS     [15N5]-8-oxo-dG       +4.985 PASS          
+8-oxoGuo     300.0939  168.0516    168.05 PASS     [15N5]-8-oxo-Guo      +4.985 PASS          
+8-oxoGua     168.0516         -    140.04 lit.     [15N5]-8-oxo-Gua      +4.985 PASS          
+FapyGua      170.0673         -    152.06 lit.     [15N5]-FapyGua        +4.985 PASS          
+5-hmdC       258.1084  142.0611    142.06 PASS     [15N3]-5-hmdC         +2.991 PASS_VERIFY_M3
+5-medC       242.1135  126.0662    126.07 PASS     [D3]-5-medC           +3.019 PASS_VERIFY_M3
+Tg           277.1030  161.0557    161.06 PASS     [13C1;15N2]-Tg        +2.997 PASS_VERIFY_M3
+O6-medG      282.1197  166.0723    166.07 PASS     [D3]-O6-medG          +3.019 PASS_VERIFY_M3
+N7-meGua     166.0723         -    149.05 lit.     [D3]-N7-meGua         +3.019 PASS_VERIFY_M3
+M1dG         304.1040  188.0567    188.06 PASS     [15N5]-M1dG           +4.985 PASS          
+edA          276.1091  160.0618    160.06 PASS     [15N5]-edA            +4.985 PASS          
+dG           268.1040  152.0567    152.06 PASS     [13C10;15N5]-dG      +15.019 PASS          
+CRE          114.0662         -     44.05 lit.     [D3]-creatinine       +3.019 PASS_VERIFY_M3
+8-isoPGF2a   353.2333         -    193.12 lit.     [D4]-8-iso-PGF2a      +4.025 PASS          
+
+  glycosidic losses used: deoxyribose 116.0473 Da, ribose 132.0423 Da
+  transitions recomputed from formula: 9 of 14 analytes verifiable this way
+  5 free bases / non-nucleosides carry literature transitions marked 'lit.'
+  failures: 0    internal standards at +3 needing M+3 bleed check: 6
+
+  transition collisions: none - every analyte has a unique precursor/product pair
+  shared-ion pairs requiring chromatographic resolution or distinct dwell:
+    8-oxodG    8-oxoGuo   shared product, distinct precursor
+    FapyGua    dG         shared product, distinct precursor
+
+  matrix partitioning:
+    DNA hydrolysate            8 analytes
+    urine                      5 analytes
+    urine + DNA hydrolysate    1 analytes
+
+MODULE B - cellular damage response (one stained tube, flow cytometry)
+------------------------------------------------------------------------------
+  10 parameters across 3 lasers: 405nm:3, 488nm:4, 640nm:3
+     405nm  155nm gap  DNA content                                -> Cleaved caspase-3
+     405nm  106nm gap  Cleaved caspase-3                          -> Ki-67
+     488nm   59nm gap  Histone H2AX                               -> 53BP1
+     488nm   32nm gap  53BP1                                      -> ATM <-- spillover critical
+     488nm   85nm gap  ATM                                        -> CHEK2
+     640nm   60nm gap  RAD51                                      -> Poly-ADP-ribose
+     640nm   60nm gap  Poly-ADP-ribose                            -> TRIM28
+  channels needing single-stain compensation controls: 1
+  mandatory non-damage channels present: Cleaved caspase-3, DNA content
+
+  cytogenetic endpoints (separate culture, same blood draw): 5
+    Cytokinesis-block micronucleus assay (CBMN hard genomic-instability endpoint
+    Alkaline comet assay                       baseline strand-break load
+    FPG/OGG1-modified comet assay              in-situ cross-check on 8-oxodG
+    Ex-vivo challenge comet assay              functional repair-capacity read-out
+    Chromosome aberration analysis             confirmatory instability endpoint
+
+MODULE C - repair capacity
+------------------------------------------------------------------------------
+  established clinical tests carried into the panel: 8
+    MMR protein immunohistochemistry       mismatch repair        anchor MMR read-out
+    Microsatellite instability PCR         mismatch repair        orthogonal MMR confirmation
+    MSI by next-generation sequencing      mismatch repair        scalable MMR read-out
+    MGMT promoter methylation              direct alkylation reve alkylation-repair read-out
+    Homologous recombination deficiency sc homologous recombinati HR pathway read-out
+    BRCA1/BRCA2 sequencing                 homologous recombinati HR genetic basis
+    Tumour mutational burden               downstream consequence integrative consequence measure
+    Mutational signature deconvolution     pathway-specific repai pathway attribution layer
+
+  expression panel: 75 targets (core 37, extended 32, normalisers 6)
+    Core clinical         43 targets -> 48-plex qPCR array               spare wells: 5
+    Extended research     75 targets -> 96-plex qPCR / nCounter panel    spare wells: 21
+
+  pathway coverage:
+    BER   base excision repair           17 genes
+    HR    homologous recombination       11 genes
+    SIG   damage signalling               9 genes
+    NER   nucleotide excision repair      8 genes
+    MMR   mismatch repair                 7 genes
+    NHEJ  non-homologous end joining      7 genes
+    REF   reference / normaliser          6 genes
+    ICL   interstrand crosslink repair    4 genes
+    DR    direct damage reversal          3 genes
+    TLS   translesion synthesis           3 genes
+
+DAMAGE-TO-REPAIR COUPLING
+------------------------------------------------------------------------------
+  8-oxodG    oxidised purine                  BER    OGG1; MUTYH
+  8-oxoGuo   oxidised purine                  BER    NUDT1
+  8-oxoGua   oxidised purine (free base)      BER    NUDT1
+  FapyGua    ring-opened purine               BER    NEIL1; NEIL2
+  5-hmdC     oxidised pyrimidine              BER    SMUG1; TDG
+  Tg         ring-saturated pyrimidine        BER    NTHL1
+  O6-medG    alkylation                       DR     MGMT
+  N7-meGua   alkylation                       BER    MPG
+  M1dG       exocyclic lipid-peroxidation add NER    XPC; ERCC1; ERCC4
+  edA        exocyclic adduct                 NER    XPC; ERCC1; ERCC4
+
+  damage analytes with a named enzymatic partner in Module C: 10 of 10
+
+COMPOSITE SCORING FRAMEWORK (worked example on SYNTHETIC values)
+------------------------------------------------------------------------------
+  The numbers below are invented to demonstrate the arithmetic. They are
+  not measurements and carry no reference-interval authority.
+
+  analyte     observed   ref med  robust z      CV  weight
+  8-oxodG        5.800     3.200     0.446      6%   0.392
+  8-oxoGuo       2.400     1.600     0.608      7%   0.290
+  Tg             0.900     0.800     0.318     12%   0.104
+  O6-medG        0.220     0.180     2.707     10%   0.146
+  M1dG           0.140     0.110     4.648     15%   0.068
+  -> Oxidative Damage Index (ODI)      = +1.097
+  RCI_MMR   = +0.100
+  RCI_BER   = -1.450
+  RCI_NER   = -0.200
+  RCI_HR    = +0.050
+  RCI_NHEJ  = -0.100
+  RCI_DR    = -0.900
+  -> Repair Capacity Index (RCI)       = -0.417
+  -> Stress-to-Repair Index (ODI - RCI)= +1.513
+  -> interpretation: decompensated - damage exceeds repair
+
+  Pathway resolution is what makes this actionable: the composite is driven
+  by RCI_BER (-1.45) and RCI_DR (-0.90), and the coupling table above names
+  OGG1/MUTYH/NUDT1 and MGMT as the specific enzymes to follow up. A single
+  scalar damage score would not have localised the defect.
+
+==============================================================================
+BUILD SUMMARY
+==============================================================================
+  Module A analytes                     14 (incl. 1 normalisers)
+  Module A transition failures          0
+  Module A transition collisions        0
+  Module B flow parameters              10
+  Module B spillover-critical pairs     1
+  Module B cytogenetic endpoints        5
+  Module C clinical tests               8
+  Module C expression targets           75
+  Repair pathways covered               9
+  Damage analytes enzymatically coupled 10 of 10
+  Verdict                               ALL CHECKS PASSED
