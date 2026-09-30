@@ -1,7 +1,7 @@
 # Exhaled breath condensate (EBC) collection protocol · Lanserhof Lans
 
-Two-page A4 document for the breath phenotyping study, styled in Lanserhof's deep green and
-warm ivory with a serif display face.
+Two-page A4 document for the breath phenotyping study, styled in a deep pine green, warm cream and
+champagne gold with a serif display face.
 
 - **Page 1 · Collection protocol** for nurses and physicians: the five steps from the pre-cooled
   condenser to the analysis laboratory, critical points, and a sample-form block.
@@ -17,8 +17,9 @@ warm ivory with a serif display face.
 
 The footer of page 1 has blank lines for the study coordinator and the date to be filled in by hand.
 The address used is Lanserhof Lans, Kochholzweg 153, 6072 Lans, Austria, +43 512 386660.
-Colour tokens (change in the HTML head or the canvas Tweaks panel): green `#1F3D30`,
-ivory `#F4F0E8`, sand `#E7DFCF`, paper `#FDFCFA`, terracotta for warnings `#A6543A`.
+Colour tokens (change in the HTML or the canvas Tweaks panel): pine green `#12281F`, cream `#F3EEE3`,
+sand `#ECE4D3`, paper `#FBF9F4`, gold `#B39A66` (hairlines, rings) and dark gold `#8A7344` (text),
+burgundy for warnings `#7A3B2E`.
 
 ## Page 1: the five steps
 
@@ -51,7 +52,7 @@ rinse mouth with water, sit down, breathe out for 2 minutes.
 
 Please avoid: eating for 2 hours (including gum, sweets, lozenges); any drink except water for at
 least 1 hour; smoking, vaping or nicotine for at least 2 hours; mouthwash, throat sprays or lozenges
-within 1 hour; strenuous exercise within 1 hour.
+within 1 hour; sexual intercourse for at least 2 hours; strenuous exercise within 1 hour.
 
 Please do: drink still water as usual; rinse the mouth with water just before sampling; arrive early
 and rest seated; breathe in through the nose and out through the mouthpiece for the full 2 minutes;
