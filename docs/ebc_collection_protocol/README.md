@@ -1,6 +1,6 @@
 # Exhaled breath condensate (EBC) collection protocol · Lanserhof Lans
 
-Two-page A4 document for the breath phenotyping study, styled in Bentley green, dark brown and
+Two-page A4 document for the breath phenotyping study, in English and German, styled in Bentley green, dark brown and
 champagne gold on warm cream, with a serif display face.
 
 - **Page 1 · Collection protocol** for nurses and physicians: the five steps from the pre-cooled
@@ -10,9 +10,11 @@ champagne gold on warm cream, with a serif display face.
 
 | File | Use |
 |------|-----|
-| `EBC_collection_protocol_A4.pdf` | Print-ready two-page A4 PDF, fonts embedded |
-| `EBC_collection_protocol_A4_page1.png`, `..._page2.png` | The pages as images (1588 × 2246 px, 2× resolution) |
-| `EBC_collection_protocol_A4.html` | Editable source for both pages; print with margins set to none |
+| `EBC_collection_protocol_A4.pdf` | English, print-ready two-page A4 PDF, fonts embedded |
+| `EBC_collection_protocol_A4_DE.pdf` | German (Deutsch), same two pages |
+| `EBC_collection_protocol_A4_page1.png`, `..._page2.png` | English pages as images (1588 × 2246 px, 2× resolution) |
+| `EBC_collection_protocol_A4_DE_page1.png`, `..._DE_page2.png` | German pages as images |
+| `EBC_collection_protocol_A4.html`, `EBC_collection_protocol_A4_DE.html` | Editable sources; print with margins set to none |
 | `fonts/` | Cormorant Garamond and Source Sans 3 (Google Fonts, OFL) |
 
 The footer of page 1 has blank lines for the study coordinator and the date to be filled in by hand.
