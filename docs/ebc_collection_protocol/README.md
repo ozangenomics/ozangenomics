@@ -1,7 +1,7 @@
 # Exhaled breath condensate (EBC) collection protocol · Lanserhof Lans
 
-Two-page A4 document for the breath phenotyping study, styled in a deep pine green, warm cream and
-champagne gold with a serif display face.
+Two-page A4 document for the breath phenotyping study, styled in Bentley green, dark brown and
+champagne gold on warm cream, with a serif display face.
 
 - **Page 1 · Collection protocol** for nurses and physicians: the five steps from the pre-cooled
   condenser to the analysis laboratory, critical points, and a sample-form block.
@@ -17,9 +17,10 @@ champagne gold with a serif display face.
 
 The footer of page 1 has blank lines for the study coordinator and the date to be filled in by hand.
 The address used is Lanserhof Lans, Kochholzweg 153, 6072 Lans, Austria, +43 512 386660.
-Colour tokens (change in the HTML or the canvas Tweaks panel): pine green `#12281F`, cream `#F3EEE3`,
-sand `#ECE4D3`, paper `#FBF9F4`, gold `#B39A66` (hairlines, rings) and dark gold `#8A7344` (text),
-burgundy for warnings `#7A3B2E`.
+Colour tokens (change in the HTML or the canvas Tweaks panel): Bentley green `#0F3B2C` (headings,
+illustration accents), dark brown `#2A1F17` (body ink) and espresso `#2E211B` (dark bands, step
+numbers), champagne gold `#C9B37E` (hairlines, rings) and dark gold `#8C7449` (small text), cream
+`#F4EEE1`, sand `#EFE6D2`, paper `#FBF9F4`, burgundy for warnings `#7A3B2E`.
 
 ## Page 1: the five steps
 
