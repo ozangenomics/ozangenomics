@@ -1,18 +1,26 @@
-# Exhaled breath condensate (EBC) collection protocol
+# Exhaled breath condensate (EBC) collection protocol · Lanserhof Lans
 
-Step-by-step, one-page (A4) illustrated protocol for nurses and physicians collecting
-exhaled breath condensate for the breath phenotyping study.
+Two-page A4 document for the breath phenotyping study, styled in Lanserhof's deep green and
+warm ivory with a serif display face.
+
+- **Page 1 · Collection protocol** for nurses and physicians: the five steps from the pre-cooled
+  condenser to the analysis laboratory, critical points, and a sample-form block.
+- **Page 2 · Participant preparation**: countdown timeline, "please avoid" and "please do" lists,
+  what to tell the team, and what happens during sampling.
 
 | File | Use |
 |------|-----|
-| `EBC_collection_protocol_A4.pdf` | Print-ready A4 page (vector, fonts embedded) |
-| `EBC_collection_protocol_A4.png` | Same page as an image (1588 × 2246 px, 2× resolution) for slides, e-mail or a wall poster |
-| `EBC_collection_protocol_A4.html` | Editable source; open in any browser, print with margins set to none |
-| `fonts/` | Manrope and Source Sans 3 (Google Fonts, OFL) used by the HTML page |
+| `EBC_collection_protocol_A4.pdf` | Print-ready two-page A4 PDF, fonts embedded |
+| `EBC_collection_protocol_A4_page1.png`, `..._page2.png` | The pages as images (1588 × 2246 px, 2× resolution) |
+| `EBC_collection_protocol_A4.html` | Editable source for both pages; print with margins set to none |
+| `fonts/` | Cormorant Garamond and Source Sans 3 (Google Fonts, OFL) |
 
-Fill in the placeholders in the footer before distribution: `[DATE]` and `[STUDY COORDINATOR]`.
+The footer of page 1 has blank lines for the study coordinator and the date to be filled in by hand.
+The address used is Lanserhof Lans, Kochholzweg 153, 6072 Lans, Austria, +43 512 386660.
+Colour tokens (change in the HTML head or the canvas Tweaks panel): green `#1F3D30`,
+ivory `#F4F0E8`, sand `#E7DFCF`, paper `#FDFCFA`, terracotta for warnings `#A6543A`.
 
-## The five steps
+## Page 1: the five steps
 
 1. **Retrieve the pre-cooled condenser.** Take the −20 °C breath condenser from the freezer in the
    sample collection room. Check that the Eppendorf tube is seated at the bottom of the condensation
@@ -33,17 +41,30 @@ Fill in the placeholders in the footer before distribution: `[DATE]` and `[STUDY
    Enclose the sample manifest (ID, date, volume) and notify the lab before dispatch. Samples must
    never thaw in transit.
 
-## Critical points
+Critical points: cold chain unbroken; clean sample (new mouthpiece, no saliva or coughing);
+traceability (label and log every tube).
 
-- **Cold chain:** condenser pre-cooled, tube frozen at once, dry ice in transit.
-- **Clean sample:** new mouthpiece each time; no saliva, no coughing.
-- **Traceability:** label and log every tube: ID, date, time, volume.
+## Page 2: participant preparation
 
-## Regenerating the PDF and PNG
+Countdown: 2 hours before, last food · 1 hour before, last drink other than water · sample time,
+rinse mouth with water, sit down, breathe out for 2 minutes.
+
+Please avoid: eating for 2 hours (including gum, sweets, lozenges); any drink except water for at
+least 1 hour; smoking, vaping or nicotine for at least 2 hours; mouthwash, throat sprays or lozenges
+within 1 hour; strenuous exercise within 1 hour.
+
+Please do: drink still water as usual; rinse the mouth with water just before sampling; arrive early
+and rest seated; breathe in through the nose and out through the mouthpiece for the full 2 minutes;
+take usual medication unless told otherwise and report it.
+
+Tell the team before sampling about a respiratory infection in the last 2 weeks, asthma, COPD or
+inhaler use, smoking or vaping, or any rule that could not be followed.
+
+## Regenerating the PDF and PNGs
 
 ```bash
 chromium --headless=new --no-pdf-header-footer \
   --print-to-pdf=EBC_collection_protocol_A4.pdf EBC_collection_protocol_A4.html
-chromium --headless=new --force-device-scale-factor=2 --window-size=794,1400 \
-  --screenshot=page.png EBC_collection_protocol_A4.html   # then crop to 1588 × 2246
+chromium --headless=new --force-device-scale-factor=2 --window-size=794,2500 \
+  --screenshot=pages.png EBC_collection_protocol_A4.html   # crop 1588 × 2246 per page
 ```
