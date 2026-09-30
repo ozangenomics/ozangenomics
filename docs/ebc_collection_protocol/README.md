@@ -26,7 +26,7 @@ numbers), champagne gold `#C9B37E` (hairlines, rings) and dark gold `#8C7449` (s
 
 1. **Retrieve the pre-cooled condenser.** Take the −20 °C breath condenser from the freezer in the
    sample collection room. Check that the Eppendorf tube is seated at the bottom of the condensation
-   tube, fit a clean mouthpiece and start at once while the tube is cold. Gloves on; label the tube
+   tube and start at once while the tube is cold. Gloves on; label the tube
    with participant ID, date and time.
 2. **Exhale for 2 minutes.** The participant breathes in through the nose and exhales steadily
    through the mouthpiece into the −20 °C tube for 2 timed minutes. Keep the device
@@ -37,14 +37,13 @@ numbers), champagne gold `#C9B37E` (hairlines, rings) and dark gold `#8C7449` (s
    Eppendorf tube, then detach and cap the tube. Expected yield about 200–400 µL. Record the volume;
    a low volume is noted, never topped up or pooled.
 4. **Store the Eppendorf tube at −20 °C.** Place the capped, labelled tube upright in the cryobox in the
-   −20 °C freezer immediately after collection and log its position and time. Return the condenser to
-   the freezer to re-cool for the next participant. Once frozen, it stays frozen: no thaw and refreeze.
+   −20 °C freezer immediately after collection and log its position and time. Once frozen, it stays frozen: no thaw and refreeze.
 5. **Ship to Gipfel Life Sciences on dry ice.** Send frozen samples to the Gipfel Life Sciences
    laboratory in an insulated box packed with dry ice so they stay at −20 °C or colder throughout.
    Enclose the sample manifest (ID, date, volume) and notify the lab before dispatch. Samples must
    never thaw in transit.
 
-Critical points: cold chain unbroken; clean sample (new mouthpiece, no saliva or coughing);
+Critical points: cold chain unbroken; clean sample (no saliva or coughing);
 traceability (label and log every tube).
 
 ## Page 2: participant preparation
