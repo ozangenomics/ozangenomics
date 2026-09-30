@@ -28,13 +28,14 @@ numbers), champagne gold `#C9B37E` (hairlines, rings) and dark gold `#8C7449` (s
    sample collection room. Check that the Eppendorf tube is seated at the bottom of the condensation
    tube, fit a clean mouthpiece and start at once while the tube is cold. Gloves on; label the tube
    with participant ID, date and time.
-2. **Exhale strongly for 2 minutes.** The participant breathes in through the nose and exhales strongly
-   and steadily through the mouthpiece into the −20 °C tube for 2 timed minutes. Keep the device
+2. **Exhale for 2 minutes.** The participant breathes in through the nose and exhales steadily
+   through the mouthpiece into the −20 °C tube for 2 timed minutes. Keep the device
    upright so the condensate runs down into the Eppendorf tube. No coughing, talking or saliva into
    the mouthpiece.
-3. **Recover the condensed sample.** Detach the Eppendorf tube from the bottom of the condenser.
-   Expected yield is about 200–400 µL of condensate, which may be partly frozen. Cap immediately and
-   record the approximate volume on the sample form. Low volume is recorded, never topped up or pooled.
+3. **Recover the condensed sample.** Take out the perforated white piston, then mount the injector
+   pump on the condensation tube. Press it slowly and carefully to drive the condensate into the
+   Eppendorf tube, then detach and cap the tube. Expected yield about 200–400 µL. Record the volume;
+   a low volume is noted, never topped up or pooled.
 4. **Store the Eppendorf tube at −20 °C.** Place the capped, labelled tube upright in the cryobox in the
    −20 °C freezer immediately after collection and log its position and time. Return the condenser to
    the freezer to re-cool for the next participant. Once frozen, it stays frozen: no thaw and refreeze.
