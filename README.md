@@ -78,3 +78,23 @@ Constituent identities and quantitation from PubMed-indexed literature — Trend
 ([DOI](https://doi.org/10.1016/j.chroma.2005.10.067)), Lacchini *et al.* 2025
 ([DOI](https://doi.org/10.1111/pbi.70122)). Reference structures from ChEMBL v34.
 Full citations in the report.
+
+---
+
+## Separate project: Ozonated olive oil nanoemulsion — PCT application draft
+
+`ozoil_nanoemulsion_patent/` holds a working draft of a PCT international application for a
+lecithin / polysorbate 80 stabilised O/W nanoemulsion of ozonated olive oil made by
+microfluidization, built from the July–August 2026 Microfluidizer trial data.
+
+```
+ozoil_nanoemulsion_patent/
+  PCT_Application_Draft_Ozonated_Olive_Oil_Nanoemulsion.md    draft (description, claims,
+                                                               abstract, drawings, prior-art annex)
+  PCT_Application_Draft_Ozonated_Olive_Oil_Nanoemulsion.docx  same, as Word file
+  figures/        FIG. 1 (laser diffraction), FIG. 2–7 (DLS per test), FIG. 8 (Z-avg/PdI vs passes),
+                  FIG. 9 (process flow); instrument_output/ = original Malvern graphics
+  data/           PSA_summary.csv, LD_distributions_unprocessed.csv, DLS_curves_extracted.csv
+  prior_art/      sources consulted
+  scripts/        emf_render.py (rasterise Malvern EMF), make_figures.py, build_docx.js
+```
