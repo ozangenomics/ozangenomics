@@ -1,0 +1,586 @@
+accession	gene	category	plasma_evidence_tier	rank	peptide	start	end	length	monoisotopic_mass	mz_2plus	mz_3plus	gravy	proteotypic_in_human_swissprot	quantification_scope	indistinguishable_accessions	n_human_proteins_sharing	shared_with	liabilities	score
+Q13315	ATM	DDR_signalling	T4_intracellular	1	GINIPADQPITK	2644	2655	12	1265.6979	633.8562	422.9066	-0.28	yes	protein_specific		1		none	39.03
+Q13315	ATM	DDR_signalling	T4_intracellular	2	SLESVYSLYPTLSR	2162	2175	14	1613.8301	807.9223	538.9506	-0.04	yes	protein_specific		1		none	38.87
+Q13315	ATM	DDR_signalling	T4_intracellular	3	LQQTAFENAYLK	1115	1126	12	1424.73	713.3723	475.9173	-0.49	yes	protein_specific		1		none	38.62
+Q13315	ATM	DDR_signalling	T4_intracellular	4	SLEISQSYTTTQR	363	375	13	1512.742	757.3783	505.2546	-0.96	yes	protein_specific		1		none	38.48
+Q13315	ATM	DDR_signalling	T4_intracellular	5	HQSSIGFSVHQNLK	674	687	14	1580.8059	791.4102	527.9426	-0.59	yes	protein_specific		1		none	38.41
+Q13535	ATR	DDR_signalling	T4_intracellular	1	EQILEHESLGLLR	1704	1716	13	1535.8307	768.9226	512.9509	-0.25	yes	protein_specific		1		none	39.91
+Q13535	ATR	DDR_signalling	T4_intracellular	2	GETFEVPEIVPFR	2502	2514	13	1518.7718	760.3932	507.2645	-0.06	yes	protein_specific		1		none	39.72
+Q13535	ATR	DDR_signalling	T4_intracellular	3	SASVSGAAYTEIR	900	912	13	1310.6466	656.3306	437.8895	0.1	yes	protein_specific		1		none	39.4
+Q13535	ATR	DDR_signalling	T4_intracellular	4	AESLQISLEYSGLK	470	483	14	1536.8035	769.409	513.2751	-0.06	yes	protein_specific		1		none	38.91
+Q13535	ATR	DDR_signalling	T4_intracellular	5	AEQIVPLSAASFER	1828	1841	14	1516.7885	759.4015	506.6035	0.18	yes	protein_specific		1		none	38.44
+O14757	CHEK1	DDR_signalling	T4_intracellular	1	VTSGGVSESPSGFSK	278	292	15	1424.6783	713.3464	475.9	-0.25	yes	protein_specific		1		none	38.31
+O14757	CHEK1	DDR_signalling	T4_intracellular	2	DIKPENLLLDER	130	141	12	1453.7776	727.8961	485.5998	-0.97	yes	protein_specific		1		none	37.67
+O14757	CHEK1	DDR_signalling	T4_intracellular	3	IDSAPLALLHK	234	244	11	1176.6866	589.3506	393.2362	0.59	yes	protein_specific		1		none	36.82
+O14757	CHEK1	DDR_signalling	T4_intracellular	4	ILVENPSAR	245	253	9	997.5556	499.7851	333.5258	0.04	yes	protein_specific		1		none	36.31
+O14757	CHEK1	DDR_signalling	T4_intracellular	5	ISDFGLATVFR	146	156	11	1224.6502	613.3324	409.224	0.91	yes	protein_specific		1		none	36.18
+O96017	CHEK2	DDR_signalling	T4_intracellular	1	VFVFFDLTVDDQSVYPK	198	214	17	2018.0037	1010.0091	673.6752	0.39	yes	protein_specific		1		none	35.61
+O96017	CHEK2	DDR_signalling	T4_intracellular	2	FTTEEALR	475	482	8	965.4818	483.7482	322.8345	-0.56	yes	protein_specific		1		none	35.27
+O96017	CHEK2	DDR_signalling	T4_intracellular	3	ITDFGHSK	366	373	8	903.445	452.7298	302.1556	-0.65	yes	protein_specific		1		none	35.1
+O96017	CHEK2	DDR_signalling	T4_intracellular	4	FAIGSAR	256	262	7	720.3919	361.2032	241.1379	0.74	yes	protein_specific		1		none	33.31
+O96017	CHEK2	DDR_signalling	T4_intracellular	5	DQITSGK	438	444	7	747.3763	374.6954	250.1327	-1.19	yes	protein_specific		1		none	33.23
+P04637	TP53	DDR_signalling	T4_intracellular	1	LGFLHSGTAK	111	120	10	1029.5607	515.7876	344.1942	0.28	yes	protein_specific		1		none	36.64
+P04637	TP53	DDR_signalling	T4_intracellular	2	ELNEALELK	343	351	9	1057.5655	529.79	353.5291	-0.52	yes	protein_specific		1		none	36.16
+P04637	TP53	DDR_signalling	T4_intracellular	3	TYQGSYGFR	102	110	9	1077.488	539.7513	360.1699	-1.12	yes	protein_specific		1		none	34.96
+P04637	TP53	DDR_signalling	T4_intracellular	4	AHSSHLK	364	370	7	778.4086	390.2116	260.4768	-0.9	yes	protein_specific		1		none	33.8
+P04637	TP53	DDR_signalling	T4_intracellular	5	VEYLDDR	203	209	7	908.4239	455.2192	303.8153	-1.19	yes	protein_specific		1		none	33.23
+Q12888	TP53BP1	DDR_signalling	T4_intracellular	1	VPETVSAATQTIK	1163	1175	13	1343.7296	672.8721	448.9172	0.08	yes	protein_specific		1		none	39.43
+Q12888	TP53BP1	DDR_signalling	T4_intracellular	2	LAILDQELEHK	731	741	11	1307.7085	654.8615	436.9101	-0.31	yes	protein_specific		1		none	38.18
+Q12888	TP53BP1	DDR_signalling	T4_intracellular	3	LSDVDANTAIK	207	217	11	1145.5928	573.8037	382.8715	0.02	yes	protein_specific		1		none	37.96
+Q12888	TP53BP1	DDR_signalling	T4_intracellular	4	TSGTEPADFALPSSR	1341	1355	15	1534.7263	768.3704	512.5827	-0.58	yes	protein_specific		1		none	37.64
+Q12888	TP53BP1	DDR_signalling	T4_intracellular	5	GDSGAAPDVDDK	973	984	12	1145.4836	573.7491	382.8352	-1.11	yes	protein_specific		1		none	37.38
+Q00987	MDM2	DDR_signalling	T3_EV_or_enriched	1	AISETEENSDELSGER	164	179	16	1764.765	883.3898	589.2623	-1.4	yes	protein_specific		1		none	35.2
+Q00987	MDM2	DDR_signalling	T3_EV_or_enriched	2	CHLEGGSDQK	127	136	10	1129.4822	565.7484	377.5013	-1.29	yes	protein_specific		1		Cys_alkylation	29.42
+Q00987	MDM2	DDR_signalling	T3_EV_or_enriched	3	TIVNDSR	365	371	7	803.4137	402.7141	268.8119	-0.61	yes	protein_specific		1		N_glycosylation_sequon	28.37
+Q00987	MDM2	DDR_signalling	T3_EV_or_enriched	4	ESCVEENDDK	372	381	10	1223.4612	612.7379	408.8277	-1.9	yes	protein_specific		1		Cys_alkylation	28.2
+Q00987	MDM2	DDR_signalling	T3_EV_or_enriched	5	SDSISLSFDESLALCVIR	186	203	18	2010.9932	1006.5039	671.3383	0.71	yes	protein_specific		1		Cys_alkylation	28.19
+P38936	CDKN1A	DDR_signalling	T4_intracellular	1	LFGPVDSEQLSR	21	32	12	1346.683	674.3488	449.9016	-0.33	yes	protein_specific		1		none	38.93
+P38936	CDKN1A	DDR_signalling	T4_intracellular	2	LYLPTGPR	76	83	8	915.5178	458.7662	306.1799	-0.31	yes	protein_specific		1		ragged_C_term	29.77
+P38936	CDKN1A	DDR_signalling	T4_intracellular	3	WNFDFVTETPLEGDFAWER	49	67	19	2358.0593	1180.0369	787.027	-0.66	yes	protein_specific		1		Trp_oxidation	28.28
+P38936	CDKN1A	DDR_signalling	T4_intracellular	4	SGEQAEGSPGGPGDSQGR	123	140	18	1671.7084	836.8615	558.2434	-1.57	yes	protein_specific		1		ragged_C_term	27.27
+P38936	CDKN1A	DDR_signalling	T4_intracellular	5	DELGGGR	87	93	7	702.3296	352.1721	235.1172	-1.27	yes	protein_specific		1		ragged_C_term	27.06
+P24522	GADD45A	DDR_signalling	T4_intracellular	1	VGDALEEVLSK	19	29	11	1158.6132	580.3139	387.2117	0.2	yes	protein_specific		1		none	37.6
+P24522	GADD45A	DDR_signalling	T4_intracellular	2	TITVGVYEAAK	35	45	11	1150.6234	576.319	384.5484	0.55	yes	protein_specific		1		none	36.91
+P24522	GADD45A	DDR_signalling	T4_intracellular	3	MTLEEFSAGEQK	1	12	12	1368.6231	685.3188	457.215	-0.79	yes	protein_specific		1		Met_oxidation;protein_N_terminus	26.02
+P24522	GADD45A	DDR_signalling	T4_intracellular	4	DPALSQLICFCR	137	148	12	1478.701	740.3578	493.9076	0.65	yes	protein_specific		1		Cys_alkylation;acid_labile_DP	25.5
+P24522	GADD45A	DDR_signalling	T4_intracellular	5	YMDQWVPVINLPER	152	165	14	1758.8763	880.4454	587.2994	-0.38	yes	protein_specific		1		Met_oxidation;Trp_oxidation;protein_C_terminus	20.84
+P16104	H2AX	DDR_signalling	T3_EV_or_enriched	1	TSATVGPK	121	128	8	759.4127	380.7136	254.1448	-0.26	yes	protein_specific		1		none	35.88
+P16104	H2AX	DDR_signalling	T3_EV_or_enriched	2	ATQASQEY	136	143	8	896.3876	449.2011	299.8031	-1.21	yes	protein_specific		1		protein_C_terminus	27.98
+P16104	H2AX	DDR_signalling	T3_EV_or_enriched	3	AGLQFPVGR	22	30	9	943.5239	472.7692	315.5153	0.24	no	family_level		15	A1A4R1;C0HKE1;C0HKE2;C0HKE3;C0HKE4;C0HKE5;C0HKE6;C0HKE7;+37 more	none	3.91
+P16104	H2AX	DDR_signalling	T3_EV_or_enriched	4	HLQLAIR	83	89	7	849.5185	425.7665	284.1801	0.39	no	family_level		14	A1A4R1;C0HKE1;C0HKE2;C0HKE3;C0HKE4;C0HKE5;C0HKE6;C0HKE7;+36 more	none	2.43
+P16104	H2AX	DDR_signalling	T3_EV_or_enriched	5	LLGGVTIAQGGVLPNIQAVLLPK	97	119	23	2270.3725	1136.1935	757.7981	1.06	no	family_level		3	Q8IUE6;Q96QV6	ragged_C_term	-3.71
+Q14676	MDC1	DDR_signalling	T4_intracellular	1	LHIFSGAHGPEK	34	45	12	1291.6673	646.8409	431.563	-0.34	yes	protein_specific		1		none	38.92
+Q14676	MDC1	DDR_signalling	T4_intracellular	2	TPETLVPTAPK	1403	1413	11	1152.639	577.3268	385.2203	-0.41	yes	protein_specific		1		none	37.98
+Q14676	MDC1	DDR_signalling	T4_intracellular	3	SQASTTVDINTQVEK	513	527	15	1619.8002	810.9074	540.9407	-0.69	yes	protein_specific		1		none	37.41
+Q14676	MDC1	DDR_signalling	T4_intracellular	4	VEIETSEEIQEK	892	903	12	1432.6933	717.3539	478.5717	-1.1	yes	protein_specific		1		none	37.4
+Q14676	MDC1	DDR_signalling	T4_intracellular	5	APQAVPLEK	385	393	9	951.5389	476.7767	318.1869	-0.28	yes	protein_specific		1		none	36.64
+P09874	PARP1	DDR_signalling	T3_EV_or_enriched	1	TTNFAGILSQGLR	866	878	13	1376.7412	689.3779	459.921	0.17	yes	protein_specific		1		none	39.26
+P09874	PARP1	DDR_signalling	T3_EV_or_enriched	2	TLGDFAAEYAK	109	119	11	1184.5713	593.2929	395.8644	-0.12	yes	protein_specific		1		none	38.24
+P09874	PARP1	DDR_signalling	T3_EV_or_enriched	3	VVSEDFLQDVSASTK	453	467	15	1623.7992	812.9069	542.2737	0.0	yes	protein_specific		1		none	38.0
+P09874	PARP1	DDR_signalling	T3_EV_or_enriched	4	TAEAGGVTGK	88	97	10	889.4505	445.7325	297.4908	-0.22	yes	protein_specific		1		none	37.56
+P09874	PARP1	DDR_signalling	T3_EV_or_enriched	5	LPKPVQDLIK	665	674	10	1149.7121	575.8633	384.2446	-0.17	yes	protein_specific		1		none	37.54
+Q9UGN5	PARP2	DDR_signalling	T4_intracellular	1	YYLIQLLEDDAQR	131	143	13	1638.8253	820.4199	547.2824	-0.53	yes	protein_specific		1		none	39.34
+Q9UGN5	PARP2	DDR_signalling	T4_intracellular	2	SPLKPESQLDLR	226	237	12	1381.7565	691.8855	461.5928	-1.03	yes	protein_specific		1		none	37.55
+Q9UGN5	PARP2	DDR_signalling	T4_intracellular	3	IQLLEALGDIEIAIK	331	345	15	1637.9603	819.9874	546.9941	0.98	yes	protein_specific		1		none	36.04
+Q9UGN5	PARP2	DDR_signalling	T4_intracellular	4	IPHDFGLR	309	316	8	953.5083	477.7614	318.8434	-0.26	yes	protein_specific		1		none	35.88
+Q9UGN5	PARP2	DDR_signalling	T4_intracellular	5	AEGLLQGK	505	512	8	814.4548	408.2347	272.4922	-0.29	yes	protein_specific		1		none	35.83
+P58004	SESN2	DDR_signalling	T3_EV_or_enriched	1	GPSAFIPVEEVLR	43	55	13	1412.7663	707.3904	471.9294	0.42	yes	protein_specific		1		none	38.77
+P58004	SESN2	DDR_signalling	T3_EV_or_enriched	2	LYPEGGQLLDEK	355	366	12	1360.6874	681.351	454.5697	-0.85	yes	protein_specific		1		none	37.9
+P58004	SESN2	DDR_signalling	T3_EV_or_enriched	3	VHVNLLLLEAR	453	463	11	1275.7663	638.8904	426.2627	0.97	yes	protein_specific		1		none	36.05
+P58004	SESN2	DDR_signalling	T3_EV_or_enriched	4	FAPGGVGDSGPGEEQR	18	33	16	1558.7012	780.3579	520.5743	-0.98	yes	protein_specific		1		none	36.04
+P58004	SESN2	DDR_signalling	T3_EV_or_enriched	5	GAQAPPTFR	330	338	9	943.4875	472.751	315.5031	-0.66	yes	protein_specific		1		none	35.89
+P78527	PRKDC	DSB_repair	T4_intracellular	1	LVINTEEVFRPYAK	2149	2162	14	1677.909	839.9618	560.3103	-0.09	yes	protein_specific		1		none	38.97
+P78527	PRKDC	DSB_repair	T4_intracellular	2	FYQGFLFSEKPEK	1961	1973	13	1618.8031	810.4088	540.6083	-0.78	yes	protein_specific		1		none	38.83
+P78527	PRKDC	DSB_repair	T4_intracellular	3	HSSLITPLQAVAQR	2787	2800	14	1519.8471	760.9308	507.623	0.09	yes	protein_specific		1		none	38.61
+P78527	PRKDC	DSB_repair	T4_intracellular	4	ILELSGSSSEDSEK	3359	3372	14	1479.694	740.8543	494.2386	-0.73	yes	protein_specific		1		none	38.14
+P78527	PRKDC	DSB_repair	T4_intracellular	5	LGASLAFNNIYR	1076	1087	12	1337.7092	669.8619	446.9103	0.38	yes	protein_specific		1		none	38.05
+P13010	XRCC5	DSB_repair	T4_intracellular	1	ANPQVGVAFPHIK	401	413	13	1376.7564	689.3855	459.9261	0.12	yes	protein_specific		1		none	39.35
+P13010	XRCC5	DSB_repair	T4_intracellular	2	LGGHGPSFPLK	185	195	11	1108.6029	555.3087	370.5416	-0.17	yes	protein_specific		1		none	38.35
+P13010	XRCC5	DSB_repair	T4_intracellular	3	HIEIFTDLSSR	131	141	11	1316.6724	659.3435	439.8981	-0.13	yes	protein_specific		1		none	38.25
+P13010	XRCC5	DSB_repair	T4_intracellular	4	TDTLEDLFPTTK	470	481	12	1379.682	690.8483	460.9013	-0.7	yes	protein_specific		1		none	38.2
+P13010	XRCC5	DSB_repair	T4_intracellular	5	YGSDIVPFSK	316	325	10	1111.555	556.7848	371.5256	-0.08	yes	protein_specific		1		none	37.36
+P12956	XRCC6	DSB_repair	T4_intracellular	1	DIISIAEDEDLR	219	230	12	1387.6831	694.8488	463.5683	-0.31	yes	protein_specific		1		none	38.98
+P12956	XRCC6	DSB_repair	T4_intracellular	2	ELVYPPDYNPEGK	527	539	13	1519.7194	760.867	507.5804	-1.36	yes	protein_specific		1		none	37.68
+P12956	XRCC6	DSB_repair	T4_intracellular	3	DLLAVVFYGTEK	81	92	12	1353.718	677.8663	452.2466	0.61	yes	protein_specific		1		none	37.58
+P12956	XRCC6	DSB_repair	T4_intracellular	4	SDSFENPVLQQHFR	475	488	14	1702.8063	852.4104	568.6094	-1.06	yes	protein_specific		1		none	37.49
+P12956	XRCC6	DSB_repair	T4_intracellular	5	DIVISVGIYNLVQK	266	279	14	1559.8923	780.9534	520.9714	0.93	yes	protein_specific		1		none	36.94
+P49959	MRE11	DSB_repair	T4_intracellular	1	IALYGLGSIPDER	176	188	13	1402.7456	702.3801	468.5891	0.18	yes	protein_specific		1		none	39.23
+P49959	MRE11	DSB_repair	T4_intracellular	2	LITKPSEGTTLR	417	428	12	1314.7507	658.3826	439.2575	-0.39	yes	protein_specific		1		none	38.82
+P49959	MRE11	DSB_repair	T4_intracellular	3	VDYSGGFEPFSVLR	367	380	14	1571.762	786.8883	524.9279	0.07	yes	protein_specific		1		none	38.66
+P49959	MRE11	DSB_repair	T4_intracellular	4	LGNSHQPEKPLVR	352	364	13	1473.8052	737.9099	492.2757	-1.13	yes	protein_specific		1		none	38.14
+P49959	MRE11	DSB_repair	T4_intracellular	5	ADTGLETSTR	595	604	10	1049.4989	525.7567	350.8402	-0.92	yes	protein_specific		1		none	36.16
+Q92878	RAD50	DSB_repair	T4_intracellular	1	LIQDQQEQIQHLK	852	864	13	1619.8631	810.9388	540.9616	-1.15	yes	protein_specific		1		none	38.09
+Q92878	RAD50	DSB_repair	T4_intracellular	2	EQVSPLETTLEK	910	921	12	1372.7086	687.3616	458.5768	-0.83	yes	protein_specific		1		none	37.95
+Q92878	RAD50	DSB_repair	T4_intracellular	3	ENIESLAHALVEIIK	1240	1254	15	1677.9301	839.9723	560.3173	0.47	yes	protein_specific		1		none	37.07
+Q92878	RAD50	DSB_repair	T4_intracellular	4	ILELDQELIK	474	483	10	1212.6965	607.3555	405.2395	0.25	yes	protein_specific		1		none	36.7
+Q92878	RAD50	DSB_repair	T4_intracellular	5	GQDIEYIEIR	1157	1166	10	1234.6193	618.3169	412.5471	-0.67	yes	protein_specific		1		none	36.66
+O60934	NBN	DSB_repair	T4_intracellular	1	LLPAAGPAGGEPYR	4	17	14	1367.7197	684.8671	456.9138	-0.16	yes	protein_specific		1		none	39.13
+O60934	NBN	DSB_repair	T4_intracellular	2	LSSAVVFGGGEAR	238	250	13	1248.6462	625.3304	417.2227	0.6	yes	protein_specific		1		none	38.4
+O60934	NBN	DSB_repair	T4_intracellular	3	DTKPELEIDVK	569	579	11	1285.6765	643.8455	429.5661	-1.05	yes	protein_specific		1		none	36.69
+O60934	NBN	DSB_repair	T4_intracellular	4	EESLADDLFR	736	745	10	1193.5564	597.7855	398.8594	-0.71	yes	protein_specific		1		none	36.58
+O60934	NBN	DSB_repair	T4_intracellular	5	IPNYQLSPTK	426	435	10	1159.6237	580.8191	387.5485	-0.86	yes	protein_specific		1		none	36.28
+P27694	RPA1	DSB_repair	T4_intracellular	1	VVPIASLTPYQSK	184	196	13	1401.7867	701.9006	468.2695	0.33	yes	protein_specific		1		none	38.94
+P27694	RPA1	DSB_repair	T4_intracellular	2	LFSLELVDESGEIR	221	234	14	1605.825	803.9198	536.2823	0.17	yes	protein_specific		1		none	38.46
+P27694	RPA1	DSB_repair	T4_intracellular	3	AAGPSLSHTSGGTQSK	168	183	16	1484.7219	743.3682	495.9146	-0.66	yes	protein_specific		1		none	36.68
+P27694	RPA1	DSB_repair	T4_intracellular	4	ATAFNEQVDK	235	244	10	1121.5353	561.7749	374.8524	-0.8	yes	protein_specific		1		none	36.4
+P27694	RPA1	DSB_repair	T4_intracellular	5	FFPLIEVNK	245	253	9	1105.6172	553.8159	369.5463	0.62	yes	protein_specific		1		none	35.16
+P15927	RPA2	DSB_repair	T4_intracellular	1	APTNIVYK	86	93	8	904.5018	453.2582	302.5079	-0.06	yes	protein_specific		1		none	35.73
+P15927	RPA2	DSB_repair	T4_intracellular	2	IGNVEISQVTIVGIIR	66	81	16	1710.0039	856.0092	571.0086	1.11	yes	protein_specific		1		none	34.98
+P15927	RPA2	DSB_repair	T4_intracellular	3	ANSQPSAGR	172	180	9	886.4257	444.2201	296.4825	-1.28	yes	protein_specific		1		none	34.64
+P15927	RPA2	DSB_repair	T4_intracellular	4	IDDMTAAPMDVR	94	105	12	1333.6006	667.8076	445.5408	-0.1	yes	protein_specific		1		Met_oxidation	33.0
+P15927	RPA2	DSB_repair	T4_intracellular	5	ACPRPEGLNFQDLK	218	231	14	1643.8089	822.9118	548.9436	-0.81	yes	protein_specific		1		Cys_alkylation	31.99
+P35244	RPA3	DSB_repair	T4_intracellular	1	EDSHPFDLGLYNEAVK	89	104	16	1832.8581	917.4363	611.96	-0.77	yes	protein_specific		1		none	36.46
+P35244	RPA3	DSB_repair	T4_intracellular	2	ATILCTSYVQFK	77	88	12	1429.7275	715.871	477.5831	0.72	yes	protein_specific		1		Cys_alkylation	31.35
+P35244	RPA3	DSB_repair	T4_intracellular	3	IIHDFPQFYPLGIVQHD	105	121	17	2038.0312	1020.0229	680.351	0.11	yes	protein_specific		1		protein_C_terminus	30.19
+P35244	RPA3	DSB_repair	T4_intracellular	4	MFILSDGEGK	40	49	10	1095.527	548.7708	366.183	0.05	yes	protein_specific		1		Met_oxidation;deamidation_isomerisation	25.1
+P35244	RPA3	DSB_repair	T4_intracellular	5	MVDMMDLPR	1	9	9	1106.4923	554.2534	369.838	0.07	yes	protein_specific		1		Met_oxidation;protein_N_terminus	24.27
+P38398	BRCA1	DSB_repair	T4_intracellular	1	VGNIPSSTSALK	1590	1601	12	1172.6401	587.3273	391.8873	0.15	yes	protein_specific		1		none	38.5
+P38398	BRCA1	DSB_repair	T4_intracellular	2	HQSESQGVGLSDK	1326	1338	13	1370.6426	686.3286	457.8881	-1.25	yes	protein_specific		1		none	37.89
+P38398	BRCA1	DSB_repair	T4_intracellular	3	FEVSADSSTSK	1477	1487	11	1156.5248	579.2697	386.5155	-0.55	yes	protein_specific		1		none	37.71
+P38398	BRCA1	DSB_repair	T4_intracellular	4	LTNAPGSFTK	702	711	10	1034.5396	518.2771	345.8538	-0.32	yes	protein_specific		1		none	37.36
+P38398	BRCA1	DSB_repair	T4_intracellular	5	LGVLQPEVYK	1086	1095	10	1144.6492	573.3319	382.557	0.18	yes	protein_specific		1		none	36.84
+P51587	BRCA2	DSB_repair	T4_intracellular	1	SVQVSDASLQNAR	1985	1997	13	1373.6899	687.8522	458.9039	-0.39	yes	protein_specific		1		none	39.62
+P51587	BRCA2	DSB_repair	T4_intracellular	2	EDLSDLTFLEVAK	1382	1394	13	1478.7504	740.3825	493.9241	0.06	yes	protein_specific		1		none	39.48
+P51587	BRCA2	DSB_repair	T4_intracellular	3	EQGLTLPLYQSPVK	83	96	14	1571.8559	786.9352	524.9592	-0.37	yes	protein_specific		1		none	38.86
+P51587	BRCA2	DSB_repair	T4_intracellular	4	FIYAIHDETSYK	590	601	12	1485.714	743.8643	496.2453	-0.38	yes	protein_specific		1		none	38.83
+P51587	BRCA2	DSB_repair	T4_intracellular	5	DLVYVLAEENK	946	956	11	1291.666	646.8403	431.5626	-0.13	yes	protein_specific		1		none	38.25
+Q06609	RAD51	DSB_repair	T4_intracellular	1	SEIIQITTGSK	97	107	11	1175.6398	588.8272	392.8872	-0.07	yes	protein_specific		1		none	38.15
+Q06609	RAD51	DSB_repair	T4_intracellular	2	YGLSGSDVLDNVAYAR	178	193	16	1698.8213	850.4179	567.281	-0.03	yes	protein_specific		1		none	37.25
+Q06609	RAD51	DSB_repair	T4_intracellular	3	YALLIVDSATALYR	216	229	14	1567.861	784.9378	523.6276	0.96	yes	protein_specific		1		none	36.89
+Q06609	RAD51	DSB_repair	T4_intracellular	4	ILAEAAK	74	80	7	714.4276	358.2211	239.1498	0.9	yes	protein_specific		1		none	33.0
+Q06609	RAD51	DSB_repair	T4_intracellular	5	LLAVAER	171	177	7	770.465	386.2398	257.8289	1.06	yes	protein_specific		1		none	32.69
+P43351	RAD52	DSB_repair	T4_intracellular	1	DFLAGVTQELIK	312	323	12	1332.7289	667.3717	445.2502	0.45	yes	protein_specific		1		none	37.9
+P43351	RAD52	DSB_repair	T4_intracellular	2	LGPEYISSR	47	55	9	1020.524	511.2693	341.1819	-0.51	yes	protein_specific		1		none	36.18
+P43351	RAD52	DSB_repair	T4_intracellular	3	VSTPSAEK	279	286	8	817.4181	409.7163	273.48	-0.66	yes	protein_specific		1		none	35.08
+P43351	RAD52	DSB_repair	T4_intracellular	4	SFGNALGNCILDK	157	169	13	1407.6816	704.8481	470.2345	0.25	yes	protein_specific		1		Cys_alkylation	33.11
+P43351	RAD52	DSB_repair	T4_intracellular	5	TLEDNSEK	324	331	8	934.4243	468.2194	312.4821	-1.95	yes	protein_specific		1		none	32.5
+Q13426	XRCC4	DSB_repair	T4_intracellular	1	VENPAEVIR	116	124	9	1025.5505	513.7825	342.8575	-0.21	yes	protein_specific		1		none	36.78
+Q13426	XRCC4	DSB_repair	T4_intracellular	2	LGSFNLEK	108	115	8	906.4811	454.2478	303.1676	-0.21	yes	protein_specific		1		none	35.98
+Q13426	XRCC4	DSB_repair	T4_intracellular	3	LLNAAQER	198	205	8	913.4981	457.7563	305.5066	-0.48	yes	protein_specific		1		none	35.45
+Q13426	XRCC4	DSB_repair	T4_intracellular	4	ELICYCLDTIAENQAK	125	140	16	1939.9019	970.9582	647.6413	0.11	yes	protein_specific		1		Cys_alkylation	30.98
+Q13426	XRCC4	DSB_repair	T4_intracellular	5	ESCYFFFEK	91	99	9	1255.5219	628.7683	419.5146	-0.23	yes	protein_specific		1		Cys_alkylation	30.73
+P49917	LIG4	DSB_repair	T4_intracellular	1	YEILSSIFTPIPGR	386	399	14	1591.861	796.9378	531.6276	0.35	yes	protein_specific		1		none	38.1
+P49917	LIG4	DSB_repair	T4_intracellular	2	SLLQLITQSSALEQK	170	184	15	1657.925	829.9698	553.649	0.03	yes	protein_specific		1		none	37.93
+P49917	LIG4	DSB_repair	T4_intracellular	3	HTVYLDSYAVINDLSTK	816	832	17	1937.9734	969.994	646.9984	-0.05	yes	protein_specific		1		none	36.51
+P49917	LIG4	DSB_repair	T4_intracellular	4	LYIELLNLPR	92	101	10	1242.7336	622.3741	415.2518	0.53	yes	protein_specific		1		none	36.14
+P49917	LIG4	DSB_repair	T4_intracellular	5	ELYDLGLK	514	521	8	949.512	475.7633	317.5113	-0.15	yes	protein_specific		1		none	35.9
+Q9H9Q4	NHEJ1	DSB_repair	T4_intracellular	1	DLEIQDYQESGATLIR	161	176	16	1849.9057	925.9601	617.6425	-0.64	yes	protein_specific		1		none	36.71
+Q9H9Q4	NHEJ1	DSB_repair	T4_intracellular	2	ESTGTSGPLQRPQLSK	273	288	16	1684.8744	843.4445	562.6321	-1.19	yes	protein_specific		1		none	35.61
+Q9H9Q4	NHEJ1	DSB_repair	T4_intracellular	3	TEPFEENSFLEQFMIEK	181	197	17	2116.9663	1059.4904	706.6627	-0.76	yes	protein_specific		1		Met_oxidation	29.68
+Q9H9Q4	NHEJ1	DSB_repair	T4_intracellular	4	ELATLLHMK	152	160	9	1054.5845	528.2995	352.5354	0.42	yes	protein_specific		1		Met_oxidation	29.56
+Q9H9Q4	NHEJ1	DSB_repair	T4_intracellular	5	LTAPPAAFLCHLDNLLRPLLK	65	85	21	2372.3402	1187.1774	791.7873	0.63	yes	protein_specific		1		Cys_alkylation	25.94
+Q96SD1	DCLRE1C	DSB_repair	T4_intracellular	1	LAQGEAAR	139	146	8	814.4297	408.2221	272.4838	-0.34	yes	protein_specific		1		none	35.73
+Q96SD1	DCLRE1C	DSB_repair	T4_intracellular	2	ELLLTSPK	67	74	8	899.5328	450.7737	300.8515	0.11	yes	protein_specific		1		none	35.38
+Q96SD1	DCLRE1C	DSB_repair	T4_intracellular	3	EHLQYLYEK	665	673	9	1221.603	611.8088	408.2083	-1.4	yes	protein_specific		1		none	34.4
+Q96SD1	DCLRE1C	DSB_repair	T4_intracellular	4	FYQIPSR	173	179	7	909.4708	455.7427	304.1642	-0.63	yes	protein_specific		1		none	34.34
+Q96SD1	DCLRE1C	DSB_repair	T4_intracellular	5	ADYRPTIK	576	583	8	962.5185	482.2665	321.8468	-1.15	yes	protein_specific		1		none	34.1
+Q9BXW9	FANCD2	DSB_repair	T4_intracellular	1	TSLLLHNSHAFFR	914	926	13	1541.8103	771.9124	514.944	0.16	yes	protein_specific		1		none	39.28
+Q9BXW9	FANCD2	DSB_repair	T4_intracellular	2	DASSSTFPTLTR	1217	1228	12	1281.6201	641.8173	428.214	-0.48	yes	protein_specific		1		none	38.65
+Q9BXW9	FANCD2	DSB_repair	T4_intracellular	3	AIENTASVSEHK	367	378	12	1284.631	643.3228	429.2176	-0.63	yes	protein_specific		1		none	38.33
+Q9BXW9	FANCD2	DSB_repair	T4_intracellular	4	EDVLSLLETFQLDTR	1322	1336	15	1777.9098	889.9622	593.6439	-0.13	yes	protein_specific		1		none	38.27
+Q9BXW9	FANCD2	DSB_repair	T4_intracellular	5	HIVELQIILEK	818	828	11	1333.7969	667.9057	445.6062	0.7	yes	protein_specific		1		none	36.6
+Q14191	WRN	DSB_repair	T4_intracellular	1	TGNILQDLQPFLVK	743	756	14	1584.8875	793.451	529.3031	0.16	yes	protein_specific		1		none	38.47
+Q14191	WRN	DSB_repair	T4_intracellular	2	LYAATDAYAGFIIYR	211	225	15	1706.8668	854.4407	569.9629	0.65	yes	protein_specific		1		none	36.69
+Q14191	WRN	DSB_repair	T4_intracellular	3	AGLTPEVQK	1306	1314	9	941.5182	471.7664	314.8467	-0.42	yes	protein_specific		1		none	36.36
+Q14191	WRN	DSB_repair	T4_intracellular	4	LLSAVDILGEK	966	976	11	1156.6703	579.3424	386.564	0.89	yes	protein_specific		1		none	36.22
+Q14191	WRN	DSB_repair	T4_intracellular	5	SLENLNSGTVEPTHSK	478	493	16	1711.8377	856.9261	571.6198	-0.94	yes	protein_specific		1		none	36.11
+P54132	BLM	DSB_repair	T4_intracellular	1	SFVTPPQSHFVR	168	179	12	1400.7201	701.3673	467.914	-0.23	yes	protein_specific		1		none	39.15
+P54132	BLM	DSB_repair	T4_intracellular	2	SLLPDFLQTPK	106	116	11	1257.6969	629.8557	420.2396	-0.13	yes	protein_specific		1		none	38.25
+P54132	BLM	DSB_repair	T4_intracellular	3	LTSLDIPATYLTGDK	727	741	15	1606.8454	804.43	536.6224	0.04	yes	protein_specific		1		none	37.92
+P54132	BLM	DSB_repair	T4_intracellular	4	AQLYTTNTVK	196	205	10	1137.603	569.8088	380.2083	-0.45	yes	protein_specific		1		none	37.1
+P54132	BLM	DSB_repair	T4_intracellular	5	SSTAAYQPIK	579	588	10	1064.5502	533.2824	355.8573	-0.45	yes	protein_specific		1		none	37.1
+Q9NUW8	TDP1	DSB_repair	T4_intracellular	1	LDIAFGTHHTK	255	265	11	1238.6407	620.3276	413.8875	-0.25	yes	protein_specific		1		none	38.31
+Q9NUW8	TDP1	DSB_repair	T4_intracellular	2	GNPFQFYLTR	161	170	10	1241.6193	621.8169	414.8804	-0.61	yes	protein_specific		1		none	36.78
+Q9NUW8	TDP1	DSB_repair	T4_intracellular	3	SSVPLYLIYPSVENVR	433	448	16	1834.9829	918.4987	612.6682	0.31	yes	protein_specific		1		none	36.58
+Q9NUW8	TDP1	DSB_repair	T4_intracellular	4	YNSGALHIK	178	186	9	1001.5294	501.772	334.8504	-0.33	yes	protein_specific		1		none	36.53
+Q9NUW8	TDP1	DSB_repair	T4_intracellular	5	HDLSETNVYLIGSTPGR	345	361	17	1857.9221	929.9683	620.3146	-0.51	yes	protein_specific		1		none	36.19
+O95551	TDP2	DSB_repair	T4_intracellular	1	AAAEEGHIIPR	322	332	11	1162.6094	582.312	388.5438	-0.21	yes	protein_specific		1		none	38.38
+O95551	TDP2	DSB_repair	T4_intracellular	2	SQEIIPFPSTK	193	203	11	1245.6605	623.8375	416.2274	-0.42	yes	protein_specific		1		none	37.96
+O95551	TDP2	DSB_repair	T4_intracellular	3	SLDLLGLEK	333	341	9	986.5648	494.2897	329.8622	0.34	yes	protein_specific		1		none	35.71
+O95551	TDP2	DSB_repair	T4_intracellular	4	TYVDLTNEETTDSTTSK	83	99	17	1903.8535	952.934	635.6251	-1.21	yes	protein_specific		1		none	34.79
+O95551	TDP2	DSB_repair	T4_intracellular	5	EAAEEEGEPEVK	12	23	12	1315.5779	658.7962	439.5332	-1.59	yes	protein_specific		1		ragged_C_term	30.42
+P11387	TOP1	DSB_repair	T4_intracellular	1	ELTAPDENIPAK	604	615	12	1296.6561	649.3353	433.226	-0.82	yes	protein_specific		1		none	37.95
+P11387	TOP1	DSB_repair	T4_intracellular	2	GPVFAPPYEPLPENVK	224	239	16	1752.9086	877.4616	585.3102	-0.46	yes	protein_specific		1		none	37.09
+P11387	TOP1	DSB_repair	T4_intracellular	3	AEEVATFFAK	253	262	10	1111.5549	556.7847	371.5256	0.36	yes	protein_specific		1		none	36.48
+P11387	TOP1	DSB_repair	T4_intracellular	4	LNTGILNK	568	575	8	871.5127	436.7636	291.5115	0.01	yes	protein_specific		1		none	35.58
+P11387	TOP1	DSB_repair	T4_intracellular	5	LEVQATDR	701	708	8	930.477	466.2458	311.1663	-0.74	yes	protein_specific		1		none	34.92
+P11388	TOP2A	DSB_repair	T4_intracellular	1	SVVSDLEADDVK	1374	1385	12	1275.6194	638.817	426.2137	-0.11	yes	protein_specific		1		none	39.02
+P11388	TOP2A	DSB_repair	T4_intracellular	2	HVDYVADQIVTK	325	336	12	1386.7143	694.3644	463.2454	-0.06	yes	protein_specific		1		none	38.92
+P11388	TOP2A	DSB_repair	T4_intracellular	3	GFQQISFVNSIATSK	307	321	15	1625.8413	813.9279	542.9544	0.18	yes	protein_specific		1		none	37.64
+P11388	TOP2A	DSB_repair	T4_intracellular	4	EDLATFIEELEAVEAK	1169	1184	16	1805.8934	903.954	602.9718	-0.07	yes	protein_specific		1		none	37.34
+P11388	TOP2A	DSB_repair	T4_intracellular	5	SSDESNFDVPPR	1302	1313	12	1348.5895	675.302	450.5371	-1.43	yes	protein_specific		1		none	36.75
+P12004	PCNA	BER	T3_EV_or_enriched	1	LSQTSNVDK	182	190	9	990.4982	496.2564	331.1733	-0.97	yes	protein_specific	P61258	1		none	35.27
+P12004	PCNA	BER	T3_EV_or_enriched	2	YLNFFTK	211	217	7	931.4803	466.7474	311.5007	-0.0	yes	protein_specific	P61258	1		none	34.8
+P12004	PCNA	BER	T3_EV_or_enriched	3	AEDNADTLALVFEAPNQEK	92	110	19	2073.9854	1038.0	692.3358	-0.65	yes	protein_specific	P61258	1		none	34.29
+P12004	PCNA	BER	T3_EV_or_enriched	4	FSASGELGNGNIK	169	181	13	1292.6361	647.3253	431.886	-0.33	yes	protein_specific	P61258	1		deamidation_isomerisation	33.74
+P12004	PCNA	BER	T3_EV_or_enriched	5	SEGFDTYR	54	61	8	973.4141	487.7143	325.4786	-1.49	yes	protein_specific	P61258	1		none	33.42
+O15527	OGG1	BER_oxidative	T4_intracellular	1	LDLVLPSGQSFR	35	46	12	1330.7245	666.3695	444.5821	0.28	yes	protein_specific		1		none	38.25
+O15527	OGG1	BER_oxidative	T4_intracellular	2	ELGNFFR	298	304	7	881.4395	441.727	294.8205	-0.36	yes	protein_specific		1		none	34.89
+O15527	OGG1	BER_oxidative	T4_intracellular	3	YVSASAR	207	213	7	752.3817	377.1981	251.8012	0.06	yes	protein_specific		1		none	34.69
+O15527	OGG1	BER_oxidative	T4_intracellular	4	ESSYEEAHK	230	238	9	1078.4567	540.2356	360.4928	-2.08	yes	protein_specific		1		none	33.04
+O15527	OGG1	BER_oxidative	T4_intracellular	5	GPSPQTNK	290	297	8	827.4137	414.7141	276.8119	-2.0	yes	protein_specific		1		none	32.4
+Q9UIF7	MUTYH	BER_oxidative	T4_intracellular	1	HLGEVVHTFSHIK	435	447	13	1502.7994	752.407	501.9404	0.05	yes	protein_specific		1		none	39.51
+Q9UIF7	MUTYH	BER_oxidative	T4_intracellular	2	TAETLQQLLPGVGR	201	214	14	1481.8202	741.9174	494.9473	-0.1	yes	protein_specific		1		none	39.0
+Q9UIF7	MUTYH	BER_oxidative	T4_intracellular	3	ALLQELQR	416	423	8	969.5607	485.7876	324.1942	-0.23	yes	protein_specific		1		none	35.95
+Q9UIF7	MUTYH	BER_oxidative	T4_intracellular	4	DVAEVTAFR	86	94	9	1006.5083	504.2614	336.5101	0.29	yes	protein_specific		1		none	35.82
+Q9UIF7	MUTYH	BER_oxidative	T4_intracellular	5	WAGPLPATHLR	424	434	11	1217.6669	609.8407	406.8962	-0.15	yes	protein_specific		1		Trp_oxidation	32.31
+P78549	NTHL1	BER_oxidative	T4_intracellular	1	GLTVDSILQTDDATLGK	150	166	17	1745.9047	873.9596	582.9755	0.02	yes	protein_specific		1		none	36.36
+P78549	NTHL1	BER_oxidative	T4_intracellular	2	SLGPGAGPR	14	22	9	810.4348	406.2247	271.1522	-0.46	yes	protein_specific		1		none	36.29
+P78549	NTHL1	BER_oxidative	T4_intracellular	3	VAYEGSDSEK	58	67	10	1083.472	542.7433	362.1646	-1.17	yes	protein_specific		1		none	35.66
+P78549	NTHL1	BER_oxidative	T4_intracellular	4	GEGAEPLK	68	75	8	799.4076	400.7111	267.4765	-0.96	yes	protein_specific		1		none	34.48
+P78549	NTHL1	BER_oxidative	T4_intracellular	5	YQVLLSLMLSSQTK	122	135	14	1609.8749	805.9447	537.6323	0.43	yes	protein_specific		1		Met_oxidation	31.94
+Q96FI4	NEIL1	BER_oxidative	T4_intracellular	1	GYGSESGEEDFAAFR	243	257	15	1620.6692	811.3419	541.2303	-0.89	yes	protein_specific		1		none	37.01
+Q96FI4	NEIL1	BER_oxidative	T4_intracellular	2	VEDALPPSK	311	319	9	954.5022	478.2584	319.1747	-0.57	yes	protein_specific		1		none	36.07
+Q96FI4	NEIL1	BER_oxidative	T4_intracellular	3	FYTAPPGPR	101	109	9	1004.5079	503.2612	335.8433	-0.79	yes	protein_specific		1		none	35.62
+Q96FI4	NEIL1	BER_oxidative	T4_intracellular	4	EVVQLGGK	235	242	8	828.4705	415.2425	277.1641	0.06	yes	protein_specific		1		none	35.48
+Q96FI4	NEIL1	BER_oxidative	T4_intracellular	5	ATQLSPEDR	302	310	9	1015.4934	508.754	339.5051	-1.39	yes	protein_specific		1		none	34.42
+Q969S2	NEIL2	BER_oxidative	T4_intracellular	1	FHHLVSPFVGQQVVK	10	24	15	1720.9413	861.4779	574.6544	0.41	yes	protein_specific		1		none	37.19
+Q969S2	NEIL2	BER_oxidative	T4_intracellular	2	FQGRPQHTQVYQK	276	288	13	1615.8219	808.9182	539.6146	-1.74	yes	protein_specific		1		none	36.92
+Q969S2	NEIL2	BER_oxidative	T4_intracellular	3	YFSGLGNIIK	225	234	10	1110.6073	556.3109	371.2097	0.53	yes	protein_specific		1		none	36.14
+Q969S2	NEIL2	BER_oxidative	T4_intracellular	4	DAPAGDAGR	121	129	9	828.3726	415.1936	277.1315	-0.94	yes	protein_specific		1		none	35.31
+Q969S2	NEIL2	BER_oxidative	T4_intracellular	5	SAELVPQGEDDSEYLER	104	120	17	1935.8697	968.9421	646.2972	-1.19	yes	protein_specific		1		none	34.81
+Q8TAT5	NEIL3	BER_oxidative	T4_intracellular	1	TAFGTTTLVLTDFSNK	383	398	16	1714.8777	858.4461	572.6332	0.23	yes	protein_specific		1		none	36.75
+Q8TAT5	NEIL3	BER_oxidative	T4_intracellular	2	VLPGQAVTGVR	18	28	11	1095.64	548.8273	366.2206	0.65	yes	protein_specific		1		none	36.71
+Q8TAT5	NEIL3	BER_oxidative	T4_intracellular	3	TTNDITQPSSK	436	446	11	1190.5779	596.2962	397.8666	-1.38	yes	protein_specific		1		none	36.04
+Q8TAT5	NEIL3	BER_oxidative	T4_intracellular	4	TAQYSSPELK	469	478	10	1122.5557	562.2851	375.1925	-1.05	yes	protein_specific		1		none	35.9
+Q8TAT5	NEIL3	BER_oxidative	T4_intracellular	5	DFSILFYR	227	234	8	1059.5389	530.7767	354.1869	0.47	yes	protein_specific		1		none	34.65
+P36639	NUDT1	BER_oxidative	T4_intracellular	1	FQGQDTILDYTLR	139	151	13	1568.7835	785.399	523.9351	-0.52	yes	protein_specific		1		none	39.37
+P36639	NUDT1	BER_oxidative	T4_intracellular	2	ELQEESGLTVDALHK	52	66	15	1667.8366	834.9256	556.9528	-0.61	yes	protein_specific		1		none	37.59
+P36639	NUDT1	BER_oxidative	T4_intracellular	3	LYTLVLVLQPQR	6	17	12	1441.8657	721.9401	481.6292	0.71	yes	protein_specific		1		none	37.38
+P36639	NUDT1	BER_oxidative	T4_intracellular	4	VQEGETIEDGAR	39	50	12	1302.6051	652.3098	435.209	-1.08	yes	protein_specific		1		deamidation_isomerisation;ragged_C_term	25.43
+P36639	NUDT1	BER_oxidative	T4_intracellular	5	WNGFGGK	32	38	7	764.3606	383.1876	255.7941	-0.96	yes	protein_specific		1		Trp_oxidation;deamidation_isomerisation	21.69
+P27695	APEX1	BER	T3_EV_or_enriched	1	EGYSGVGLLSR	126	136	11	1136.5826	569.2986	379.8681	-0.03	yes	protein_specific		1		none	38.05
+P27695	APEX1	BER	T3_EV_or_enriched	2	TSPSGKPATLK	53	63	11	1085.6081	543.8113	362.8766	-0.8	yes	protein_specific		1		none	37.2
+P27695	APEX1	BER	T3_EV_or_enriched	3	VSYGIGDEEHDQEGR	142	156	15	1689.723	845.8688	564.2483	-1.55	yes	protein_specific		1		none	35.69
+P27695	APEX1	BER	T3_EV_or_enriched	4	EEAPDILCLQETK	86	98	13	1544.7392	773.3769	515.9203	-0.56	yes	protein_specific		1		Cys_alkylation	33.28
+P27695	APEX1	BER	T3_EV_or_enriched	5	GAVAEDGDELR	8	18	11	1130.5203	566.2674	377.8474	-0.7	yes	protein_specific		1		deamidation_isomerisation	31.4
+Q9UBZ4	APEX2	BER	T4_intracellular	1	FLPEFAGTQLK	328	338	11	1249.6706	625.8426	417.5642	0.13	yes	protein_specific		1		none	37.75
+Q9UBZ4	APEX2	BER	T4_intracellular	2	STRPQPSQVGSSR	376	388	13	1385.7011	693.8578	462.9077	-1.48	yes	protein_specific		1		none	37.43
+Q9UBZ4	APEX2	BER	T4_intracellular	3	LDYVLGDR	276	283	8	949.4869	475.7507	317.5029	-0.18	yes	protein_specific		1		none	35.95
+Q9UBZ4	APEX2	BER	T4_intracellular	4	ALLTQHK	133	139	7	809.4759	405.7452	270.8326	-0.27	yes	protein_specific		1		none	35.06
+Q9UBZ4	APEX2	BER	T4_intracellular	5	SVLAGPLR	458	465	8	811.4916	406.7531	271.5045	0.79	yes	protein_specific		1		none	34.02
+P18887	XRCC1	BER	T4_intracellular	1	AIGSTSKPQESPK	231	243	13	1328.6936	665.3541	443.9051	-1.17	yes	protein_specific		1		none	38.06
+P18887	XRCC1	BER	T4_intracellular	2	TPATAPVPAR	281	290	10	979.5451	490.7798	327.5223	-0.11	yes	protein_specific		1		none	37.42
+P18887	XRCC1	BER	T4_intracellular	3	YSQVLGLGGR	370	379	10	1048.5665	525.2905	350.5295	0.05	yes	protein_specific		1		none	37.1
+P18887	XRCC1	BER	T4_intracellular	4	DSPFGLSFVR	139	148	10	1123.5662	562.7904	375.5293	0.2	yes	protein_specific		1		none	36.8
+P18887	XRCC1	BER	T4_intracellular	5	AQGAVTGKPR	291	300	10	983.5512	492.7829	328.8577	-0.72	yes	protein_specific		1		none	36.56
+P06746	POLB	BER	T4_intracellular	1	LLHQVVEQLQK	210	220	11	1333.7718	667.8932	445.5979	-0.12	yes	protein_specific		1		none	38.24
+P06746	POLB	BER	T4_intracellular	2	VHFITDTLSK	221	230	10	1159.6237	580.8191	387.5485	0.25	yes	protein_specific		1		none	36.7
+P06746	POLB	BER	T4_intracellular	3	IDEFLATGK	73	81	9	992.5178	497.2662	331.8466	0.1	yes	protein_specific		1		none	36.2
+P06746	POLB	BER	T4_intracellular	4	FVDEGIK	114	120	7	806.4174	404.216	269.8131	0.03	yes	protein_specific		1		none	34.74
+P06746	POLB	BER	T4_intracellular	5	QDDTSSSINFLTR	90	102	13	1482.695	742.3548	495.239	-0.86	yes	protein_specific		1		N_term_deamidation	32.68
+P49916	LIG3	BER	T4_intracellular	1	EQITQHIADLSSK	175	187	13	1468.7522	735.3834	490.5913	-0.68	yes	protein_specific		1		none	39.05
+P49916	LIG3	BER	T4_intracellular	2	LTTTGQVTSPVK	202	213	12	1230.682	616.3483	411.2346	-0.07	yes	protein_specific		1		none	38.93
+P49916	LIG3	BER	T4_intracellular	3	LYLPPSTPDFSR	943	954	12	1391.7085	696.8615	464.9101	-0.5	yes	protein_specific		1		none	38.6
+P49916	LIG3	BER	T4_intracellular	4	SLLTIQEVDEFLLR	370	383	14	1674.9192	838.4669	559.3137	0.48	yes	protein_specific		1		none	37.84
+P49916	LIG3	BER	T4_intracellular	5	DLEQGDVSETIR	344	355	12	1360.647	681.3308	454.5563	-0.95	yes	protein_specific		1		none	37.7
+P18858	LIG1	BER	T4_intracellular	1	AQIHALEGGEVK	574	585	12	1250.6619	626.3382	417.8946	-0.19	yes	protein_specific		1		none	39.18
+P18858	LIG1	BER	T4_intracellular	2	DIEQIAEFLEQSVK	703	716	14	1647.8355	824.925	550.2858	-0.29	yes	protein_specific		1		none	39.01
+P18858	LIG1	BER	T4_intracellular	3	ALVLPSPRPYVR	814	825	12	1366.8085	684.4115	456.6101	0.16	yes	protein_specific		1		none	38.48
+P18858	LIG1	BER	T4_intracellular	4	GDVGLVAENSR	377	387	11	1115.5571	558.7858	372.8596	-0.24	yes	protein_specific		1		none	38.33
+P18858	LIG1	BER	T4_intracellular	5	ESLTEAEVATEK	162	173	12	1305.63	653.8223	436.2173	-0.71	yes	protein_specific		1		none	38.18
+P39748	FEN1	BER	T4_intracellular	1	LPIQEFHLSR	202	211	10	1238.6771	620.3458	413.8997	-0.22	yes	protein_specific		1		none	37.56
+P39748	FEN1	BER	T4_intracellular	2	LIADVAPSAIR	9	19	11	1124.6553	563.3349	375.8924	1.09	yes	protein_specific		1		none	35.82
+P39748	FEN1	BER	T4_intracellular	3	VTGSLSSAK	346	354	9	848.4603	425.2374	283.8274	0.27	yes	protein_specific		1		ragged_C_term	29.87
+P39748	FEN1	BER	T4_intracellular	4	QLQQAQAAGAEQEVEK	110	125	16	1726.8486	864.4316	576.6235	-1.07	yes	protein_specific		1		N_term_deamidation	29.86
+P39748	FEN1	BER	T4_intracellular	5	WSEPNEEELIK	298	308	11	1372.651	687.3328	458.5576	-1.49	yes	protein_specific		1		Trp_oxidation	29.82
+Q96T60	PNKP	BER	T4_intracellular	1	VAIDNTNPDAASR	419	431	13	1342.6477	672.3311	448.5565	-0.58	yes	protein_specific		1		none	39.25
+Q96T60	PNKP	BER	T4_intracellular	2	HLVSAGYVHVNR	385	396	12	1350.7156	676.3651	451.2458	0.11	yes	protein_specific		1		none	38.58
+Q96T60	PNKP	BER	T4_intracellular	3	LLVFTAAGVKPQGK	153	166	14	1427.85	714.9323	476.9573	0.57	yes	protein_specific		1		none	37.66
+Q96T60	PNKP	BER	T4_intracellular	4	LPAEEFK	227	233	7	832.433	417.2238	278.485	-0.59	yes	protein_specific		1		none	34.43
+Q96T60	PNKP	BER	T4_intracellular	5	VEAVVEK	236	242	7	772.433	387.2238	258.485	0.5	yes	protein_specific		1		none	33.8
+P13051	UNG	BER	T4_intracellular	1	HLSGEFGKPYFIK	101	113	13	1521.798	761.9063	508.2733	-0.39	yes	protein_specific		1		none	39.62
+P13051	UNG	BER	T4_intracellular	2	HHVLQTAHPSPLSVYR	270	285	16	1840.9696	921.4921	614.6638	-0.41	yes	protein_specific		1		none	37.18
+P13051	UNG	BER	T4_intracellular	3	TNELLQK	296	302	7	844.4654	423.24	282.4958	-1.07	yes	protein_specific		1		none	33.46
+P13051	UNG	BER	T4_intracellular	4	TLYSFFSPSPAR	6	17	12	1371.6823	686.8484	458.2347	-0.08	yes	protein_specific		1		ragged_C_term	32.95
+P13051	UNG	BER	T4_intracellular	5	AHQANSHK	220	227	8	891.4311	446.7228	298.151	-1.81	yes	protein_specific		1		none	32.77
+Q53HV7	SMUG1	BER	T4_intracellular	1	EQLLGICDAALCR	188	200	13	1517.733	759.8738	506.9183	0.7	yes	protein_specific		1		Cys_alkylation	32.2
+Q53HV7	SMUG1	BER	T4_intracellular	2	LVVGVGR	209	215	7	698.4439	350.2292	233.8219	1.59	yes	protein_specific		1		none	31.63
+Q53HV7	SMUG1	BER	T4_intracellular	3	LNELGLLPLLLK	259	270	12	1334.8537	668.4341	445.9585	1.14	yes	protein_specific		1		protein_C_terminus	30.52
+Q53HV7	SMUG1	BER	T4_intracellular	4	GWEAVAK	250	256	7	759.3915	380.703	254.1378	-0.13	yes	protein_specific		1		Trp_oxidation	29.06
+Q53HV7	SMUG1	BER	T4_intracellular	5	QVQLLGVR	201	208	8	911.5552	456.7849	304.859	0.51	yes	protein_specific		1		N_term_deamidation	28.57
+Q13569	TDG	BER	T4_intracellular	1	FNGVSEAELLTK	111	122	12	1306.6769	654.3457	436.5662	0.01	yes	protein_specific		1		deamidation_isomerisation	32.78
+Q13569	TDG	BER	T4_intracellular	2	YGIGFTNMVER	185	195	11	1285.6125	643.8135	429.5448	-0.08	yes	protein_specific		1		Met_oxidation	32.16
+Q13569	TDG	BER	T4_intracellular	3	GHHYPGPGNHFWK	149	161	13	1532.7061	767.3603	511.9093	-1.6	yes	protein_specific		1		Trp_oxidation	31.2
+Q13569	TDG	BER	T4_intracellular	4	NLEFGLQPHK	249	258	10	1181.6193	591.8169	394.8804	-0.92	yes	protein_specific		1		N_term_deamidation	30.16
+Q13569	TDG	BER	T4_intracellular	5	CIYEIFSK	233	240	8	1058.5107	530.2626	353.8442	0.6	yes	protein_specific		1		Cys_alkylation	28.4
+O95243	MBD4	BER	T4_intracellular	1	FDVYFISPQGLK	106	117	12	1412.734	707.3743	471.9186	0.26	yes	protein_specific		1		none	38.28
+O95243	MBD4	BER	T4_intracellular	2	DVSELLKPLGLYDLR	498	512	15	1729.9614	865.988	577.6611	0.01	yes	protein_specific		1		none	37.97
+O95243	MBD4	BER	T4_intracellular	3	GAAPTVTSSER	15	25	11	1074.5305	538.2725	359.1841	-0.47	yes	protein_specific		1		none	37.85
+O95243	MBD4	BER	T4_intracellular	4	YEDTFLESEEIGTK	348	361	14	1659.7515	830.883	554.2578	-1.01	yes	protein_specific		1		none	37.57
+O95243	MBD4	BER	T4_intracellular	5	YPIELHGIGK	530	539	10	1125.6182	563.8164	376.2133	-0.15	yes	protein_specific		1		none	37.5
+P29372	MPG	BER	T4_intracellular	1	GPLEPSEPAVVAAAR	247	261	15	1462.7779	732.3962	488.5999	0.13	yes	protein_specific		1		none	37.75
+P29372	MPG	BER	T4_intracellular	2	LGLEFFDQPAVPLAR	86	100	15	1671.8984	836.9565	558.3067	0.41	yes	protein_specific		1		none	37.17
+P29372	MPG	BER	T4_intracellular	3	SIYFSSPK	73	80	8	927.4702	464.7424	310.164	-0.24	yes	protein_specific		1		none	35.92
+P29372	MPG	BER	T4_intracellular	4	IVETEAYLGPEDEAAHSR	121	138	18	1985.933	993.9738	662.9849	-0.67	yes	protein_specific		1		none	35.06
+P29372	MPG	BER	T4_intracellular	5	ALEPLEGLETMR	183	194	12	1357.6911	679.8528	453.571	-0.22	yes	protein_specific		1		Met_oxidation	33.17
+P23025	XPA	NER	T4_intracellular	1	IIDTGGGFILEEEEEEEQK	68	86	19	2164.0059	1083.0102	722.3426	-0.91	yes	protein_specific		1		none	33.79
+P23025	XPA	NER	T4_intracellular	2	SLEVWGSQEALEEAK	190	204	15	1674.81	838.4123	559.2773	-0.59	yes	protein_specific		1		Trp_oxidation	31.61
+P23025	XPA	NER	T4_intracellular	3	TCTMCGHELTYEK	260	272	13	1628.6633	815.3389	543.895	-0.55	yes	protein_specific		1		Met_oxidation;Cys_alkylation	27.29
+P23025	XPA	NER	T4_intracellular	4	LAARPYSATAAAATGGMANVK	43	63	21	1991.0258	996.5202	664.6825	0.31	yes	protein_specific		1		Met_oxidation	26.58
+P23025	XPA	NER	T4_intracellular	5	EFMDSYLMNHFDLPTCDNCR	111	130	20	2564.0229	1283.0187	855.6816	-0.56	yes	protein_specific		1		Met_oxidation;Cys_alkylation	21.69
+Q01831	XPC	NER	T4_intracellular	1	DVDTYYLSNLVK	248	259	12	1428.7136	715.3641	477.2452	-0.21	yes	protein_specific		1		none	39.18
+Q01831	XPC	NER	T4_intracellular	2	DDEELVHIFLLILR	294	307	14	1723.9508	862.9827	575.6576	0.68	yes	protein_specific		1		none	37.44
+Q01831	XPC	NER	T4_intracellular	3	LVLSLQPIPLK	315	325	11	1219.7904	610.9025	407.6041	1.14	yes	protein_specific		1		none	35.73
+Q01831	XPC	NER	T4_intracellular	4	SLLPVKPVEIEIETPEQAK	156	174	19	2119.1776	1060.5961	707.3998	-0.25	yes	protein_specific		1		none	35.09
+Q01831	XPC	NER	T4_intracellular	5	LGEVPYK	699	705	7	804.4381	403.2263	269.1533	-0.39	yes	protein_specific		1		none	34.83
+P54727	RAD23B	NER	T4_intracellular	1	ILNDDTALK	52	60	9	1001.5393	501.7769	334.8537	-0.13	yes	protein_specific		1		none	36.67
+P54727	RAD23B	NER	T4_intracellular	2	EQVIAALR	205	212	8	898.5236	450.2691	300.5151	0.57	yes	protein_specific		1		none	34.45
+P54727	RAD23B	NER	T4_intracellular	3	ASFNNPDR	213	220	8	919.4148	460.7147	307.4789	-1.6	yes	protein_specific		1		none	33.2
+P54727	RAD23B	NER	T4_intracellular	4	AVEYLLMGIPGDR	221	233	13	1432.7384	717.3765	478.5867	0.37	yes	protein_specific		1		Met_oxidation	32.86
+P54727	RAD23B	NER	T4_intracellular	5	IDIDPEETVK	15	24	10	1157.5816	579.7981	386.8678	-0.7	yes	protein_specific		1		acid_labile_DP	30.6
+P07992	ERCC1	NER	T4_intracellular	1	LFDVLHEPFLK	285	295	11	1356.7441	679.3793	453.2553	0.5	yes	protein_specific		1		none	37.0
+P07992	ERCC1	NER	T4_intracellular	2	YHNLHPDYIHGR	145	156	12	1520.7273	761.3709	507.9164	-1.45	yes	protein_specific		1		none	36.7
+P07992	ERCC1	NER	T4_intracellular	3	SNSIIVSPR	98	106	9	971.54	486.7773	324.8539	0.13	yes	protein_specific		1		none	36.13
+P07992	ERCC1	NER	T4_intracellular	4	LEQDFVSR	227	234	8	992.4927	497.2536	331.8382	-0.62	yes	protein_specific		1		none	35.15
+P07992	ERCC1	NER	T4_intracellular	5	EDLALCPGLGPQK	269	281	13	1396.702	699.3583	466.5746	-0.21	yes	protein_specific		1		Cys_alkylation	33.98
+P18074	ERCC2	NER	T4_intracellular	1	VSEGIDFVHHYGR	604	616	13	1514.7266	758.3706	505.9161	-0.39	yes	protein_specific		1		none	39.62
+P18074	ERCC2	NER	T4_intracellular	2	GFTIIIEPFDDR	413	424	12	1421.719	711.8668	474.9136	0.12	yes	protein_specific		1		none	38.57
+P18074	ERCC2	NER	T4_intracellular	3	EVPLPAGIYNLDDLK	167	181	15	1655.877	828.9458	552.9663	-0.06	yes	protein_specific		1		none	38.12
+P18074	ERCC2	NER	T4_intracellular	4	GNDQVAISSK	498	507	10	1017.5091	509.7618	340.177	-0.59	yes	protein_specific		1		none	36.82
+P18074	ERCC2	NER	T4_intracellular	5	AYPLEVTK	62	69	8	919.5015	460.758	307.5078	-0.15	yes	protein_specific		1		none	35.9
+P19447	ERCC3	NER	T4_intracellular	1	TAESSGGPSTSR	223	234	12	1135.5105	568.7625	379.5108	-1.1	yes	protein_specific		1		none	37.4
+P19447	ERCC3	NER	T4_intracellular	2	FLVDQGYSFK	679	688	10	1202.5972	602.3059	401.873	0.02	yes	protein_specific		1		none	37.16
+P19447	ERCC3	NER	T4_intracellular	3	LNKPYIYGPTSQGER	575	589	15	1721.8737	861.9441	574.9652	-1.25	yes	protein_specific		1		none	36.31
+P19447	ERCC3	NER	T4_intracellular	4	IVDLNFLIGPK	477	487	11	1227.7227	614.8686	410.2482	0.97	yes	protein_specific		1		none	36.05
+P19447	ERCC3	NER	T4_intracellular	5	IIVFADNVFALK	558	569	12	1348.7754	675.395	450.5991	1.63	yes	protein_specific		1		none	35.55
+Q92889	ERCC4	NER	T4_intracellular	1	VYFLIYGGSTEEQR	605	618	14	1660.8097	831.4121	554.6105	-0.33	yes	protein_specific		1		none	38.94
+Q92889	ERCC4	NER	T4_intracellular	2	DYITLGAEAFLLR	422	434	13	1480.7925	741.4035	494.6048	0.65	yes	protein_specific		1		none	38.31
+Q92889	ERCC4	NER	T4_intracellular	3	GALFQEISSNDISSK	773	787	15	1594.7838	798.3992	532.6019	-0.27	yes	protein_specific		1		none	38.25
+Q92889	ERCC4	NER	T4_intracellular	4	YVVLYDAELTFVR	577	589	13	1586.8344	794.4245	529.9521	0.77	yes	protein_specific		1		none	38.06
+Q92889	ERCC4	NER	T4_intracellular	5	YEVYTQGGVIFATSR	98	112	15	1689.8362	845.9254	564.286	0.03	yes	protein_specific		1		none	37.95
+P28715	ERCC5	NER	T4_intracellular	1	VVSEDTSHYILIK	281	293	13	1502.798	752.4063	501.94	0.27	yes	protein_specific		1		none	39.06
+P28715	ERCC5	NER	T4_intracellular	2	EGEAPAESESLLR	690	702	13	1386.6627	694.3386	463.2282	-0.84	yes	protein_specific		1		none	38.72
+P28715	ERCC5	NER	T4_intracellular	3	FDSSLLSSDDETK	556	568	13	1442.6413	722.3279	481.8877	-0.88	yes	protein_specific		1		none	38.65
+P28715	ERCC5	NER	T4_intracellular	4	TVAEVDSESLPSSSK	299	313	15	1534.7362	768.3754	512.586	-0.45	yes	protein_specific		1		none	37.91
+P28715	ERCC5	NER	T4_intracellular	5	TDESLFPVLK	973	982	10	1147.6125	574.8135	383.5448	0.06	yes	protein_specific		1		none	37.08
+Q03468	ERCC6	NER	T4_intracellular	1	GAEVNAVTSNR	1077	1087	11	1116.5523	559.2834	373.1914	-0.45	yes	protein_specific		1		none	37.91
+Q03468	ERCC6	NER	T4_intracellular	2	YNEDTSIFVFLLTTR	901	915	15	1817.9199	909.9672	606.9806	0.18	yes	protein_specific		1		none	37.64
+Q03468	ERCC6	NER	T4_intracellular	3	LLTAGTIEEK	962	971	10	1073.5968	537.8057	358.8729	0.12	yes	protein_specific		1		none	36.96
+Q03468	ERCC6	NER	T4_intracellular	4	HHSVAEEETLEK	1187	1198	12	1407.663	704.8388	470.2283	-1.33	yes	protein_specific		1		none	36.93
+Q03468	ERCC6	NER	T4_intracellular	5	VYQNFVDSK	775	783	9	1098.5346	550.2746	367.1855	-0.59	yes	protein_specific		1		none	36.02
+Q16531	DDB1	NER	T4_intracellular	1	ALYYLQIHPQELR	515	527	13	1642.8831	822.4488	548.635	-0.36	yes	protein_specific		1		none	39.68
+Q16531	DDB1	NER	T4_intracellular	2	ETDDTLVLSFVGQTR	420	434	15	1679.8366	840.9256	560.9528	-0.2	yes	protein_specific		1		none	38.4
+Q16531	DDB1	NER	T4_intracellular	3	VTLGTQPTVLR	629	639	11	1183.6925	592.8535	395.5714	0.35	yes	protein_specific		1		none	37.29
+Q16531	DDB1	NER	T4_intracellular	4	LEIYVVTAEGLRPVK	39	53	15	1685.9716	843.9931	562.9978	0.47	yes	protein_specific		1		none	37.05
+Q16531	DDB1	NER	T4_intracellular	5	LEELHVIDVK	159	168	10	1193.6656	597.8401	398.8958	0.29	yes	protein_specific		1		none	36.62
+Q92466	DDB2	NER	T4_intracellular	1	GIGAGGSITGLK	152	163	12	1029.5818	515.7982	344.2012	0.6	yes	protein_specific		1		none	37.6
+Q92466	DDB2	NER	T4_intracellular	2	ASFLYSLPHR	279	288	10	1189.6244	595.8195	397.5487	0.0	yes	protein_specific		1		none	37.2
+Q92466	DDB2	NER	T4_intracellular	3	TSEIVLRPR	12	20	9	1069.6244	535.8195	357.5487	-0.34	yes	protein_specific		1		none	36.51
+Q92466	DDB2	NER	T4_intracellular	4	HFQHLTPIK	333	341	9	1119.6189	560.8167	374.2136	-0.56	yes	protein_specific		1		none	36.09
+Q92466	DDB2	NER	T4_intracellular	5	LLTTDQK	303	309	7	817.4545	409.7345	273.4921	-0.67	yes	protein_specific		1		none	34.26
+P40692	MLH1	MMR	T4_intracellular	1	HEVHFLHEESILER	312	325	14	1773.8798	887.9472	592.3005	-0.7	yes	protein_specific		1		none	38.2
+P40692	MLH1	MMR	T4_intracellular	2	AIETVYAAYLPK	275	286	12	1337.7231	669.8688	446.915	0.47	yes	protein_specific		1		none	37.87
+P40692	MLH1	MMR	T4_intracellular	3	IAAGEVIQRPANAIK	19	33	15	1549.894	775.9543	517.6386	0.27	yes	protein_specific		1		none	37.47
+P40692	MLH1	MMR	T4_intracellular	4	LQSFEDLASISTYGFR	85	100	16	1832.8945	917.4545	611.9721	-0.02	yes	protein_specific		1		none	37.24
+P40692	MLH1	MMR	T4_intracellular	5	STTSLTSSSTSGSSDK	362	377	16	1531.6849	766.8497	511.5689	-0.83	yes	protein_specific		1		none	36.35
+P43246	MSH2	MMR	T4_intracellular	1	LDSSAQFGYYFR	513	524	12	1452.6674	727.341	485.2297	-0.41	yes	protein_specific		1		none	38.78
+P43246	MSH2	MMR	T4_intracellular	2	LNLVEAFVEDAELR	360	373	14	1616.8409	809.4277	539.9543	0.3	yes	protein_specific		1		none	38.2
+P43246	MSH2	MMR	T4_intracellular	3	TEYEEAQDAIVK	568	579	12	1394.6565	698.3355	465.8928	-0.92	yes	protein_specific		1		none	37.75
+P43246	MSH2	MMR	T4_intracellular	4	ETLQLESAAEVGFVR	7	21	15	1647.8468	824.9307	550.2895	0.13	yes	protein_specific		1		none	37.73
+P43246	MSH2	MMR	T4_intracellular	5	GDFYTAHGEDALLAAR	40	55	16	1705.806	853.9103	569.6093	-0.21	yes	protein_specific		1		none	37.58
+P52701	MSH6	MMR	T4_intracellular	1	GGHFYSAKPEILR	162	174	13	1473.7728	737.8937	492.2649	-0.52	yes	protein_specific		1		none	39.37
+P52701	MSH6	MMR	T4_intracellular	2	VHVQFFDDSPTR	129	140	12	1446.6892	724.3519	483.237	-0.61	yes	protein_specific		1		none	38.38
+P52701	MSH6	MMR	T4_intracellular	3	LANLPEEVIQK	1305	1315	11	1252.7027	627.3586	418.5748	-0.13	yes	protein_specific		1		none	38.25
+P52701	MSH6	MMR	T4_intracellular	4	AGFDSDYDQALADIR	931	945	15	1655.7427	828.8786	552.9215	-0.53	yes	protein_specific		1		none	37.73
+P52701	MSH6	MMR	T4_intracellular	5	FPDLTVELNR	902	911	10	1202.6295	602.322	401.8838	-0.27	yes	protein_specific		1		none	37.46
+P20585	MSH3	MMR	T4_intracellular	1	STLIGEDVNPLIK	337	349	13	1397.7766	699.8956	466.9328	0.22	yes	protein_specific		1		none	39.15
+P20585	MSH3	MMR	T4_intracellular	2	ATSQSLVILDELGR	966	979	14	1500.8147	751.4146	501.2789	0.3	yes	protein_specific		1		none	38.2
+P20585	MSH3	MMR	T4_intracellular	3	FHSPFIVENYR	780	790	11	1407.6935	704.854	470.2384	-0.37	yes	protein_specific		1		none	38.05
+P20585	MSH3	MMR	T4_intracellular	4	FFGEDAEIAAR	258	268	11	1224.5775	613.296	409.1998	0.01	yes	protein_specific		1		none	37.98
+P20585	MSH3	MMR	T4_intracellular	5	DEIQGVIDEIR	717	727	11	1285.6514	643.833	429.5577	-0.43	yes	protein_specific		1		none	37.95
+P54278	PMS2	MMR	T4_intracellular	1	IQEFADLTQVETFGFR	92	107	16	1899.9366	950.9756	634.3195	-0.07	yes	protein_specific		1		none	37.34
+P54278	PMS2	MMR	T4_intracellular	2	ENIGSVFGQK	225	234	10	1077.5455	539.78	360.1891	-0.45	yes	protein_specific		1		none	37.1
+P54278	PMS2	MMR	T4_intracellular	3	LNEDIFIVDQHATDEK	691	706	16	1885.9057	943.9601	629.6425	-0.67	yes	protein_specific		1		none	36.66
+P54278	PMS2	MMR	T4_intracellular	4	GTTVSVQQLFSTLPVR	154	169	16	1731.9519	866.9832	578.3246	0.36	yes	protein_specific		1		none	36.48
+P54278	PMS2	MMR	T4_intracellular	5	LISLPTSK	767	774	8	857.5222	429.7684	286.848	0.54	yes	protein_specific		1		none	34.52
+P09429	HMGB1	nuclear_DAMP	T2_detected_plasma	1	HPDASVNFSEFSK	31	43	13	1463.6681	732.8413	488.8966	-0.77	yes	protein_specific	A9RA84;B0CM99;B1MTB0;Q08IE6;Q4R844;Q6YKA4	1		N_glycosylation_sequon;ragged_C_term	26.86
+P09429	HMGB1	nuclear_DAMP	T2_detected_plasma	2	GKPDAAK	166	172	7	685.3759	343.6952	229.4659	-1.39	yes	protein_specific	A9RA84;B0CM99;B1MTB0;Q08IE6;Q4R844;Q6YKA4	1		ragged_C_term	26.83
+P09429	HMGB1	nuclear_DAMP	T2_detected_plasma	3	RPPSAFFLFCSEYRPK	97	112	16	2000.9931	1001.5038	668.005	-0.48	yes	protein_specific	A9RA84;B0CM99;B1MTB0;Q08IE6;Q4R844;Q6YKA4	1		Cys_alkylation;ragged_N_term	25.05
+P09429	HMGB1	nuclear_DAMP	T2_detected_plasma	4	GEHPGLSIGDVAK	115	127	13	1278.6568	640.3357	427.2262	-0.26	no	ambiguous	A9RA84;B0CM99;B1MTB0;Q08IE6;Q4R844;Q6YKA4	2	B2RPK0	ragged_C_term	-6.12
+P09429	HMGB1	nuclear_DAMP	T2_detected_plasma	5	MSSYAFFVQTCR	13	24	12	1495.6588	748.8367	499.5602	0.37	no	ambiguous	A9RA84;B0CM99;B1MTB0;Q08IE6;Q4R844;Q6YKA4	3	B2RPK0;P26583;P40673	Met_oxidation;Cys_alkylation	-13.93
+P26583	HMGB2	nuclear_DAMP	T3_EV_or_enriched	1	SEHPGLSIGDTAK	115	127	13	1310.6466	656.3306	437.8895	-0.67	yes	protein_specific	P40673	1		ragged_C_term	33.06
+P26583	HMGB2	nuclear_DAMP	T3_EV_or_enriched	2	HPDSSVNFAEFSK	31	43	13	1463.6681	732.8413	488.8966	-0.77	yes	protein_specific	P40673	1		ragged_C_term	32.86
+P26583	HMGB2	nuclear_DAMP	T3_EV_or_enriched	3	GPGRPTGSK	174	182	9	855.4562	428.7354	286.1594	-1.59	yes	protein_specific	P40673	1		ragged_C_term	28.02
+P26583	HMGB2	nuclear_DAMP	T3_EV_or_enriched	4	LGEMWSEQSAK	129	139	11	1264.5758	633.2952	422.5325	-0.89	yes	protein_specific	P40673	1		Met_oxidation;Trp_oxidation	25.02
+P26583	HMGB2	nuclear_DAMP	T3_EV_or_enriched	5	RPPSAFFLFCSEHRPK	97	112	16	1974.9886	988.5016	659.3368	-0.59	yes	protein_specific	P40673	1		Cys_alkylation;ragged_N_term	24.81
+P35659	DEK	nuclear_DAMP	T3_EV_or_enriched	1	EPFTIAQGK	76	84	9	989.5182	495.7664	330.8467	-0.5	yes	protein_specific		1		none	36.2
+P35659	DEK	nuclear_DAMP	T3_EV_or_enriched	2	LLYNRPGTVSSLK	112	124	13	1446.8194	724.417	483.2804	-0.15	yes	protein_specific		1		ragged_C_term	33.89
+P35659	DEK	nuclear_DAMP	T3_EV_or_enriched	3	LLASANLEEVTMK	332	344	13	1417.7486	709.8816	473.5902	0.4	yes	protein_specific		1		Met_oxidation	32.8
+P35659	DEK	nuclear_DAMP	T3_EV_or_enriched	4	NVGQFSGFPFEK	126	137	12	1355.651	678.8328	452.8909	-0.42	yes	protein_specific		1		N_term_deamidation	32.77
+P35659	DEK	nuclear_DAMP	T3_EV_or_enriched	5	VYENYPTYDLTER	350	362	13	1661.7573	831.8859	554.9264	-1.34	yes	protein_specific		1		ragged_C_term	31.72
+P06748	NPM1	nuclear_DAMP	T3_EV_or_enriched	1	VDNDENEHQLSLR	33	45	13	1567.7226	784.8686	523.5815	-1.63	yes	protein_specific		1		none	37.14
+P06748	NPM1	nuclear_DAMP	T3_EV_or_enriched	2	GPSSVEDIK	240	248	9	930.4658	466.2402	311.1625	-0.64	yes	protein_specific		1		none	35.91
+P06748	NPM1	nuclear_DAMP	T3_EV_or_enriched	3	TVSLGAGAK	46	54	9	802.4548	402.2347	268.4922	0.6	yes	protein_specific		1		none	35.2
+P06748	NPM1	nuclear_DAMP	T3_EV_or_enriched	4	SAPGGGSK	143	150	8	659.3238	330.6692	220.7819	-0.81	yes	protein_specific		1		none	34.77
+P06748	NPM1	nuclear_DAMP	T3_EV_or_enriched	5	DSKPSSTPR	213	221	9	973.4829	487.7487	325.5016	-2.02	yes	protein_specific		1		none	33.16
+P62805	H4	nuclear_DAMP	T2_detected_plasma	1	ISGLIYEETR	47	56	10	1179.6135	590.814	394.2118	-0.19	yes	protein_specific	P62794;P62795;P62796;P62797;P62798;P62799;P62800;P62801;P62802;P62803;P62804;P62806;Q28DR4;Q4R362;Q5RCS7;Q6WV72;Q6WV73;Q6WV90;Q7K8C0;Q7KQD1	1		none	37.58
+P62805	H4	nuclear_DAMP	T2_detected_plasma	2	VFLENVIR	61	68	8	988.5705	495.2925	330.5308	1.0	yes	protein_specific	P62794;P62795;P62796;P62797;P62798;P62799;P62800;P62801;P62802;P62803;P62804;P62806;Q28DR4;Q4R362;Q5RCS7;Q6WV72;Q6WV73;Q6WV90;Q7K8C0;Q7KQD1	1		none	33.6
+P62805	H4	nuclear_DAMP	T2_detected_plasma	3	DNIQGITKPAIR	25	36	12	1324.7463	663.3804	442.5894	-0.53	yes	protein_specific	P62794;P62795;P62796;P62797;P62798;P62799;P62800;P62801;P62802;P62803;P62804;P62806;Q28DR4;Q4R362;Q5RCS7;Q6WV72;Q6WV73;Q6WV90;Q7K8C0;Q7KQD1	1		ragged_C_term	32.55
+P62805	H4	nuclear_DAMP	T2_detected_plasma	4	DAVTYTEHAK	69	78	10	1133.5353	567.7749	378.8524	-0.9	yes	protein_specific	P62794;P62795;P62796;P62797;P62798;P62799;P62800;P62801;P62802;P62803;P62804;P62806;Q28DR4;Q4R362;Q5RCS7;Q6WV72;Q6WV73;Q6WV90;Q7K8C0;Q7KQD1	1		ragged_C_term	30.2
+P62805	H4	nuclear_DAMP	T2_detected_plasma	5	TLYGFGG	97	103	7	713.3384	357.6765	238.7868	0.49	yes	protein_specific	P62794;P62795;P62796;P62797;P62798;P62799;P62800;P62801;P62802;P62803;P62804;P62806;Q28DR4;Q4R362;Q5RCS7;Q6WV72;Q6WV73;Q6WV90;Q7K8C0;Q7KQD1	1		protein_C_terminus	27.83
+P62807	H2BC4	nuclear_DAMP	T2_detected_plasma	1	ESYSVYVYK	36	44	9	1136.539	569.2768	379.8536	-0.5	no	family_level	P62808;Q5R893;Q6ZWY9	9	O60814;P10854;P57053;P58876;Q5QNW6;Q64525;Q93079;Q99877;+2 more	none	6.6
+P62807	H2BC4	nuclear_DAMP	T2_detected_plasma	2	EIQTAVR	94	100	7	815.4501	408.7323	272.824	-0.24	no	family_level	P62808;Q5R893;Q6ZWY9	14	O60814;P06899;P10854;P23527;P33778;P57053;P58876;Q16778;+7 more	none	3.51
+P62807	H2BC4	nuclear_DAMP	T2_detected_plasma	3	HAVSEGTK	110	117	8	827.4137	414.7141	276.8118	-0.81	no	family_level	P62808;Q5R893;Q6ZWY9	16	A0A2R8Y619;O60814;P06899;P10854;P23527;P33778;P57053;P58876;+10 more	none	2.37
+P62807	H2BC4	nuclear_DAMP	T2_detected_plasma	4	LLLPGELAK	101	109	9	952.5957	477.3051	318.5392	0.84	no	family_level	P62808;Q5R893;Q6ZWY9	16	A0A2R8Y619;O60814;P06899;P10854;P23527;P33778;P57053;P58876;+10 more	none	2.31
+P62807	H2BC4	nuclear_DAMP	T2_detected_plasma	5	AMGIMNSFVNDIFER	59	73	15	1742.812	872.4133	581.9446	0.31	no	family_level	P62808;Q5R893;Q6ZWY9	14	O60814;P06899;P10854;P23527;P33778;P57053;P58876;Q16778;+8 more	Met_oxidation	-0.23
+P68431	H3C1	nuclear_DAMP	T2_detected_plasma	1	YRPGTVALR	42	50	9	1031.5876	516.8011	344.8698	-0.36	no	family_level	P68432;P68433;Q6LBF0;Q6LED0	6	C0HL66;C0HL67;P02299;P84227;P84228;P84229;P84230;P84231;+27 more	none	8.09
+P68431	H3C1	nuclear_DAMP	T2_detected_plasma	2	EIAQDFK	74	80	7	849.4232	425.7189	284.1483	-0.76	no	family_level	P68432;P68433;Q6LBF0;Q6LED0	4	C0HL66;C0HL67;P02299;P84227;P84228;P84229;P84230;P84231;+25 more	none	6.49
+P68431	H3C1	nuclear_DAMP	T2_detected_plasma	3	SAPATGGVK	29	37	9	786.4235	394.219	263.1485	0.0	no	family_level	P68432;P68433;Q6LBF0;Q6LED0	4	P02299;P84227;P84228;P84229;P84230;P84231;P84232;P84233;+12 more	ragged_C_term	2.8
+P68431	H3C1	nuclear_DAMP	T2_detected_plasma	4	STELLIR	58	64	7	830.4862	416.2504	277.836	0.37	no	family_level	P68432;P68433;Q6LBF0;Q6LED0	6	C0HL66;C0HL67;P02299;P84227;P84228;P84229;P84230;P84231;+27 more	ragged_C_term	-0.34
+P84243	H3-3A	nuclear_DAMP	T2_detected_plasma	1	SAPSTGGVK	29	37	9	802.4185	402.2165	268.4801	-0.29	yes	protein_specific	C0HL66;C0HL67;P84244;P84245;P84246;P84247;P84248;P84250;Q5E9F8;Q6P823;Q6PI20;Q6PI79;Q71LE2	1		ragged_C_term	30.62
+P84243	H3-3A	nuclear_DAMP	T2_detected_plasma	2	YRPGTVALR	42	50	9	1031.5876	516.8011	344.8698	-0.36	no	family_level	C0HL66;C0HL67;P84244;P84245;P84246;P84247;P84248;P84250;Q5E9F8;Q6P823;Q6PI20;Q6PI79;Q71LE2	6	P02299;P68431;P68432;P68433;P84227;P84228;P84229;P84230;+18 more	none	8.09
+P84243	H3-3A	nuclear_DAMP	T2_detected_plasma	3	EIAQDFK	74	80	7	849.4232	425.7189	284.1483	-0.76	no	family_level	C0HL66;C0HL67;P84244;P84245;P84246;P84247;P84248;P84250;Q5E9F8;Q6P823;Q6PI20;Q6PI79;Q71LE2	4	P02299;P68431;P68432;P68433;P84227;P84228;P84229;P84230;+16 more	none	6.49
+P84243	H3-3A	nuclear_DAMP	T2_detected_plasma	4	STELLIR	58	64	7	830.4862	416.2504	277.836	0.37	no	family_level	C0HL66;C0HL67;P84244;P84245;P84246;P84247;P84248;P84250;Q5E9F8;Q6P823;Q6PI20;Q6PI79;Q71LE2	6	P02299;P68431;P68432;P68433;P84227;P84228;P84229;P84230;+18 more	ragged_C_term	-0.34
+P0C0S8	H2AC11	nuclear_DAMP	T2_detected_plasma	1	AGLQFPVGR	22	30	9	943.5239	472.7692	315.5153	0.24	no	family_level	P0C0S9	15	A1A4R1;C0HKE1;C0HKE2;C0HKE3;C0HKE4;C0HKE5;C0HKE6;C0HKE7;+36 more	none	3.91
+P0C0S8	H2AC11	nuclear_DAMP	T2_detected_plasma	2	HLQLAIR	83	89	7	849.5185	425.7665	284.1801	0.39	no	family_level	P0C0S9	14	A1A4R1;C0HKE1;C0HKE2;C0HKE3;C0HKE4;C0HKE5;C0HKE6;C0HKE7;+35 more	none	2.43
+P0C0S8	H2AC11	nuclear_DAMP	T2_detected_plasma	3	VTIAQGGVLPNIQAVLLPK	101	119	19	1930.1615	966.088	644.3944	0.92	no	family_level	P0C0S9	13	A1A4R1;C0HKE1;C0HKE2;C0HKE3;C0HKE4;C0HKE5;C0HKE6;C0HKE7;+21 more	ragged_C_term	-4.24
+P0C0S8	H2AC11	nuclear_DAMP	T2_detected_plasma	4	NDEELNK	90	96	7	860.3876	431.2011	287.8031	-2.51	no	family_level	P0C0S9	13	A1A4R1;C0HKE1;C0HKE2;C0HKE3;C0HKE4;C0HKE5;C0HKE6;C0HKE7;+21 more	N_term_deamidation	-6.63
+P0C0S5	H2AZ1	nuclear_DAMP	T3_EV_or_enriched	1	ATIAGGGVIPHIHK	103	116	14	1369.783	685.8988	457.6016	0.54	no	family_level	P0C0S4;P0C0S6;P0C0S7;P22647;Q5RC42;Q6YNC8	2	P02272;Q32LA7;Q3THW5;Q5BJ65;Q6GM74;Q6Y237;Q71PD7;Q71UI9	none	10.93
+P0C0S5	H2AZ1	nuclear_DAMP	T3_EV_or_enriched	2	GDEELDSLIK	93	102	10	1117.5503	559.7824	373.524	-0.7	no	family_level	P0C0S4;P0C0S6;P0C0S7;P22647;Q5RC42;Q6YNC8	2	P02272;Q32LA7;Q3THW5;Q5BJ65;Q6GM74;Q6Y237;Q71PD7;Q71UI9	none	9.8
+P0C0S5	H2AZ1	nuclear_DAMP	T3_EV_or_enriched	3	AGLQFPVGR	24	32	9	943.5239	472.7692	315.5153	0.24	no	family_level	P0C0S4;P0C0S6;P0C0S7;P22647;Q5RC42;Q6YNC8	15	A1A4R1;C0HKE1;C0HKE2;C0HKE3;C0HKE4;C0HKE5;C0HKE6;C0HKE7;+31 more	none	3.91
+P0C0S5	H2AZ1	nuclear_DAMP	T3_EV_or_enriched	4	HLQLAIR	86	92	7	849.5185	425.7665	284.1801	0.39	no	family_level	P0C0S4;P0C0S6;P0C0S7;P22647;Q5RC42;Q6YNC8	14	A1A4R1;C0HKE1;C0HKE2;C0HKE3;C0HKE4;C0HKE5;C0HKE6;C0HKE7;+30 more	none	2.43
+P00441	SOD1	oxidative_stress	T2_detected_plasma	1	TLVVHEK	117	123	7	824.4756	413.2451	275.8325	0.13	yes	protein_specific	P60052	1		none	34.54
+P00441	SOD1	oxidative_stress	T2_detected_plasma	2	TGNAGSR	138	144	7	661.3143	331.6644	221.4454	-1.21	yes	protein_specific	P60052	1		none	33.17
+P00441	SOD1	oxidative_stress	T2_detected_plasma	3	HVGDLGNVTADK	81	92	12	1224.6098	613.3122	409.2106	-0.42	yes	protein_specific	P60052	1		N_glycosylation_sequon	32.75
+P00441	SOD1	oxidative_stress	T2_detected_plasma	4	GDGPVQGIINFEQK	11	24	14	1500.7572	751.3859	501.2597	-0.59	yes	protein_specific	P60052	1		deamidation_isomerisation	32.43
+P00441	SOD1	oxidative_stress	T2_detected_plasma	5	GGNEESTK	130	137	8	820.3563	411.1854	274.4594	-2.09	yes	protein_specific	P60052	1		none	32.23
+P04179	SOD2	oxidative_stress	T2_detected_plasma	1	GDVTAQIALQPALK	76	89	14	1423.8034	712.909	475.6084	0.33	yes	protein_specific		1		none	38.14
+P04179	SOD2	oxidative_stress	T2_detected_plasma	2	YQEALAK	69	75	7	821.4283	411.7214	274.8167	-0.69	yes	protein_specific		1		none	34.23
+P04179	SOD2	oxidative_stress	T2_detected_plasma	3	DFGSFDK	124	130	7	814.3497	408.1821	272.4572	-0.93	yes	protein_specific		1		none	33.74
+P04179	SOD2	oxidative_stress	T2_detected_plasma	4	QLAPVLGYLGSR	12	23	12	1272.719	637.3668	425.2469	0.41	yes	protein_specific		1		N_term_deamidation	31.98
+P04179	SOD2	oxidative_stress	T2_detected_plasma	5	HHAAYVNNLNVTEEK	54	68	15	1737.8434	869.929	580.2884	-0.93	yes	protein_specific		1		N_glycosylation_sequon	30.93
+P08294	SOD3	oxidative_stress	T2_detected_plasma	1	AVVVHAGEDDLGR	177	189	13	1336.6735	669.344	446.5651	0.08	yes	protein_specific		1		none	39.45
+P08294	SOD3	oxidative_stress	T2_detected_plasma	2	AGLAASLAGPHSIVGR	161	176	16	1475.8208	738.9177	492.9475	0.71	yes	protein_specific		1		none	35.77
+P08294	SOD3	oxidative_stress	T2_detected_plasma	3	VTGVVLFR	78	85	8	889.5385	445.7765	297.5201	1.7	yes	protein_specific		1		none	32.2
+P08294	SOD3	oxidative_stress	T2_detected_plasma	4	LDAFFALEGFPTEPNSSSR	93	111	19	2083.985	1042.9998	695.669	-0.29	yes	protein_specific		1		N_glycosylation_sequon	29.01
+P08294	SOD3	oxidative_stress	T2_detected_plasma	5	GGNQASVENGNAGR	190	203	14	1329.6021	665.8083	444.208	-1.19	yes	protein_specific		1		deamidation_isomerisation;ragged_C_term	25.23
+P04040	CAT	oxidative_stress	T2_detected_plasma	1	ADVLTTGAGNPVGDK	24	38	15	1413.7099	707.8622	472.2439	-0.19	yes	protein_specific		1		none	38.37
+P04040	CAT	oxidative_stress	T2_detected_plasma	2	FSTVAGESGSADTVR	113	127	15	1482.695	742.3548	495.239	-0.09	yes	protein_specific		1		none	38.17
+P04040	CAT	oxidative_stress	T2_detected_plasma	3	GAGAFGYFEVTHDITK	78	93	16	1711.8205	856.9175	571.6141	-0.01	yes	protein_specific		1		none	37.21
+P04040	CAT	oxidative_stress	T2_detected_plasma	4	DLFNAIATGK	264	273	10	1048.5553	525.2849	350.5257	0.27	yes	protein_specific		1		none	36.66
+P04040	CAT	oxidative_stress	T2_detected_plasma	5	DYPLIPVGK	307	315	9	1000.5593	501.2869	334.527	0.02	yes	protein_specific		1		none	36.36
+P07203	GPX1	oxidative_stress	T2_detected_plasma	1	YVRPGGGFEPNFMLFEK	98	114	17	1986.9662	994.4904	663.3293	-0.37	yes	protein_specific		1		Met_oxidation	30.46
+P07203	GPX1	oxidative_stress	T2_detected_plasma	2	GLVVLGFPCNQFGHQENAK	70	88	19	2114.0367	1058.0256	705.6862	-0.08	yes	protein_specific		1		Cys_alkylation	28.96
+P07203	GPX1	oxidative_stress	T2_detected_plasma	3	FLVGPDGVPLR	167	177	11	1168.6604	585.3375	390.5607	0.62	yes	protein_specific		1		deamidation_isomerisation;ragged_C_term	24.76
+P07203	GPX1	oxidative_stress	T2_detected_plasma	4	CEVNGAGAHPLFAFLR	115	130	16	1757.8671	879.9408	586.963	0.51	yes	protein_specific		1		Cys_alkylation;deamidation_isomerisation	24.18
+P07203	GPX1	oxidative_stress	T2_detected_plasma	5	EALPAPSDDATALMTDPK	131	148	18	1841.8717	921.9431	614.9645	-0.46	yes	protein_specific		1		Met_oxidation;acid_labile_DP	23.49
+P22352	GPX3	oxidative_stress	T1_abundant_plasma	1	YVRPGGGFVPNFQLFEK	121	137	17	1954.0101	978.0123	652.344	-0.24	yes	protein_specific		1		none	36.73
+P22352	GPX3	oxidative_stress	T1_abundant_plasma	2	TTVSNVK	202	208	7	747.4127	374.7136	250.1448	-0.17	yes	protein_specific		1		none	35.14
+P22352	GPX3	oxidative_stress	T1_abundant_plasma	3	QEPGENSEILPTLK	107	120	14	1553.7937	777.9041	518.9385	-1.03	yes	protein_specific		1		N_term_deamidation	31.54
+P22352	GPX3	oxidative_stress	T1_abundant_plasma	4	LLQASCLLSLLLAGFVSQSR	4	23	20	2175.2085	1088.6115	726.0768	1.23	yes	protein_specific		1		Cys_alkylation	25.54
+P22352	GPX3	oxidative_stress	T1_abundant_plasma	5	FLVGPDGIPIMR	186	197	12	1313.7165	657.8655	438.9128	0.81	yes	protein_specific		1		Met_oxidation;deamidation_isomerisation	25.18
+P36969	GPX4	oxidative_stress	T3_EV_or_enriched	1	EFAAGYNVK	118	126	9	997.4869	499.7507	333.5029	-0.22	yes	protein_specific	Q4AEH2	1		none	36.76
+P36969	GPX4	oxidative_stress	T3_EV_or_enriched	2	GILGNAIK	155	162	8	784.4807	393.2476	262.5008	0.8	yes	protein_specific	Q4AEH2	1		none	34.0
+P36969	GPX4	oxidative_stress	T3_EV_or_enriched	3	YGPMEEPLVIEK	180	191	12	1403.7006	702.8576	468.9075	-0.41	yes	protein_specific	Q4AEH2	1		Met_oxidation	32.78
+P36969	GPX4	oxidative_stress	T3_EV_or_enriched	4	TEVNYTQLVDLHAR	76	89	14	1657.8424	829.9285	553.6214	-0.47	yes	protein_specific	Q4AEH2	1		N_glycosylation_sequon	32.66
+P36969	GPX4	oxidative_stress	T3_EV_or_enriched	5	ILAFPCNQFGK	97	107	11	1293.654	647.8343	432.2253	0.48	yes	protein_specific	Q4AEH2	1		Cys_alkylation	31.04
+Q06830	PRDX1	oxidative_stress	T2_detected_plasma	1	LVQAFQFTDK	159	168	10	1195.6237	598.8191	399.5485	0.03	yes	protein_specific		1		none	37.14
+Q06830	PRDX1	oxidative_stress	T2_detected_plasma	2	TIAQDYGVLK	111	120	10	1106.5972	554.3059	369.873	0.1	yes	protein_specific		1		none	37.0
+Q06830	PRDX1	oxidative_stress	T2_detected_plasma	3	IGHPAPNFK	8	16	9	979.5239	490.7692	327.5153	-0.57	yes	protein_specific		1		none	36.07
+Q06830	PRDX1	oxidative_stress	T2_detected_plasma	4	ADEGISFR	121	128	8	893.4243	447.7194	298.8154	-0.45	yes	protein_specific		1		none	35.5
+Q06830	PRDX1	oxidative_stress	T2_detected_plasma	5	DISLSDYK	28	35	8	939.4549	470.7347	314.1589	-0.69	yes	protein_specific		1		none	35.02
+P32119	PRDX2	oxidative_stress	T2_detected_plasma	1	LSEDYGVLK	111	119	9	1022.5284	512.2715	341.8501	-0.18	yes	protein_specific	Q2PFZ3	1		none	36.76
+P32119	PRDX2	oxidative_stress	T2_detected_plasma	2	IGKPAPDFK	8	16	9	971.544	486.7793	324.8553	-0.64	yes	protein_specific	Q2PFZ3	1		none	35.91
+P32119	PRDX2	oxidative_stress	T2_detected_plasma	3	TDEGIAYR	120	127	8	923.4348	462.7247	308.8189	-0.95	yes	protein_specific	Q2PFZ3	1		none	34.5
+P32119	PRDX2	oxidative_stress	T2_detected_plasma	4	EGGLGPLNIPLLADVTR	93	109	17	1733.9675	867.991	578.9965	0.33	yes	protein_specific	Q2PFZ3	1		ragged_C_term	29.74
+P32119	PRDX2	oxidative_stress	T2_detected_plasma	5	ATAVVDGAFK	17	26	10	977.5182	489.7664	326.8467	0.81	yes	protein_specific	Q2PFZ3	1		deamidation_isomerisation	29.58
+P30048	PRDX3	oxidative_stress	T3_EV_or_enriched	1	HLSVNDLPVGR	197	207	11	1205.6516	603.8331	402.8912	-0.14	yes	protein_specific		1		none	38.27
+P30048	PRDX3	oxidative_stress	T3_EV_or_enriched	2	DYGVLLEGSGLALR	171	184	14	1461.7827	731.8986	488.2682	0.46	yes	protein_specific		1		none	37.89
+P30048	PRDX3	oxidative_stress	T3_EV_or_enriched	3	DLSLDDFK	84	91	8	951.4549	476.7347	318.1589	-0.6	yes	protein_specific		1		none	35.2
+P30048	PRDX3	oxidative_stress	T3_EV_or_enriched	4	SVEETLR	208	214	7	832.429	417.2218	278.4836	-0.71	yes	protein_specific		1		none	34.17
+P30048	PRDX3	oxidative_stress	T3_EV_or_enriched	5	TSLTNLLCSGSSQAK	38	52	15	1565.7719	783.8932	522.9312	-0.01	yes	protein_specific		1		Cys_alkylation	32.03
+Q13162	PRDX4	oxidative_stress	T2_detected_plasma	1	IPLLSDLTHQISK	174	186	13	1463.8348	732.9247	488.9522	0.18	yes	protein_specific		1		none	39.23
+Q13162	PRDX4	oxidative_stress	T2_detected_plasma	2	VSVADHSLHLSK	67	78	12	1291.6884	646.8515	431.5701	0.13	yes	protein_specific		1		none	38.53
+Q13162	PRDX4	oxidative_stress	T2_detected_plasma	3	DYGVYLEDSGHTLR	187	200	14	1623.7529	812.8837	542.2582	-0.81	yes	protein_specific		1		none	37.99
+Q13162	PRDX4	oxidative_stress	T2_detected_plasma	4	LVQAFQYTDK	231	240	10	1211.6186	606.8166	404.8802	-0.38	yes	protein_specific		1		none	37.24
+Q13162	PRDX4	oxidative_stress	T2_detected_plasma	5	QITLNDLPVGR	213	223	11	1224.6826	613.3486	409.2348	-0.13	yes	protein_specific		1		N_term_deamidation	32.25
+P30044	PRDX5	oxidative_stress	T3_EV_or_enriched	1	THLPGFVEQAEALK	103	116	14	1538.8093	770.4119	513.9437	-0.15	yes	protein_specific		1		none	39.1
+P30044	PRDX5	oxidative_stress	T3_EV_or_enriched	2	VGDAIPAVEVFEGEPGNK	58	75	18	1826.905	914.4598	609.9756	-0.13	yes	protein_specific		1		none	35.86
+P30044	PRDX5	oxidative_stress	T3_EV_or_enriched	3	VNLAELFK	76	83	8	932.5331	467.2738	311.8516	0.69	yes	protein_specific		1		none	34.23
+P30044	PRDX5	oxidative_stress	T3_EV_or_enriched	4	YSEGEWASGGVR	33	44	12	1296.5735	649.294	433.1984	-0.88	yes	protein_specific		1		Trp_oxidation	31.85
+P30044	PRDX5	oxidative_stress	T3_EV_or_enriched	5	LLADPTGAFGK	149	159	11	1088.5866	545.3006	363.8695	0.32	yes	protein_specific		1		acid_labile_DP	31.36
+P30041	PRDX6	oxidative_stress	T2_detected_plasma	1	LSILYPATTGR	145	155	11	1190.6659	596.3402	397.8959	0.35	yes	protein_specific		1		none	37.29
+P30041	PRDX6	oxidative_stress	T2_detected_plasma	2	LPFPIIDDR	98	106	9	1084.5917	543.3031	362.5378	0.1	yes	protein_specific		1		none	36.2
+P30041	PRDX6	oxidative_stress	T2_detected_plasma	3	DFTPVCTTELGR	42	53	12	1394.65	698.3323	465.8906	-0.19	yes	protein_specific		1		Cys_alkylation	33.18
+P30041	PRDX6	oxidative_stress	T2_detected_plasma	4	DINAYNCEEPTEK	85	97	13	1581.6617	791.8381	528.2278	-1.52	yes	protein_specific		1		Cys_alkylation	31.37
+P30041	PRDX6	oxidative_stress	T2_detected_plasma	5	FHDFLGDSWGILFSHPR	25	41	17	2029.9798	1015.9972	677.6672	-0.14	yes	protein_specific		1		Trp_oxidation	30.67
+P10599	TXN	oxidative_stress	T2_detected_plasma	1	TAFQEALDAAGDK	9	21	13	1335.6306	668.8226	446.2175	-0.4	yes	protein_specific		1		none	39.6
+P10599	TXN	oxidative_stress	T2_detected_plasma	2	VGEFSGANK	86	94	9	907.4399	454.7272	303.4873	-0.41	yes	protein_specific		1		none	36.38
+P10599	TXN	oxidative_stress	T2_detected_plasma	3	MIKPFFHSLSEK	37	48	12	1462.7642	732.3894	488.5954	-0.16	yes	protein_specific		1		Met_oxidation	33.12
+P10599	TXN	oxidative_stress	T2_detected_plasma	4	LEATINELV	97	105	9	1000.5441	501.2793	334.522	0.77	yes	protein_specific		1		protein_C_terminus	28.87
+P10599	TXN	oxidative_stress	T2_detected_plasma	5	LVVVDFSATWCGPCK	22	36	15	1737.8218	869.9182	580.2812	0.95	yes	protein_specific		1		Cys_alkylation;Trp_oxidation	24.11
+Q16881	TXNRD1	oxidative_stress	T3_EV_or_enriched	1	AVAAAAPTELQTK	8	20	13	1269.6928	635.8537	424.2382	0.24	yes	protein_specific		1		none	39.12
+Q16881	TXNRD1	oxidative_stress	T3_EV_or_enriched	2	VVYENAYGQFIGPHR	275	289	15	1748.8634	875.439	583.9618	-0.38	yes	protein_specific		1		none	38.04
+Q16881	TXNRD1	oxidative_stress	T3_EV_or_enriched	3	VELTPVAIQAGR	490	501	12	1252.7139	627.3642	418.5786	0.51	yes	protein_specific		1		none	37.78
+Q16881	TXNRD1	oxidative_stress	T3_EV_or_enriched	4	FLIATGERPR	307	316	10	1158.6509	580.3327	387.2242	-0.23	yes	protein_specific		1		none	37.54
+Q16881	TXNRD1	oxidative_stress	T3_EV_or_enriched	5	VEQIEAGTPGR	406	416	11	1155.5884	578.8015	386.2034	-0.69	yes	protein_specific		1		none	37.42
+Q9H3M7	TXNIP	oxidative_stress	T3_EV_or_enriched	1	FGFELPQGPLGTSFK	101	115	15	1623.8297	812.9221	542.2838	-0.05	yes	protein_specific		1		none	38.11
+Q9H3M7	TXNIP	oxidative_stress	T3_EV_or_enriched	2	VILDLPLVIGSR	288	299	12	1293.802	647.9083	432.2746	1.5	yes	protein_specific		1		none	35.8
+Q9H3M7	TXNIP	oxidative_stress	T3_EV_or_enriched	3	VYGSGEK	20	26	7	738.3548	370.1847	247.1255	-0.87	yes	protein_specific		1		none	33.86
+Q9H3M7	TXNIP	oxidative_stress	T3_EV_or_enriched	4	SFEVVFNDPEK	9	19	11	1309.619	655.8168	437.5469	-0.57	yes	protein_specific		1		acid_labile_DP	31.65
+Q9H3M7	TXNIP	oxidative_stress	T3_EV_or_enriched	5	IRPSILGCNILR	260	271	12	1410.8129	706.4137	471.2782	0.69	yes	protein_specific		1		Cys_alkylation	31.42
+P00390	GSR	oxidative_stress	T3_EV_or_enriched	1	GHIIVDEFQNTNVK	355	368	14	1612.8209	807.4177	538.6142	-0.39	yes	protein_specific		1		none	38.81
+P00390	GSR	oxidative_stress	T3_EV_or_enriched	2	GFLLLLPEPAALTR	25	38	14	1509.8919	755.9532	504.3046	0.94	yes	protein_specific		1		none	36.93
+P00390	GSR	oxidative_stress	T3_EV_or_enriched	3	AAVVESHK	90	97	8	839.4501	420.7323	280.824	0.08	yes	protein_specific		1		none	35.45
+P00390	GSR	oxidative_stress	T3_EV_or_enriched	4	LGIQTDDK	347	354	8	888.4552	445.2349	297.159	-0.9	yes	protein_specific		1		none	34.6
+P00390	GSR	oxidative_stress	T3_EV_or_enriched	5	YGIENVK	435	441	7	821.4283	411.7214	274.8167	-0.56	yes	protein_specific		1		none	34.49
+P09211	GSTP1	oxidative_stress	T2_detected_plasma	1	YISLIYTNYEAGK	104	116	13	1533.7715	767.893	512.2644	-0.16	yes	protein_specific		1		none	39.92
+P09211	GSTP1	oxidative_stress	T2_detected_plasma	2	TLGLYGK	76	82	7	750.4276	376.2211	251.1498	0.13	yes	protein_specific		1		none	34.54
+P09211	GSTP1	oxidative_stress	T2_detected_plasma	3	ALPGQLKPFETLLSQNQGGK	122	141	20	2125.1531	1063.5838	709.3916	-0.57	yes	protein_specific		1		none	33.66
+P09211	GSTP1	oxidative_stress	T2_detected_plasma	4	EEVVTVETWQEGSLK	31	45	15	1732.8519	867.4332	578.6246	-0.57	yes	protein_specific		1		Trp_oxidation	31.67
+P09211	GSTP1	oxidative_stress	T2_detected_plasma	5	ASCLYGQLPK	46	55	10	1135.5696	568.7921	379.5305	0.04	yes	protein_specific		1		Cys_alkylation	31.12
+P35754	GLRX	oxidative_stress	T2_detected_plasma	1	AQEILSQLPIK	29	39	11	1238.7234	620.369	413.9151	0.15	yes	protein_specific		1		none	37.71
+P35754	GLRX	oxidative_stress	T2_detected_plasma	2	DCIGGCSDLVSLQQSGELLTR	78	98	21	2307.0835	1154.549	770.0351	0.12	yes	protein_specific		1		Cys_alkylation	26.95
+P35754	GLRX	oxidative_stress	T2_detected_plasma	3	VVVFIKPTCPYCR	15	27	13	1637.8422	819.9284	546.9547	0.87	yes	protein_specific		1		Cys_alkylation;ragged_C_term	25.86
+P35754	GLRX	oxidative_stress	T2_detected_plasma	4	MAQEFVNCK	1	9	9	1125.4947	563.7546	376.1722	-0.13	yes	protein_specific		1		Met_oxidation;Cys_alkylation;protein_N_terminus	18.67
+Q9BYN0	SRXN1	oxidative_stress	T3_EV_or_enriched	1	LVQSTLSDLR	117	126	10	1130.6295	566.322	377.8838	0.18	yes	protein_specific		1		none	36.84
+Q9BYN0	SRXN1	oxidative_stress	T3_EV_or_enriched	2	VQSLVDTIR	62	70	9	1029.5818	515.7982	344.2012	0.41	yes	protein_specific		1		none	35.58
+Q9BYN0	SRXN1	oxidative_stress	T3_EV_or_enriched	3	AGGTLGR	5	11	7	630.3449	316.1797	211.1222	-0.11	yes	protein_specific		1		none	35.03
+Q9BYN0	SRXN1	oxidative_stress	T3_EV_or_enriched	4	YAAYQQLQR	102	110	9	1139.5724	570.7935	380.8647	-1.13	yes	protein_specific		1		none	34.93
+Q9BYN0	SRXN1	oxidative_stress	T3_EV_or_enriched	5	GAPEGPGPSGGAQGGSIHSGR	17	37	21	1831.8561	916.9353	611.626	-0.81	yes	protein_specific		1		none	32.38
+P09601	HMOX1	oxidative_stress	T2_detected_plasma	1	TEPELLVAHAYTR	124	136	13	1498.778	750.3963	500.5999	-0.28	yes	protein_specific		1		none	39.85
+P09601	HMOX1	oxidative_stress	T2_detected_plasma	2	VQDSAPVETPR	244	254	11	1197.5989	599.8067	400.2069	-0.86	yes	protein_specific		1		none	37.07
+P09601	HMOX1	oxidative_stress	T2_detected_plasma	3	SQAPLLR	263	269	7	783.4603	392.7374	262.1607	-0.14	yes	protein_specific		1		none	35.09
+P09601	HMOX1	oxidative_stress	T2_detected_plasma	4	GKPPLNTR	255	262	8	881.5083	441.7614	294.8434	-1.55	yes	protein_specific		1		none	33.3
+P09601	HMOX1	oxidative_stress	T2_detected_plasma	5	AALEQDLAFWYGPR	87	100	14	1635.8045	818.9095	546.2754	-0.24	yes	protein_specific		1		Trp_oxidation	33.11
+P15559	NQO1	oxidative_stress	T3_EV_or_enriched	1	FGLSVGHHLGK	252	262	11	1150.6247	576.3196	384.5488	0.21	yes	protein_specific		1		none	37.58
+P15559	NQO1	oxidative_stress	T3_EV_or_enriched	2	ALIVLAHSER	6	15	10	1107.64	554.8273	370.2206	0.79	yes	protein_specific		1		none	35.62
+P15559	NQO1	oxidative_stress	T3_EV_or_enriched	3	SIPTDNQIK	263	271	9	1014.5346	508.2746	339.1855	-0.94	yes	protein_specific		1		none	35.31
+P15559	NQO1	oxidative_stress	T3_EV_or_enriched	4	EGHLSPDIVAEQK	78	90	13	1421.715	711.8648	474.9123	-0.74	yes	protein_specific		1		ragged_C_term	32.92
+P15559	NQO1	oxidative_stress	T3_EV_or_enriched	5	DPANFQYPAESVLAYK	62	77	16	1811.873	906.9438	604.9649	-0.52	yes	protein_specific		1		acid_labile_DP	30.96
+Q99497	PARK7	oxidative_stress	T2_detected_plasma	1	VTTHPLAK	123	130	8	865.5021	433.7583	289.508	-0.04	yes	protein_specific		1		none	35.67
+Q99497	PARK7	oxidative_stress	T2_detected_plasma	2	EVAAQVK	176	182	7	743.4177	372.7161	248.8132	0.16	yes	protein_specific		1		none	34.49
+Q99497	PARK7	oxidative_stress	T2_detected_plasma	3	VTVAGLAGK	33	41	9	814.4912	408.2529	272.5044	1.16	yes	protein_specific		1		none	34.09
+Q99497	PARK7	oxidative_stress	T2_detected_plasma	4	ALVILAK	6	12	7	726.5003	364.2574	243.1741	2.29	yes	protein_specific		1		none	30.23
+Q99497	PARK7	oxidative_stress	T2_detected_plasma	5	DGLILTSR	149	156	8	873.492	437.7533	292.1713	0.27	yes	protein_specific		1		deamidation_isomerisation	29.05
+P49908	SELENOP	oxidative_stress	T1_abundant_plasma	1	LPTDSELAPR	289	298	10	1097.5717	549.7931	366.8645	-0.68	yes	protein_specific		1		none	36.64
+P49908	SELENOP	oxidative_stress	T1_abundant_plasma	2	DDFLIYDR	132	139	8	1055.4924	528.7535	352.8381	-0.65	yes	protein_specific		1		none	35.1
+P49908	SELENOP	oxidative_stress	T1_abundant_plasma	3	VSLATVDK	189	196	8	831.4702	416.7424	278.164	0.64	yes	protein_specific		1		none	34.33
+P49908	SELENOP	oxidative_stress	T1_abundant_plasma	4	LVYHLGLPFSFLTFPYVEEAIK	143	164	22	2582.3824	1292.1985	861.8014	0.75	yes	protein_specific		1		none	30.9
+P49908	SELENOP	oxidative_stress	T1_abundant_plasma	5	EGYSNISYIVVNHQGISSR	79	97	19	2122.0443	1062.0294	708.3554	-0.34	yes	protein_specific		1		N_glycosylation_sequon	28.93
+Q16236	NFE2L2	oxidative_stress	T4_intracellular	1	EQFNEAQLALIR	488	499	12	1430.7518	716.3832	477.9245	-0.29	yes	protein_specific		1		none	39.02
+Q16236	NFE2L2	oxidative_stress	T4_intracellular	2	LENIVELEQDLDHLK	519	533	15	1806.9363	904.4754	603.3194	-0.51	yes	protein_specific		1		none	37.77
+Q16236	NFE2L2	oxidative_stress	T4_intracellular	3	ALHIPFPVEK	463	472	10	1149.6546	575.8346	384.2255	0.33	yes	protein_specific		1		none	36.54
+Q16236	NFE2L2	oxidative_stress	T4_intracellular	4	LEAHLTR	450	456	7	838.4661	420.2403	280.496	-0.36	yes	protein_specific		1		none	34.89
+Q16236	NFE2L2	oxidative_stress	T4_intracellular	5	LVETTMVPSPEAK	207	219	13	1400.7221	701.3683	467.9146	-0.03	yes	protein_specific		1		Met_oxidation	33.66
+Q14145	KEAP1	oxidative_stress	T4_intracellular	1	SALGITVHQGR	555	565	11	1137.6254	569.82	380.2158	0.07	yes	protein_specific		1		none	37.85
+Q14145	KEAP1	oxidative_stress	T4_intracellular	2	TFSYTLEDHTK	51	61	11	1340.6248	671.3197	447.8822	-1.06	yes	protein_specific		1		none	36.67
+Q14145	KEAP1	oxidative_stress	T4_intracellular	3	LIYTAGGYFR	327	336	10	1159.6026	580.8086	387.5415	0.43	yes	protein_specific		1		none	36.34
+Q14145	KEAP1	oxidative_stress	T4_intracellular	4	AEVTPSQHGNR	40	50	11	1194.5741	598.2943	399.1987	-1.43	yes	protein_specific		1		none	35.95
+Q14145	KEAP1	oxidative_stress	T4_intracellular	5	VVLASSSPVFK	98	108	11	1132.6492	567.3319	378.557	1.19	yes	protein_specific		1		none	35.62
+P11413	G6PD	oxidative_stress	T3_EV_or_enriched	1	GGYFDEFGIIR	247	257	11	1272.6139	637.3142	425.2119	0.05	yes	protein_specific		1		none	37.89
+P11413	G6PD	oxidative_stress	T3_EV_or_enriched	2	LSNHISSLFR	183	192	10	1172.6302	587.3224	391.884	0.13	yes	protein_specific		1		none	36.94
+P11413	G6PD	oxidative_stress	T3_EV_or_enriched	3	VQPNEAVYTK	394	403	10	1147.5873	574.8009	383.5364	-0.78	yes	protein_specific		1		none	36.44
+P11413	G6PD	oxidative_stress	T3_EV_or_enriched	4	VGFQYEGTYK	499	508	10	1190.5608	596.2877	397.8609	-0.8	yes	protein_specific		1		none	36.4
+P11413	G6PD	oxidative_stress	T3_EV_or_enriched	5	IIVEKPFGR	167	175	9	1057.6284	529.8215	353.5501	0.23	yes	protein_specific		1		none	35.93
+P00450	CP	oxidative_stress	T1_abundant_plasma	1	GAYPLSIEPIGVR	469	481	13	1370.7558	686.3852	457.9259	0.36	yes	protein_specific		1		none	38.88
+P00450	CP	oxidative_stress	T1_abundant_plasma	2	ALYLQYTDETFR	70	81	12	1518.7354	760.375	507.2524	-0.57	yes	protein_specific		1		none	38.47
+P00450	CP	oxidative_stress	T1_abundant_plasma	3	IYHSHIDAPK	178	187	10	1179.6036	590.8091	394.2085	-0.67	yes	protein_specific		1		none	36.66
+P00450	CP	oxidative_stress	T1_abundant_plasma	4	GEFYIGSK	771	778	8	899.4389	450.7267	300.8202	-0.38	yes	protein_specific		1		none	35.65
+P00450	CP	oxidative_stress	T1_abundant_plasma	5	DDEEFIESNK	948	957	10	1224.5146	613.2646	409.1788	-1.84	yes	protein_specific		1		none	34.32
+P00738	HP	oxidative_stress	T1_abundant_plasma	1	DYAEVGR	271	277	7	808.3715	405.193	270.4644	-1.03	yes	protein_specific		1		none	33.54
+P00738	HP	oxidative_stress	T1_abundant_plasma	2	TEGDGVYTLNNEK	119	131	13	1438.6576	720.3361	480.5598	-1.3	yes	protein_specific		1		deamidation_isomerisation	31.8
+P00738	HP	oxidative_stress	T1_abundant_plasma	3	VTSIQDWVQK	392	401	10	1202.6295	602.322	401.8838	-0.39	yes	protein_specific		1		Trp_oxidation	31.22
+P00738	HP	oxidative_stress	T1_abundant_plasma	4	VGYVSGWGR	278	286	9	979.4875	490.751	327.5031	-0.03	yes	protein_specific		1		Trp_oxidation	30.47
+P00738	HP	oxidative_stress	T1_abundant_plasma	5	VVLHPNYSQVDIGLIK	236	251	16	1794.0039	898.0092	599.0086	0.47	yes	protein_specific		1		N_glycosylation_sequon	30.26
+P02790	HPX	oxidative_stress	T1_abundant_plasma	1	LYLVQGTQVYVFLTK	318	332	15	1770.992	886.5033	591.3379	0.77	yes	protein_specific		1		none	36.47
+P02790	HPX	oxidative_stress	T1_abundant_plasma	2	NFPSPVDAAFR	92	102	11	1219.5985	610.8065	407.5401	-0.19	yes	protein_specific		1		N_term_deamidation	32.38
+P02790	HPX	oxidative_stress	T1_abundant_plasma	3	GGYTLVSGYPK	333	343	11	1140.5815	571.298	381.2011	-0.25	yes	protein_specific		1		ragged_C_term	32.29
+P02790	HPX	oxidative_stress	T1_abundant_plasma	4	GECQAEGVLFFQGDR	152	166	15	1711.7624	856.8885	571.5947	-0.35	yes	protein_specific		1		Cys_alkylation	32.09
+P02790	HPX	oxidative_stress	T1_abundant_plasma	5	YYCFQGNQFLR	198	208	11	1494.6714	748.343	499.2311	-0.55	yes	protein_specific		1		Cys_alkylation	31.69
+P05164	MPO	oxidative_stress	T2_detected_plasma	1	FPTDQLTPDQER	237	248	12	1445.6787	723.8466	482.9002	-1.67	yes	protein_specific		1		none	36.27
+P05164	MPO	oxidative_stress	T2_detected_plasma	2	IANVFTNAFR	490	499	10	1151.6087	576.8116	384.8769	0.57	yes	protein_specific		1		none	36.06
+P05164	MPO	oxidative_stress	T2_detected_plasma	3	SPTLGASNR	185	193	9	901.4617	451.7381	301.4945	-0.74	yes	protein_specific		1		none	35.71
+P05164	MPO	oxidative_stress	T2_detected_plasma	4	AVSNEIVR	229	236	8	886.4872	444.2509	296.503	0.3	yes	protein_specific		1		none	35.0
+P05164	MPO	oxidative_stress	T2_detected_plasma	5	SGSASPMELLSYFK	90	103	14	1515.7279	758.8712	506.2499	0.01	yes	protein_specific		1		Met_oxidation	32.77
+P0DMV8	HSPA1A	stress_chaperone	T2_detected_plasma	1	AQIHDLVLVGGSTR	329	342	14	1464.8048	733.4097	489.2756	0.38	yes	protein_specific	P0DMV9;Q5R7D3	1		none	38.04
+P0DMV8	HSPA1A	stress_chaperone	T2_detected_plasma	2	SAVEDEGLK	551	559	9	946.4607	474.2376	316.4942	-0.64	yes	protein_specific	P0DMV9;Q5R7D3	1		none	35.91
+P0DMV8	HSPA1A	stress_chaperone	T2_detected_plasma	3	GGSGSGPTIEEVD	629	641	13	1203.5255	602.77	402.1824	-0.56	yes	protein_specific	P0DMV9;Q5R7D3	1		protein_C_terminus	33.28
+P0DMV8	HSPA1A	stress_chaperone	T2_detected_plasma	4	LVNHFVEEFK	237	246	10	1260.6502	631.3324	421.224	0.02	yes	protein_specific	P0DMV9;Q5R7D3	1		ragged_C_term	31.16
+P0DMV8	HSPA1A	stress_chaperone	T2_detected_plasma	5	LLQDFFNGR	349	357	9	1108.5665	555.2905	370.5295	-0.24	yes	protein_specific	P0DMV9;Q5R7D3	1		deamidation_isomerisation	30.71
+P07900	HSP90AA1	stress_chaperone	T2_detected_plasma	1	DQVANSAFVER	500	510	11	1234.5942	618.3044	412.5387	-0.41	yes	protein_specific		1		none	37.98
+P07900	HSP90AA1	stress_chaperone	T2_detected_plasma	2	HLEINPDHSIIETLR	633	647	15	1785.9373	893.9759	596.3197	-0.46	yes	protein_specific		1		none	37.88
+P07900	HSP90AA1	stress_chaperone	T2_detected_plasma	3	EVSDDEAEEK	229	238	10	1149.4673	575.7409	384.163	-1.97	yes	protein_specific		1		none	34.06
+P07900	HSP90AA1	stress_chaperone	T2_detected_plasma	4	FYEQFSK	437	443	7	947.4389	474.7267	316.8202	-1.06	yes	protein_specific		1		none	33.49
+P07900	HSP90AA1	stress_chaperone	T2_detected_plasma	5	YYTSASGDEMVSLK	465	478	14	1549.697	775.8558	517.5729	-0.38	yes	protein_specific		1		Met_oxidation	32.84

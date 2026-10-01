@@ -1,0 +1,119 @@
+accession	gene	tier	expected_level	basis	assay	confounder
+Q13315	ATM	T4_intracellular	not established in plasma	350 kDa nuclear kinase; no credible free-plasma report	PBMC / tumour lysate; EV lysate if pursued	none
+Q13535	ATR	T4_intracellular	not established in plasma	nuclear kinase, chromatin-bound	PBMC / tumour lysate	none
+O14757	CHEK1	T4_intracellular	not established in plasma	nuclear, cell-cycle restricted	PBMC lysate	none
+O96017	CHEK2	T4_intracellular	not established in plasma	nuclear	PBMC lysate	none
+P04637	TP53	T4_intracellular	not established in plasma	circulating readout is anti-p53 autoantibody, not the protein	serology for autoantibody; PBMC/tumour for protein	none
+Q12888	TP53BP1	T4_intracellular	not established in plasma	large nuclear scaffold	PBMC lysate	none
+Q00987	MDM2	T3_EV_or_enriched	sub-ng/mL if present	serum MDM2 immunoassays reported in oncology, MS confirmation sparse	EV-enriched PRM or immunoassay	none
+P38936	CDKN1A	T4_intracellular	not established in plasma	nuclear CDK inhibitor	PBMC lysate	none
+P24522	GADD45A	T4_intracellular	not established in plasma	small nuclear stress protein	PBMC lysate	none
+P16104	H2AX	T3_EV_or_enriched	ng/mL as nucleosomal cargo	reaches plasma inside circulating nucleosomes, not as free protein	nucleosome pull-down then PRM	NET / apoptosis release
+Q14676	MDC1	T4_intracellular	not established in plasma	large nuclear scaffold	PBMC lysate	none
+P09874	PARP1	T3_EV_or_enriched	low ng/mL	cleaved PARP1 fragments reported in serum; also EV cargo	EV or immunocapture PRM	apoptotic release
+Q9UGN5	PARP2	T4_intracellular	not established in plasma	nuclear paralogue, lower abundance than PARP1	PBMC lysate	none
+P58004	SESN2	T3_EV_or_enriched	low ng/mL	serum sestrin-2 immunoassays published in metabolic disease	immunoassay or EV PRM	none
+P78527	PRKDC	T4_intracellular	not established in plasma	460 kDa nuclear kinase	PBMC lysate	none
+P13010	XRCC5	T4_intracellular	not established in plasma	Ku80, nuclear; circulating signal is autoantibody	PBMC lysate	none
+P12956	XRCC6	T4_intracellular	not established in plasma	Ku70, nuclear; circulating signal is autoantibody	PBMC lysate	none
+P49959	MRE11	T4_intracellular	not established in plasma	MRN complex, nuclear	PBMC lysate	none
+Q92878	RAD50	T4_intracellular	not established in plasma	MRN complex, nuclear	PBMC lysate	none
+O60934	NBN	T4_intracellular	not established in plasma	MRN complex, nuclear	PBMC lysate	none
+P27694	RPA1	T4_intracellular	not established in plasma	ssDNA-binding, nuclear	PBMC lysate	none
+P15927	RPA2	T4_intracellular	not established in plasma	nuclear; pRPA2 is a tissue DDR marker	PBMC lysate	none
+P35244	RPA3	T4_intracellular	not established in plasma	14 kDa nuclear subunit	PBMC lysate	none
+P38398	BRCA1	T4_intracellular	not established in plasma	large nuclear scaffold	tumour lysate	none
+P51587	BRCA2	T4_intracellular	not established in plasma	large nuclear scaffold	tumour lysate	none
+Q06609	RAD51	T4_intracellular	not established in plasma	nuclear recombinase; foci are the usual readout	PBMC / tumour lysate	none
+P43351	RAD52	T4_intracellular	not established in plasma	nuclear	PBMC lysate	none
+Q13426	XRCC4	T4_intracellular	not established in plasma	nuclear NHEJ factor	PBMC lysate	none
+P49917	LIG4	T4_intracellular	not established in plasma	nuclear NHEJ ligase	PBMC lysate	none
+Q9H9Q4	NHEJ1	T4_intracellular	not established in plasma	nuclear NHEJ factor	PBMC lysate	none
+Q96SD1	DCLRE1C	T4_intracellular	not established in plasma	nuclear nuclease	PBMC lysate	none
+Q9BXW9	FANCD2	T4_intracellular	not established in plasma	nuclear, monoubiquitination is the readout	PBMC lysate	none
+Q14191	WRN	T4_intracellular	not established in plasma	nuclear helicase	PBMC lysate	none
+P54132	BLM	T4_intracellular	not established in plasma	nuclear helicase	PBMC lysate	none
+Q9NUW8	TDP1	T4_intracellular	not established in plasma	nuclear/mitochondrial phosphodiesterase	PBMC lysate	none
+O95551	TDP2	T4_intracellular	not established in plasma	nuclear phosphodiesterase	PBMC lysate	none
+P11387	TOP1	T4_intracellular	not established in plasma	circulating signal is anti-topoisomerase I autoantibody	serology; PBMC lysate for protein	none
+P11388	TOP2A	T4_intracellular	not established in plasma	proliferation-restricted nuclear enzyme	tumour lysate	none
+P12004	PCNA	T3_EV_or_enriched	low ng/mL	serum PCNA reported; anti-PCNA autoantibodies in lupus	EV PRM or immunoassay	proliferating-cell release
+O15527	OGG1	T4_intracellular	not established in plasma	the central 8-oxoG glycosylase, but nuclear/mitochondrial	PBMC lysate; pair with urinary 8-oxo-dG	none
+Q9UIF7	MUTYH	T4_intracellular	not established in plasma	nuclear/mitochondrial glycosylase	PBMC lysate	none
+P78549	NTHL1	T4_intracellular	not established in plasma	nuclear/mitochondrial glycosylase	PBMC lysate	none
+Q96FI4	NEIL1	T4_intracellular	not established in plasma	nuclear glycosylase	PBMC lysate	none
+Q969S2	NEIL2	T4_intracellular	not established in plasma	nuclear glycosylase	PBMC lysate	none
+Q8TAT5	NEIL3	T4_intracellular	not established in plasma	nuclear glycosylase, proliferation-restricted	PBMC lysate	none
+P36639	NUDT1	T4_intracellular	not established in plasma	MTH1, cytosolic nucleotide-pool sanitiser	PBMC lysate	none
+P27695	APEX1	T3_EV_or_enriched	low ng/mL	secreted/serum APE1-Ref-1 reported in several oncology cohorts	EV or immunocapture PRM	none
+Q9UBZ4	APEX2	T4_intracellular	not established in plasma	nuclear AP endonuclease	PBMC lysate	none
+P18887	XRCC1	T4_intracellular	not established in plasma	nuclear BER scaffold	PBMC lysate	none
+P06746	POLB	T4_intracellular	not established in plasma	nuclear BER polymerase	PBMC lysate	none
+P49916	LIG3	T4_intracellular	not established in plasma	nuclear/mitochondrial ligase	PBMC lysate	none
+P18858	LIG1	T4_intracellular	not established in plasma	nuclear replicative ligase	PBMC lysate	none
+P39748	FEN1	T4_intracellular	not established in plasma	nuclear flap endonuclease	PBMC lysate	none
+Q96T60	PNKP	T4_intracellular	not established in plasma	nuclear end-processing enzyme	PBMC lysate	none
+P13051	UNG	T4_intracellular	not established in plasma	nuclear/mitochondrial glycosylase	PBMC lysate	none
+Q53HV7	SMUG1	T4_intracellular	not established in plasma	nuclear glycosylase	PBMC lysate	none
+Q13569	TDG	T4_intracellular	not established in plasma	nuclear glycosylase	PBMC lysate	none
+O95243	MBD4	T4_intracellular	not established in plasma	nuclear glycosylase	PBMC lysate	none
+P29372	MPG	T4_intracellular	not established in plasma	nuclear alkyladenine glycosylase	PBMC lysate	none
+P23025	XPA	T4_intracellular	not established in plasma	nuclear NER scaffold	PBMC lysate	none
+Q01831	XPC	T4_intracellular	not established in plasma	nuclear damage sensor	PBMC lysate	none
+P54727	RAD23B	T4_intracellular	not established in plasma	nuclear/cytosolic NER partner	PBMC lysate	none
+P07992	ERCC1	T4_intracellular	not established in plasma	nuclear NER endonuclease subunit	tumour lysate	none
+P18074	ERCC2	T4_intracellular	not established in plasma	TFIIH helicase subunit, nuclear	PBMC lysate	none
+P19447	ERCC3	T4_intracellular	not established in plasma	TFIIH helicase subunit, nuclear	PBMC lysate	none
+Q92889	ERCC4	T4_intracellular	not established in plasma	nuclear NER endonuclease	PBMC lysate	none
+P28715	ERCC5	T4_intracellular	not established in plasma	nuclear NER endonuclease	PBMC lysate	none
+Q03468	ERCC6	T4_intracellular	not established in plasma	nuclear transcription-coupled repair factor	PBMC lysate	none
+Q16531	DDB1	T4_intracellular	not established in plasma	nuclear CUL4 adaptor	PBMC lysate	none
+Q92466	DDB2	T4_intracellular	not established in plasma	nuclear UV damage sensor	PBMC lysate	none
+P40692	MLH1	T4_intracellular	not established in plasma	nuclear MMR	tumour lysate	none
+P43246	MSH2	T4_intracellular	not established in plasma	nuclear MMR	tumour lysate	none
+P52701	MSH6	T4_intracellular	not established in plasma	nuclear MMR	tumour lysate	none
+P20585	MSH3	T4_intracellular	not established in plasma	nuclear MMR	tumour lysate	none
+P54278	PMS2	T4_intracellular	not established in plasma	nuclear MMR	tumour lysate	none
+P09429	HMGB1	T2_detected_plasma	1-10 ng/mL healthy, higher in sepsis and trauma	established plasma immunoassay and MS detection in inflammatory states	depleted plasma PRM or immunoassay	platelet and necrotic release; pre-analytics sensitive
+P26583	HMGB2	T3_EV_or_enriched	sub-ng/mL	less documented than HMGB1	EV PRM	same as HMGB1
+P35659	DEK	T3_EV_or_enriched	sub-ng/mL	secreted DEK reported in autoimmune joint fluid	EV PRM	none
+P06748	NPM1	T3_EV_or_enriched	low ng/mL	common EV cargo; free-plasma evidence weak	EV PRM	proliferating-cell release
+P62805	H4	T2_detected_plasma	ng/mL healthy, up to ug/mL in sepsis and trauma	circulating nucleosomes and NETs; MS-detected in critical illness	depleted plasma or nucleosome enrichment, PRM	NETosis, cell lysis, hemolysis
+P62807	H2BC4	T2_detected_plasma	ng/mL healthy, higher in critical illness	circulating nucleosomes and NETs	depleted plasma or nucleosome enrichment, PRM	NETosis, cell lysis
+P68431	H3C1	T2_detected_plasma	ng/mL healthy, higher in critical illness	circulating nucleosomes and NETs; citrullinated H3 is a NET marker	depleted plasma or nucleosome enrichment, PRM	NETosis, cell lysis
+P84243	H3-3A	T2_detected_plasma	ng/mL	nucleosomal; differs from H3.1 at only a few residues	nucleosome enrichment, PRM on variant-distinguishing peptides	NETosis, cell lysis
+P0C0S8	H2AC11	T2_detected_plasma	ng/mL	circulating nucleosomes	nucleosome enrichment, PRM	NETosis, cell lysis
+P0C0S5	H2AZ1	T3_EV_or_enriched	sub-ng/mL	variant histone, lower nucleosome occupancy	nucleosome enrichment, PRM	NETosis
+P00441	SOD1	T2_detected_plasma	10-100 ng/mL	detected in plasma MS and immunoassay	depleted plasma PRM	strong hemolysis confounder, erythrocyte-rich
+P04179	SOD2	T2_detected_plasma	1-10 ng/mL	serum MnSOD immunoassays established	depleted plasma PRM or immunoassay	mitochondrial release from damaged tissue
+P08294	SOD3	T2_detected_plasma	20-100 ng/mL	extracellular SOD, heparin-releasable from endothelium	plasma PRM; note heparin tubes raise levels	heparin anticoagulant alters level
+P04040	CAT	T2_detected_plasma	10-100 ng/mL	detected in plasma MS	depleted plasma PRM	strong hemolysis confounder
+P07203	GPX1	T2_detected_plasma	10-100 ng/mL	detected in plasma MS	depleted plasma PRM	strong hemolysis confounder, erythrocyte-rich
+P22352	GPX3	T1_abundant_plasma	10-30 ug/mL	classical secreted plasma glutathione peroxidase, kidney-derived	neat plasma, DIA or PRM	renal function affects level
+P36969	GPX4	T3_EV_or_enriched	sub-ng/mL	membrane-associated, mostly intracellular	EV PRM	none
+Q06830	PRDX1	T2_detected_plasma	10-100 ng/mL	detected in plasma MS, secreted under stress	depleted plasma PRM	hemolysis confounder
+P32119	PRDX2	T2_detected_plasma	50-500 ng/mL	abundant erythrocyte peroxiredoxin, detected in plasma MS	depleted plasma PRM	very strong hemolysis confounder
+P30048	PRDX3	T3_EV_or_enriched	sub-ng/mL	mitochondrial, released on tissue damage	EV PRM	none
+Q13162	PRDX4	T2_detected_plasma	1-20 ng/mL	the secreted peroxiredoxin, ER-resident with a signal peptide	depleted plasma PRM	none
+P30044	PRDX5	T3_EV_or_enriched	sub-ng/mL	mitochondrial and peroxisomal	EV PRM	none
+P30041	PRDX6	T2_detected_plasma	10-100 ng/mL	detected in plasma MS	depleted plasma PRM	hemolysis and platelet confounder
+P10599	TXN	T2_detected_plasma	10-50 ng/mL	plasma thioredoxin immunoassay well established as an oxidative-stress marker	depleted plasma PRM or immunoassay	hemolysis confounder
+Q16881	TXNRD1	T3_EV_or_enriched	sub-ng/mL	selenoenzyme, mostly cytosolic	EV PRM	selenocysteine complicates digestion
+Q9H3M7	TXNIP	T3_EV_or_enriched	sub-ng/mL	cytosolic, glucose-responsive	EV PRM	none
+P00390	GSR	T3_EV_or_enriched	low ng/mL	mostly erythrocyte and hepatic	depleted plasma PRM	hemolysis confounder
+P09211	GSTP1	T2_detected_plasma	1-10 ng/mL	serum GST-pi immunoassays established in liver injury and oncology	depleted plasma PRM or immunoassay	hemolysis confounder
+P35754	GLRX	T2_detected_plasma	1-20 ng/mL	plasma glutaredoxin-1 immunoassays published as a redox marker	depleted plasma PRM or immunoassay	hemolysis confounder
+Q9BYN0	SRXN1	T3_EV_or_enriched	sub-ng/mL	small cytosolic sulfiredoxin, the PRDX overoxidation repair enzyme	EV PRM	none
+P09601	HMOX1	T2_detected_plasma	1-20 ng/mL	serum HO-1 immunoassays established as an oxidative-stress marker	depleted plasma PRM or immunoassay	monocyte and hepatic induction
+P15559	NQO1	T3_EV_or_enriched	low ng/mL	cytosolic NRF2 target	EV PRM	NQO1 P187S polymorphism alters protein level
+Q99497	PARK7	T2_detected_plasma	10-100 ng/mL	plasma DJ-1 immunoassay and MS detection established	depleted plasma PRM	strong hemolysis confounder
+P49908	SELENOP	T1_abundant_plasma	3-6 ug/mL	the main plasma selenium transporter, hepatically secreted	neat plasma, DIA or PRM	selenium status; multiple selenocysteines
+Q16236	NFE2L2	T4_intracellular	not established in plasma	short-lived nuclear transcription factor	PBMC lysate	none
+Q14145	KEAP1	T4_intracellular	not established in plasma	cytosolic NRF2 repressor	PBMC lysate	none
+P11413	G6PD	T3_EV_or_enriched	low ng/mL	erythrocyte and cytosolic	depleted plasma PRM	strong hemolysis confounder
+P00450	CP	T1_abundant_plasma	200-400 ug/mL	classical acute-phase plasma ferroxidase	neat plasma, DIA or PRM	acute-phase response, copper status
+P00738	HP	T1_abundant_plasma	0.3-2 mg/mL	classical acute-phase haemoglobin scavenger	neat plasma, DIA or PRM	falls with intravascular hemolysis; HP1/HP2 genotype
+P02790	HPX	T1_abundant_plasma	0.5-1 mg/mL	classical plasma heme scavenger	neat plasma, DIA or PRM	falls with hemolysis
+P05164	MPO	T2_detected_plasma	10-100 ng/mL	established cardiovascular and neutrophil-activation marker	depleted plasma PRM or immunoassay	neutrophil activation, heparin raises level
+P0DMV8	HSPA1A	T2_detected_plasma	1-20 ng/mL	serum HSP70 immunoassays established	depleted plasma PRM	near-identical paralogue HSPA1B, shared peptides
+P07900	HSP90AA1	T2_detected_plasma	1-50 ng/mL	serum HSP90-alpha immunoassays established in oncology	depleted plasma PRM or immunoassay	close paralogue HSP90AB1, shared peptides

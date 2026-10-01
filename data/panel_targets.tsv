@@ -1,0 +1,119 @@
+accession	gene	protein_name	category	length
+Q13315	ATM	Serine-protein kinase ATM	DDR_signalling	3056
+Q13535	ATR	Serine/threonine-protein kinase ATR	DDR_signalling	2644
+O14757	CHEK1	Serine/threonine-protein kinase Chk1	DDR_signalling	476
+O96017	CHEK2	Serine/threonine-protein kinase Chk2	DDR_signalling	543
+P04637	TP53	Cellular tumor antigen p53	DDR_signalling	393
+Q12888	TP53BP1	TP53-binding protein 1	DDR_signalling	1972
+Q00987	MDM2	E3 ubiquitin-protein ligase Mdm2	DDR_signalling	491
+P38936	CDKN1A	Cyclin-dependent kinase inhibitor 1	DDR_signalling	164
+P24522	GADD45A	Growth arrest and DNA damage-inducible protein GADD45 alpha	DDR_signalling	165
+P16104	H2AX	Histone H2AX	DDR_signalling	143
+Q14676	MDC1	Mediator of DNA damage checkpoint protein 1	DDR_signalling	2089
+P09874	PARP1	Poly	DDR_signalling	1014
+Q9UGN5	PARP2	Poly	DDR_signalling	583
+P58004	SESN2	Sestrin-2	DDR_signalling	480
+P78527	PRKDC	DNA-dependent protein kinase catalytic subunit	DSB_repair	4128
+P13010	XRCC5	DNA repair protein Ku80	DSB_repair	732
+P12956	XRCC6	DNA repair protein Ku70	DSB_repair	609
+P49959	MRE11	Double-strand break repair protein MRE11	DSB_repair	708
+Q92878	RAD50	DNA repair protein RAD50	DSB_repair	1312
+O60934	NBN	Nibrin	DSB_repair	754
+P27694	RPA1	Replication protein A 70 kDa DNA-binding subunit	DSB_repair	616
+P15927	RPA2	Replication protein A 32 kDa subunit	DSB_repair	270
+P35244	RPA3	Replication protein A 14 kDa subunit	DSB_repair	121
+P38398	BRCA1	Breast cancer type 1 susceptibility protein	DSB_repair	1863
+P51587	BRCA2	Breast cancer type 2 susceptibility protein	DSB_repair	3418
+Q06609	RAD51	DNA repair protein RAD51 homolog 1	DSB_repair	339
+P43351	RAD52	DNA repair protein RAD52 homolog	DSB_repair	418
+Q13426	XRCC4	DNA repair protein XRCC4	DSB_repair	336
+P49917	LIG4	DNA ligase 4	DSB_repair	911
+Q9H9Q4	NHEJ1	Non-homologous end-joining factor 1	DSB_repair	299
+Q96SD1	DCLRE1C	Protein artemis	DSB_repair	692
+Q9BXW9	FANCD2	Fanconi anemia group D2 protein	DSB_repair	1451
+Q14191	WRN	Bifunctional 3'-5' exonuclease/ATP-dependent helicase WRN	DSB_repair	1432
+P54132	BLM	RecQ-like DNA helicase BLM	DSB_repair	1417
+Q9NUW8	TDP1	Tyrosyl-DNA phosphodiesterase 1	DSB_repair	608
+O95551	TDP2	Tyrosyl-DNA phosphodiesterase 2	DSB_repair	362
+P11387	TOP1	DNA topoisomerase 1	DSB_repair	765
+P11388	TOP2A	DNA topoisomerase 2-alpha	DSB_repair	1531
+P12004	PCNA	DNA sliding clamp PCNA	BER	261
+O15527	OGG1	N-glycosylase/DNA lyase	BER_oxidative	345
+Q9UIF7	MUTYH	Adenine DNA glycosylase	BER_oxidative	546
+P78549	NTHL1	Endonuclease III-like protein 1	BER_oxidative	304
+Q96FI4	NEIL1	Endonuclease 8-like 1	BER_oxidative	390
+Q969S2	NEIL2	Endonuclease 8-like 2	BER_oxidative	332
+Q8TAT5	NEIL3	Endonuclease 8-like 3	BER_oxidative	605
+P36639	NUDT1	Oxidized purine nucleoside triphosphate hydrolase	BER_oxidative	156
+P27695	APEX1	DNA repair nuclease/redox regulator APEX1	BER	318
+Q9UBZ4	APEX2	DNA-(apurinic or apyrimidinic site) endonuclease 2	BER	518
+P18887	XRCC1	DNA repair protein XRCC1	BER	633
+P06746	POLB	DNA polymerase beta	BER	335
+P49916	LIG3	DNA ligase 3	BER	1009
+P18858	LIG1	DNA ligase 1	BER	919
+P39748	FEN1	Flap endonuclease 1	BER	380
+Q96T60	PNKP	Bifunctional polynucleotide phosphatase/kinase	BER	521
+P13051	UNG	Uracil-DNA glycosylase	BER	313
+Q53HV7	SMUG1	Single-strand selective monofunctional uracil DNA glycosylase	BER	270
+Q13569	TDG	G/T mismatch-specific thymine DNA glycosylase	BER	410
+O95243	MBD4	Methyl-CpG-binding domain protein 4	BER	580
+P29372	MPG	DNA-3-methyladenine glycosylase	BER	298
+P23025	XPA	DNA repair protein complementing XP-A cells	NER	273
+Q01831	XPC	DNA repair protein complementing XP-C cells	NER	940
+P54727	RAD23B	Lysine-specific demethylase RAD23B	NER	409
+P07992	ERCC1	DNA excision repair protein ERCC-1	NER	297
+P18074	ERCC2	General transcription and DNA repair factor IIH helicase subunit XPD	NER	760
+P19447	ERCC3	General transcription and DNA repair factor IIH helicase/translocase subunit XPB	NER	782
+Q92889	ERCC4	DNA repair endonuclease XPF	NER	916
+P28715	ERCC5	DNA excision repair protein ERCC-5	NER	1186
+Q03468	ERCC6	DNA excision repair protein ERCC-6	NER	1493
+Q16531	DDB1	DNA damage-binding protein 1	NER	1140
+Q92466	DDB2	DNA damage-binding protein 2	NER	427
+P40692	MLH1	DNA mismatch repair protein Mlh1	MMR	756
+P43246	MSH2	DNA mismatch repair protein Msh2	MMR	934
+P52701	MSH6	DNA mismatch repair protein Msh6	MMR	1360
+P20585	MSH3	DNA mismatch repair protein Msh3	MMR	1137
+P54278	PMS2	Mismatch repair endonuclease PMS2	MMR	862
+P09429	HMGB1	High mobility group protein B1	nuclear_DAMP	215
+P26583	HMGB2	High mobility group protein B2	nuclear_DAMP	209
+P35659	DEK	Protein DEK	nuclear_DAMP	375
+P06748	NPM1	Nucleophosmin	nuclear_DAMP	294
+P62805	H4	Histone H4	nuclear_DAMP	103
+P62807	H2BC4	Histone H2B type 1-C/E/F/G/I	nuclear_DAMP	126
+P68431	H3C1	Histone H3.1	nuclear_DAMP	136
+P84243	H3-3A	Histone H3.3	nuclear_DAMP	136
+P0C0S8	H2AC11	Histone H2A type 1	nuclear_DAMP	130
+P0C0S5	H2AZ1	Histone H2A.Z	nuclear_DAMP	128
+P00441	SOD1	Superoxide dismutase	oxidative_stress	154
+P04179	SOD2	Superoxide dismutase	oxidative_stress	222
+P08294	SOD3	Extracellular superoxide dismutase	oxidative_stress	240
+P04040	CAT	Catalase	oxidative_stress	527
+P07203	GPX1	Glutathione peroxidase 1	oxidative_stress	203
+P22352	GPX3	Glutathione peroxidase 3	oxidative_stress	226
+P36969	GPX4	Phospholipid hydroperoxide glutathione peroxidase GPX4	oxidative_stress	197
+Q06830	PRDX1	Peroxiredoxin-1	oxidative_stress	199
+P32119	PRDX2	Peroxiredoxin-2	oxidative_stress	198
+P30048	PRDX3	Thioredoxin-dependent peroxide reductase, mitochondrial	oxidative_stress	256
+Q13162	PRDX4	Peroxiredoxin-4	oxidative_stress	271
+P30044	PRDX5	Peroxiredoxin-5, mitochondrial	oxidative_stress	214
+P30041	PRDX6	Peroxiredoxin-6	oxidative_stress	224
+P10599	TXN	Thioredoxin	oxidative_stress	105
+Q16881	TXNRD1	Thioredoxin reductase 1, cytoplasmic	oxidative_stress	649
+Q9H3M7	TXNIP	Thioredoxin-interacting protein	oxidative_stress	391
+P00390	GSR	Glutathione reductase, mitochondrial	oxidative_stress	522
+P09211	GSTP1	Glutathione S-transferase P	oxidative_stress	210
+P35754	GLRX	Glutaredoxin-1	oxidative_stress	106
+Q9BYN0	SRXN1	Sulfiredoxin-1	oxidative_stress	137
+P09601	HMOX1	Heme oxygenase 1	oxidative_stress	288
+P15559	NQO1	NAD(P)H dehydrogenase	oxidative_stress	274
+Q99497	PARK7	Parkinson disease protein 7	oxidative_stress	189
+P49908	SELENOP	Selenoprotein P	oxidative_stress	381
+Q16236	NFE2L2	Nuclear factor erythroid 2-related factor 2	oxidative_stress	605
+Q14145	KEAP1	Kelch-like ECH-associated protein 1	oxidative_stress	624
+P11413	G6PD	Glucose-6-phosphate 1-dehydrogenase	oxidative_stress	515
+P00450	CP	Ceruloplasmin	oxidative_stress	1065
+P00738	HP	Haptoglobin	oxidative_stress	406
+P02790	HPX	Hemopexin	oxidative_stress	462
+P05164	MPO	Myeloperoxidase	oxidative_stress	745
+P0DMV8	HSPA1A	Heat shock 70 kDa protein 1A	stress_chaperone	641
+P07900	HSP90AA1	Heat shock protein HSP 90-alpha	stress_chaperone	732

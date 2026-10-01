@@ -1,4 +1,51 @@
-# PROTAC architecture vs. *Primula* root constituents — a cheminformatics SAR assessment
+# ozangenomics
+
+Computational analyses in cheminformatics and proteomics.
+
+## Analyses
+
+### DNA damage, oxidation and repair panel for plasma LC-MS/MS
+
+A 118-protein target list built against UniProtKB/Swiss-Prot, digested in silico,
+checked for peptide uniqueness across all 20,525 human entries, and tiered by
+whether each protein is realistically measurable in plasma.
+
+**Read the analysis: [`docs/DNA_damage_plasma_panel.md`](docs/DNA_damage_plasma_panel.md)**
+
+The central finding is negative and it matters for study design: 71 of the 118
+proteins are nuclear or cytosolic enzymes that do not circulate at a level any
+mass spectrometer reaches from plasma. Every protein in double-strand break
+repair, nucleotide excision repair, mismatch repair and base excision repair
+falls in that group, OGG1, APEX1 and PARP1 among them. Twenty-eight proteins are
+realistically measurable, and they are the consequences of DNA damage rather than
+the repair machinery: nucleosomal histones from cell death and NETosis, the redox
+enzymes that create the damaging environment, and the acute-phase iron and heme
+handlers that drive Fenton chemistry.
+
+The exception worth pursuing is H2AX. Its C-terminal tryptic peptide ATQASQEY is
+specific to H2AX across the human proteome and contains Ser140, the residue the
+literature calls Ser139, so a phospho-PRM assay on it reads the canonical
+double-strand-break marker from blood rather than from cells on a slide.
+
+Thirteen of the 28 measurable proteins are erythrocyte-rich, so a hemolysis index
+belongs on every sample as a covariate.
+
+```
+data/panel_targets.tsv          118 targets with pathway category
+data/plasma_evidence.tsv        tier, expected level, assay and confounder per protein
+data/human_swissprot.fasta.gz   the 20,525 human Swiss-Prot entries used
+src/fetch_swissprot.py          rebuilds that file from the NCBI distribution
+src/panel_build.py              digestion, uniqueness, scoring, transitions, 13 checks
+src/validate.py                 re-derives every number by an independent route
+results/                        proteins, peptides, PRM transitions, QC
+```
+
+```bash
+python3 src/panel_build.py
+python3 src/validate.py
+```
+
+### PROTAC architecture vs. *Primula* root constituents
 
 Computational assessment of whether any constituent of primrose (*Primula*) root can
 serve as a module of a PROTAC degrader — warhead, linker, or E3 ligand — and what the
@@ -6,7 +53,7 @@ structure–activity comparison actually supports.
 
 **Read the analysis: [`docs/PROTAC_primula_SAR.md`](docs/PROTAC_primula_SAR.md)**
 
-## Headline findings
+#### Headline findings
 
 - **No structural overlap.** Maximum ECFP4 Tanimoto of any *Primula* constituent to any
   PROTAC reference is **0.133**, well below the ~0.4 threshold implying shared
@@ -30,14 +77,14 @@ structure–activity comparison actually supports.
   *Saponaria*/*Quillaja* saponins. It is a falsifiable prediction; Section 7 of the report
   gives the experiment that would test it.
 
-## Species caveat
+#### Species caveat
 
 The European Pharmacopoeia drug *Primulae radix* is ***P. veris*** and/or ***P. elatior***,
 **not *P. vulgaris***. All quantitative constituent data used here derive from those
 species, and published work shows saponin pattern is species-discriminating. The
 constituent list is treated as genus-level throughout and flagged in the report.
 
-## Layout
+#### Layout
 
 ```
 data/primula_constituents.csv   13 constituents: class, species evidence, SMILES,
@@ -53,14 +100,14 @@ results/                        descriptors, similarity matrix, formula validati
 docs/PROTAC_primula_SAR.md      the full analysis
 ```
 
-## Reproduce
+#### Reproduce
 
 ```bash
 pip install rdkit
 python3 src/run_analysis.py
 ```
 
-## Verification built into the run
+#### Verification built into the run
 
 Every drawn structure is checked against its literature-reported molecular formula before
 any descriptor is reported. All 13 pass — see `results/formula_validation.csv`. Reference
@@ -71,7 +118,7 @@ flavonoids carry it, the triterpenoid sapogenins are written constitution-only. 
 descriptor used is constitution-level and Morgan fingerprints are generated without
 chirality, so no conclusion depends on unverified stereochemistry.
 
-## Sources
+#### Sources
 
 Constituent identities and quantitation from PubMed-indexed literature — Trendafilova
 *et al.* 2026 ([DOI](https://doi.org/10.3390/plants15152259)), Müller *et al.* 2005
