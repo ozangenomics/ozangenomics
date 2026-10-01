@@ -1,0 +1,12 @@
+gene	accession	site	marker	kinase	peptide	residues	length	missed_cleavages	unmod_mz_2plus	phospho_mz_2plus	phospho_mz_3plus	STY_count	verdict
+H2AX	P16104	S140	gamma-H2AX (lit. Ser139)	ATM/ATR/DNA-PK	ATQASQEY	136-143	8	0	449.2011	489.1842	326.4586	3	good PRM candidate; 3 S/T/Y so site localisation required
+TRIM28	Q13263	S824	KAP1 pS824	ATM	FSAVLVEPPPMSLPGAGLSSQELSGGPGDGP	805-835	31	0	1475.7287	1515.7119	1010.8104	5	peptide long for PRM; consider Glu-C or Asp-N; 5 S/T/Y so site localisation required
+RPA2	P15927	S33	RPA2 pS33	ATR/CDK	MWNSGFESYGSSSYGGAGGYTQSPGGFGSPAPSQAEK	1-37	37	0	1845.7893	1885.7725	1257.5174	12	peptide long for PRM; consider Glu-C or Asp-N; 12 S/T/Y so site localisation required
+RPA2	P15927	S4	RPA2 pS4	DNA-PK	MWNSGFESYGSSSYGGAGGYTQSPGGFGSPAPSQAEK	1-37	37	0	1845.7893	1885.7725	1257.5174	12	peptide long for PRM; consider Glu-C or Asp-N; 12 S/T/Y so site localisation required
+CHEK2	O96017	T68	CHK2 pT68	ATM									no tryptic peptide between 6 and 45 residues; use Glu-C or Asp-N
+CHEK1	O14757	S345	CHK1 pS345	ATR	LVQGISFSQPTCPDHMLLNSQLLGTPGSSQNPWQR	338-372	35	0	1947.4567	1987.4399	1325.2957	7	peptide long for PRM; consider Glu-C or Asp-N; 7 S/T/Y so site localisation required
+ATM	Q13315	S1981	ATM pS1981 autophosphorylation	ATM	SLAFEEGSQSTTISSLSEK	1974-1992	19	0	1000.9866	1040.9697	694.3156	8	good PRM candidate; 8 S/T/Y so site localisation required
+NBN	O60934	S343	NBS1 pS343	ATM	TTTPGPSLSQGVSVDEK	335-351	17	0	851.9283	891.9115	594.9434	6	good PRM candidate; 6 S/T/Y so site localisation required
+TP53	P04637	S15	p53 pS15	ATM/ATR	MEEPQSDPSVEPPLSQETFSDLWK	1-24	24	0	1388.6365	1428.6197	952.7489	5	good PRM candidate; 5 S/T/Y so site localisation required
+CDKN1A	P38936	S146	p21 pS146	AKT	QTSMTDFYHSK	144-154	11	0	672.7981	712.7812	475.5233	5	good PRM candidate; 5 S/T/Y so site localisation required
+TP53BP1	Q12888	S25	53BP1 pS25	ATM	MDPTGSQLDSDFSQQDTPCLIIEDSQPESQVLEDDSGSHFSMLSR	1-45	45	0	2515.1002	2555.0834	1703.7247	11	peptide long for PRM; consider Glu-C or Asp-N; 11 S/T/Y so site localisation required

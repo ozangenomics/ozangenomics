@@ -144,9 +144,33 @@ And phosphopeptide recovery requires enrichment, so spike the heavy standard
 before enrichment, not after, or the ratio will report recovery rather than
 biology.
 
-**TRIM28 (KAP1) is the second phospho readout worth building.** It is abundant,
-its Ser824 is a direct ATM substrate, and unlike H2AX it is not a histone, so it
-reports the soluble arm of ATM signalling.
+### Other phosphosites, and which of them trypsin can actually reach
+
+`results/lymphocyte_phospho_markers.tsv` checks eleven canonical damage-response
+phosphosites against the sequence and asks whether a usable tryptic peptide
+contains them. The answer is often no, which is worth knowing before you plan the
+assay rather than after.
+
+| Site | Marker | Tryptic peptide | Verdict |
+|---|---|---|---|
+| H2AX Ser140 | γH2AX | ATQASQEY, 8 residues | good PRM candidate |
+| CDKN1A Ser146 | p21 | QTSMTDFYHSK, 11 | good PRM candidate |
+| NBN Ser343 | NBS1, ATM substrate | TTTPGPSLSQGVSVDEK, 17 | good PRM candidate |
+| ATM Ser1981 | ATM autophosphorylation | SLAFEEGSQSTTISSLSEK, 19 | good PRM candidate |
+| TP53 Ser15 | p53, ATM and ATR | MEEPQSDPSVEPPLSQETFSDLWK, 24 | workable, Met oxidation liability |
+| TRIM28 Ser824 | KAP1, ATM substrate | 31 residues | too long; use Glu-C or Asp-N |
+| CHEK1 Ser345 | CHK1, ATR substrate | 35 residues | too long; use Glu-C or Asp-N |
+| RPA2 Ser4 and Ser33 | DNA-PK and ATR | 37 residues, 12 S/T/Y | too long; use Glu-C or Asp-N |
+| TP53BP1 Ser25 | 53BP1, ATM substrate | 45 residues | too long; use Glu-C or Asp-N |
+| CHEK2 Thr68 | CHK2, ATM substrate | none between 6 and 45 residues | trypsin cannot reach it |
+
+Every one of these peptides carries more than one serine, threonine or tyrosine,
+so site localisation needs good fragmentation. Do not assume a mass shift on the
+precursor means the site you intended.
+
+KAP1 Ser824 remains the best second readout biologically, being an abundant and
+direct ATM substrate that is not a histone, but it needs a protease other than
+trypsin. CHK2 Thr68 is the clearest case where an immunoassay beats targeted MS.
 
 ## Lymphocyte-specific DNA damage biology
 
@@ -254,3 +278,5 @@ proteomics, not values measured here.
 | `results/lymphocyte_panel_peptides.tsv` | 635 ranked candidate peptides |
 | `results/lymphocyte_prm_transitions.tsv` | 1,098 PRM transitions for the measurable tiers |
 | `results/lymphocyte_panel_qc.tsv` | The 13 internal checks |
+| `results/lymphocyte_marker_list.tsv` | **The flat marker list**: every protein with its top three peptides, tier, m/z, scope and confounder |
+| `results/lymphocyte_phospho_markers.tsv` | Canonical DDR phosphosites, verified against the sequence, with phospho precursor m/z and a verdict on tryptic suitability |
