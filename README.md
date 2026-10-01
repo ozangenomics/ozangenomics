@@ -4,45 +4,50 @@ Computational analyses in cheminformatics and proteomics.
 
 ## Analyses
 
-### DNA damage, oxidation and repair panel for plasma LC-MS/MS
+### DNA damage, oxidation and repair panel for lymphocyte LC-MS/MS
 
-A 118-protein target list built against UniProtKB/Swiss-Prot, digested in silico,
-checked for peptide uniqueness across all 20,525 human entries, and tiered by
-whether each protein is realistically measurable in plasma.
+A 128-protein target list built against UniProtKB/Swiss-Prot, digested in silico,
+checked for peptide uniqueness across all 20,525 human entries, and tiered for
+two matrices: isolated peripheral blood lymphocytes, and plasma.
 
-**Read the analysis: [`docs/DNA_damage_plasma_panel.md`](docs/DNA_damage_plasma_panel.md)**
+**Read the analysis: [`docs/DNA_damage_lymphocyte_panel.md`](docs/DNA_damage_lymphocyte_panel.md)**
+(plasma companion: [`docs/DNA_damage_plasma_panel.md`](docs/DNA_damage_plasma_panel.md))
 
-The central finding is negative and it matters for study design: 71 of the 118
-proteins are nuclear or cytosolic enzymes that do not circulate at a level any
-mass spectrometer reaches from plasma. Every protein in double-strand break
-repair, nucleotide excision repair, mismatch repair and base excision repair
-falls in that group, OGG1, APEX1 and PARP1 among them. Twenty-eight proteins are
-realistically measurable, and they are the consequences of DNA damage rather than
-the repair machinery: nucleosomal histones from cell death and NETosis, the redox
-enzymes that create the damaging environment, and the acute-phase iron and heme
-handlers that drive Fenton chemistry.
+Lymphocytes are the right matrix for this question. Sixty of the 128 proteins are
+measurable in a cell lysate against 28 in plasma, and the 41 proteins that change
+status are the repair machinery itself: PARP1, APE1, Ku70, Ku80, DNA-PKcs, the MRN
+complex, RPA, PCNA, XRCC1 and the mismatch repair proteins. Several are not merely
+detectable but abundant enough for DIA from a plain whole-cell lysate. The traffic
+runs both ways: the seven secreted plasma proteins in the panel are not lymphocyte
+proteins at all, and the panel uses them as purity and carryover markers instead.
 
-The exception worth pursuing is H2AX. Its C-terminal tryptic peptide ATQASQEY is
-specific to H2AX across the human proteome and contains Ser140, the residue the
-literature calls Ser139, so a phospho-PRM assay on it reads the canonical
-double-strand-break marker from blood rather than from cells on a slide.
+Three things decide whether the experiment works. Resting lymphocytes are in G0,
+so fourteen proteins including RAD51, BRCA1, BRCA2 and TOP2A are absent until
+mitogen stimulation, and a design that mixes resting and stimulated cells measures
+proliferation while reporting repair capacity. The isolation procedure itself
+induces a damage response, so time from draw to lysis is a covariate. And purity
+is a measurement: MPO reports granulocyte contamination, the plasma proteins
+report wash quality, and PRDX2 and friends report incomplete red cell lysis.
 
-Thirteen of the 28 measurable proteins are erythrocyte-rich, so a hemolysis index
-belongs on every sample as a covariate.
+The flagship assay is γH2AX. In lymphocytes H2AX is a core histone, and its
+C-terminal peptide ATQASQEY carries Ser140, the residue the literature calls
+Ser139. Measured against the total-H2AX peptide TSATVGPK it gives a stoichiometric
+occupancy that foci counting only approximates.
 
 ```
-data/panel_targets.tsv          118 targets with pathway category
-data/plasma_evidence.tsv        tier, expected level, assay and confounder per protein
-data/human_swissprot.fasta.gz   the 20,525 human Swiss-Prot entries used
-src/fetch_swissprot.py          rebuilds that file from the NCBI distribution
-src/panel_build.py              digestion, uniqueness, scoring, transitions, 13 checks
-src/validate.py                 re-derives every number by an independent route
-results/                        proteins, peptides, PRM transitions, QC
+data/panel_targets.tsv            128 targets with pathway category
+data/lymphocyte_evidence.tsv      tier, expected level, assay and confounder
+data/plasma_evidence.tsv          the same for plasma
+data/human_swissprot.fasta.gz     the 20,525 human Swiss-Prot entries used
+src/fetch_swissprot.py            rebuilds that file from the NCBI distribution
+src/panel_build.py                digestion, uniqueness, scoring, transitions, 13 checks
+src/validate.py                   re-derives every number by an independent route
+results/                          proteins, peptides, PRM transitions, QC per matrix
 ```
 
 ```bash
-python3 src/panel_build.py
-python3 src/validate.py
+python3 src/panel_build.py lymphocyte && python3 src/validate.py lymphocyte
+python3 src/panel_build.py plasma     && python3 src/validate.py plasma
 ```
 
 ### PROTAC architecture vs. *Primula* root constituents

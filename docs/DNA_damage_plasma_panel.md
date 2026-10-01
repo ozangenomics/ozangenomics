@@ -1,8 +1,17 @@
 # A DNA-damage, DNA-oxidation and DNA-repair protein panel for plasma LC-MS/MS
 
-A 118-protein target list built against UniProtKB/Swiss-Prot, digested in silico,
-checked for peptide uniqueness across the whole human proteome, and tiered by
-whether each protein is realistically measurable in plasma.
+> **Looking for the lymphocyte panel?** See
+> [`DNA_damage_lymphocyte_panel.md`](DNA_damage_lymphocyte_panel.md). For DNA
+> repair enzymes the cell is the better matrix: 60 of the 128 proteins are
+> measurable in a lymphocyte lysate against 28 here, and the repair machinery
+> that this page reports as unreachable is abundant there. This page remains the
+> right reference for what circulates.
+
+A target list built against UniProtKB/Swiss-Prot, digested in silico, checked for
+peptide uniqueness across the whole human proteome, and tiered by whether each
+protein is realistically measurable in plasma. The counts below describe the
+original 118-protein list; the panel has since grown to 128 with the addition of
+lymphocyte-specific targets, all of which are intracellular and tier T4 here.
 
 ## The headline you need before designing the experiment
 
@@ -132,8 +141,8 @@ and HP independently of any DNA damage.
 ## Reproducing
 
 ```bash
-python3 src/panel_build.py     # builds the panel and runs 13 internal checks
-python3 src/validate.py        # re-derives everything by an independent route
+python3 src/panel_build.py plasma     # builds the panel and runs 13 internal checks
+python3 src/validate.py plasma        # re-derives everything by an independent route
 ```
 
 Both must exit cleanly. `src/validate.py` recomputes every peptide mass and every
@@ -175,7 +184,7 @@ heavy peptide standards before committing to a large cohort.
 |---|---|
 | `data/panel_targets.tsv` | 118 targets: accession, gene, Swiss-Prot name, pathway category, length |
 | `data/plasma_evidence.tsv` | Tier, expected level, basis, recommended assay and confounder per protein |
-| `results/panel_proteins.tsv` | One row per protein with digestion statistics and lead peptide |
-| `results/panel_peptides.tsv` | 585 ranked candidate peptides with m/z, scope, sharing partners and liabilities |
-| `results/prm_transition_list.tsv` | 468 PRM transitions for the measurable tiers |
-| `results/panel_qc.tsv` | The 13 internal checks and their results |
+| `results/plasma_panel_proteins.tsv` | One row per protein with digestion statistics and lead peptide |
+| `results/plasma_panel_peptides.tsv` | Ranked candidate peptides with m/z, scope, sharing partners and liabilities |
+| `results/plasma_prm_transitions.tsv` | PRM transitions for the measurable tiers |
+| `results/plasma_panel_qc.tsv` | The 13 internal checks and their results |

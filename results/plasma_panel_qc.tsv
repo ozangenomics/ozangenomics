@@ -1,0 +1,14 @@
+check	result	detail
+every_target_resolved_in_swissprot	PASS	128 of 128 accessions found
+peptide_coordinates_match_sequence	PASS	0 mismatched of 635
+peptide_masses_reproducible	PASS	0 discrepancies
+proteotypic_calls_consistent	PASS	0 contradicted
+digestion_fully_specific	PASS	0 violations
+all_proteins_have_evidence_tier	PASS	0 unassessed
+all_proteins_have_candidate_peptide	PASS	0 without
+measurable_tier_lead_peptide_scope_resolved	PASS	28 of 28; 25 protein-specific
+no_measurable_tier_protein_relies_on_ambiguous_peptide	PASS	0 ambiguous
+family_level_peptides_name_their_group	PASS	23 family-level peptides, 0 unnamed
+no_selenocysteine_in_measurable_tier_lead	PASS	0
+transition_list_products_above_precursor	PASS	468 transitions for 55 peptides
+sequence_identical_accessions_declared	PASS	13 proteins share an exact sequence with another accession: PCNA,HMGB1,HMGB2,H4,H2BC4,H3C1,H3-3A,H2AC11,H2AZ1,SOD1,GPX4,PRDX2,HSPA1A

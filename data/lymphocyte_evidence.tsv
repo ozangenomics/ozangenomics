@@ -1,0 +1,129 @@
+accession	gene	tier	expected_level	basis	assay	confounder
+Q13315	ATM	L3_enrichment	low, ~1e4 copies/cell	350 kDa nuclear kinase, low copy number but the apex DDR kinase	nuclear fraction or immunoenrichment, PRM	long peptides from a large protein; pS1981 needs phospho-enrichment
+Q13535	ATR	L3_enrichment	low	lower copy number than ATM, replication-stress restricted	nuclear fraction, PRM	rises with proliferation
+O14757	CHEK1	L4_stimulation_required	very low in resting cells	S-phase restricted, near-absent in quiescent lymphocytes	stimulate with PHA or anti-CD3 then PRM	entirely proliferation-dependent
+O96017	CHEK2	L3_enrichment	low to moderate	expressed in lymphoid tissue, less cell-cycle restricted than CHK1	nuclear fraction, PRM	pT68 needs phospho-enrichment
+P04637	TP53	L3_enrichment	low, short half-life	rapidly degraded unless stabilised by damage	nuclear fraction, PRM; stabilises on damage	level reports stabilisation, not synthesis
+Q12888	TP53BP1	L3_enrichment	moderate	53BP1 is a readily detected nuclear scaffold in lymphoid cells	nuclear fraction, PRM	foci imaging is the orthogonal readout
+Q00987	MDM2	L4_stimulation_required	very low	short-lived, autoubiquitinated	immunoenrichment only	none
+P38936	CDKN1A	L3_enrichment	low, inducible	p21 is damage-inducible, low at baseline	nuclear fraction, PRM after damage	induction kinetics dominate the signal
+P24522	GADD45A	L4_stimulation_required	very low at baseline	strongly inducible, near-absent unstressed	PRM after damage	none
+P16104	H2AX	L1_abundant	high; 2-25 percent of the H2A pool	a core histone variant, abundant in every nucleated cell	whole-cell or acid-extracted histones, DIA or PRM	see the phospho note in the report
+Q14676	MDC1	L3_enrichment	low to moderate	large nuclear scaffold	nuclear fraction, PRM	none
+P09874	PARP1	L1_abundant	high, ~1e6 copies/cell	one of the most abundant nuclear proteins	whole-cell lysate, DIA or PRM	cleaved to 89 kDa in apoptosis; choose peptides on both sides of the DEVD site
+Q9UGN5	PARP2	L3_enrichment	low	minor paralogue of PARP1	nuclear fraction, PRM	shares domains with PARP1, check peptide uniqueness
+P58004	SESN2	L4_stimulation_required	very low at baseline	stress-inducible	PRM after stress	none
+P78527	PRKDC	L1_abundant	high, ~1e5 copies/cell	DNA-PKcs is abundant in lymphoid cells, the dominant NHEJ kinase	whole-cell lysate, DIA or PRM	460 kDa; digest completeness matters
+P13010	XRCC5	L1_abundant	high, ~4e5 copies/cell	Ku80, one of the most abundant nuclear proteins in lymphocytes	whole-cell lysate, DIA or PRM	none
+P12956	XRCC6	L1_abundant	high, ~4e5 copies/cell	Ku70, obligate Ku80 partner, equally abundant	whole-cell lysate, DIA or PRM	none
+P49959	MRE11	L2_deep_proteome	moderate	MRN complex, routinely seen in deep cell proteomes	whole-cell lysate, DIA or PRM	none
+Q92878	RAD50	L2_deep_proteome	moderate	MRN complex	whole-cell lysate, DIA or PRM	none
+O60934	NBN	L2_deep_proteome	moderate	MRN complex, nibrin	whole-cell lysate, DIA or PRM	pS343 needs phospho-enrichment
+P27694	RPA1	L2_deep_proteome	moderate to high	RPA is an abundant ssDNA-binding complex	whole-cell lysate, DIA or PRM	rises with proliferation
+P15927	RPA2	L2_deep_proteome	moderate to high	RPA complex; pS4/S8 is a classic DSB marker	whole-cell lysate; phospho-enrichment for pS4/S8	phospho form needs enrichment
+P35244	RPA3	L2_deep_proteome	moderate	small RPA subunit, 121 residues, few tryptic peptides	whole-cell lysate, PRM	short protein limits peptide choice
+P38398	BRCA1	L4_stimulation_required	very low in resting cells	S and G2 restricted, near-absent in quiescent lymphocytes	stimulate then nuclear fraction, PRM	entirely proliferation-dependent
+P51587	BRCA2	L4_stimulation_required	very low in resting cells	S and G2 restricted, 3418 residues	stimulate then nuclear fraction, PRM	entirely proliferation-dependent
+Q06609	RAD51	L4_stimulation_required	very low in resting cells	homologous recombination is unavailable in G0	stimulate then PRM	the defining resting-lymphocyte absence
+P43351	RAD52	L4_stimulation_required	very low	minor recombination mediator	stimulate then PRM	none
+Q13426	XRCC4	L2_deep_proteome	moderate	NHEJ ligase cofactor, active in G0	whole-cell lysate, PRM	none
+P49917	LIG4	L3_enrichment	low	NHEJ ligase, low copy but functionally essential in G0	nuclear fraction, PRM	none
+Q9H9Q4	NHEJ1	L3_enrichment	low	XLF, small NHEJ factor	nuclear fraction, PRM	none
+Q96SD1	DCLRE1C	L3_enrichment	low	Artemis, the lymphocyte hairpin-opening nuclease	nuclear fraction, PRM	central to V(D)J; loss causes SCID
+Q9BXW9	FANCD2	L4_stimulation_required	very low in resting cells	S-phase restricted, monoubiquitination is the readout	stimulate then PRM; ubiquitin form by gel shift	proliferation-dependent
+Q14191	WRN	L3_enrichment	low	RecQ helicase	nuclear fraction, PRM	none
+P54132	BLM	L4_stimulation_required	very low in resting cells	proliferation-restricted RecQ helicase	stimulate then PRM	proliferation-dependent
+Q9NUW8	TDP1	L3_enrichment	low	resolves trapped topoisomerase I adducts	nuclear fraction, PRM	none
+O95551	TDP2	L3_enrichment	low to moderate	resolves trapped topoisomerase II adducts	nuclear fraction, PRM	none
+P11387	TOP1	L2_deep_proteome	moderate to high	abundant and active in non-dividing cells	whole-cell lysate, DIA or PRM	none
+P11388	TOP2A	L4_stimulation_required	very low in resting cells	the canonical proliferation marker, absent in G0	stimulate then PRM	proliferation-dependent; TOP2B is the G0 paralogue
+P12004	PCNA	L2_deep_proteome	moderate resting, high stimulated	sliding clamp, strongly proliferation-responsive	whole-cell lysate, DIA or PRM	a de facto proliferation index
+O15527	OGG1	L3_enrichment	low, ~1e3 to 1e4 copies/cell	the central 8-oxoG glycosylase; genuinely low copy	nuclear fraction or immunoenrichment, PRM	the key target of this panel and the hardest to measure
+Q9UIF7	MUTYH	L3_enrichment	low	adenine glycosylase opposite 8-oxoG	nuclear fraction, PRM	none
+P78549	NTHL1	L3_enrichment	low	oxidised pyrimidine glycosylase	nuclear fraction, PRM	none
+Q96FI4	NEIL1	L3_enrichment	low	oxidised base glycosylase	nuclear fraction, PRM	none
+Q969S2	NEIL2	L3_enrichment	low	transcription-coupled oxidised base repair	nuclear fraction, PRM	none
+Q8TAT5	NEIL3	L4_stimulation_required	very low in resting cells	proliferation-restricted glycosylase	stimulate then PRM	proliferation-dependent
+P36639	NUDT1	L2_deep_proteome	moderate	MTH1 is cytosolic and reasonably abundant	whole-cell lysate, PRM	sanitises the nucleotide pool, not DNA
+P27695	APEX1	L1_abundant	high, ~1e6 copies/cell	APE1 is one of the most abundant nuclear enzymes	whole-cell lysate, DIA or PRM	also a redox coactivator; level does not imply repair flux
+Q9UBZ4	APEX2	L3_enrichment	low	minor AP endonuclease	nuclear fraction, PRM	none
+P18887	XRCC1	L2_deep_proteome	moderate	BER scaffold, constitutive	whole-cell lysate, PRM	none
+P06746	POLB	L2_deep_proteome	moderate	BER polymerase, constitutive	whole-cell lysate, PRM	none
+P49916	LIG3	L2_deep_proteome	moderate	nuclear and mitochondrial ligase, XRCC1 partner	whole-cell lysate, PRM	none
+P18858	LIG1	L3_enrichment	low resting, high stimulated	replicative ligase	whole-cell lysate; stimulate to raise signal	proliferation-dependent
+P39748	FEN1	L3_enrichment	low resting, high stimulated	replication-linked flap endonuclease	whole-cell lysate; stimulate to raise signal	proliferation-dependent
+Q96T60	PNKP	L3_enrichment	low	end-processing kinase and phosphatase	nuclear fraction, PRM	none
+P13051	UNG	L3_enrichment	low	uracil glycosylase; UNG2 is the nuclear form	nuclear fraction, PRM	central to class-switch recombination in B cells
+Q53HV7	SMUG1	L3_enrichment	low	backup uracil glycosylase	nuclear fraction, PRM	none
+Q13569	TDG	L3_enrichment	low	G/T mismatch glycosylase	nuclear fraction, PRM	none
+O95243	MBD4	L3_enrichment	low	methyl-CpG glycosylase	nuclear fraction, PRM	none
+P29372	MPG	L3_enrichment	low to moderate	alkyladenine glycosylase	nuclear fraction, PRM	the right readout for alkylating exposure
+P23025	XPA	L3_enrichment	low	NER scaffold	nuclear fraction, PRM	none
+Q01831	XPC	L2_deep_proteome	moderate	global-genome damage sensor, constitutive	whole-cell lysate, PRM	none
+P54727	RAD23B	L2_deep_proteome	moderate to high	abundant, also a proteasome shuttle	whole-cell lysate, DIA or PRM	abundance reflects both roles
+P07992	ERCC1	L3_enrichment	low	ERCC1-XPF endonuclease subunit	nuclear fraction, PRM	none
+P18074	ERCC2	L2_deep_proteome	moderate	XPD, a TFIIH subunit, constitutive	whole-cell lysate, PRM	TFIIH abundance reflects transcription, not repair
+P19447	ERCC3	L2_deep_proteome	moderate	XPB, a TFIIH subunit, constitutive	whole-cell lysate, PRM	TFIIH abundance reflects transcription, not repair
+Q92889	ERCC4	L3_enrichment	low	XPF endonuclease	nuclear fraction, PRM	none
+P28715	ERCC5	L3_enrichment	low	XPG endonuclease	nuclear fraction, PRM	none
+Q03468	ERCC6	L3_enrichment	low	CSB, transcription-coupled repair	nuclear fraction, PRM	none
+Q16531	DDB1	L1_abundant	high	abundant CUL4 adaptor with many roles beyond NER	whole-cell lysate, DIA or PRM	abundance is not NER-specific
+Q92466	DDB2	L3_enrichment	low, UV-inducible	UV damage sensor	nuclear fraction, PRM	none
+P40692	MLH1	L2_deep_proteome	moderate	MutL alpha, constitutive	whole-cell lysate, PRM	none
+P43246	MSH2	L2_deep_proteome	moderate	MutS alpha, rises with proliferation	whole-cell lysate, PRM	proliferation-responsive
+P52701	MSH6	L2_deep_proteome	moderate	MutS alpha partner of MSH2	whole-cell lysate, PRM	proliferation-responsive
+P20585	MSH3	L3_enrichment	low	MutS beta, lower abundance than MSH6	nuclear fraction, PRM	none
+P54278	PMS2	L3_enrichment	low	MutL alpha partner, degraded without MLH1	nuclear fraction, PRM	level depends on MLH1
+P09429	HMGB1	L1_abundant	high, ~1e6 copies/cell	abundant chromatin protein in every nucleated cell	whole-cell lysate, DIA or PRM	leaves the nucleus on activation and death
+P26583	HMGB2	L2_deep_proteome	moderate to high	abundant in lymphoid tissue	whole-cell lysate, DIA or PRM	more proliferation-linked than HMGB1
+P35659	DEK	L2_deep_proteome	moderate to high	abundant chromatin architectural protein	whole-cell lysate, DIA or PRM	none
+P06748	NPM1	L1_abundant	high	one of the most abundant nucleolar proteins	whole-cell lysate, DIA or PRM	none
+P62805	H4	L1_abundant	very high	core histone	acid extraction, DIA or PRM	see the histone note in the report
+P62807	H2BC4	L1_abundant	very high	core histone	acid extraction, DIA or PRM	family-level quantification only
+P68431	H3C1	L1_abundant	very high	core histone	acid extraction, DIA or PRM	family-level quantification only
+P84243	H3-3A	L1_abundant	very high	replication-independent H3 variant, enriched in G0	acid extraction, DIA or PRM	H3.3 to H3.1 ratio tracks proliferation history
+P0C0S8	H2AC11	L1_abundant	very high	core histone	acid extraction, DIA or PRM	family-level quantification only
+P0C0S5	H2AZ1	L2_deep_proteome	moderate	variant histone at regulatory elements	acid extraction, PRM	family-level quantification only
+P00441	SOD1	L1_abundant	high	abundant cytosolic antioxidant	whole-cell lysate, DIA or PRM	erythrocyte carryover in the preparation
+P04179	SOD2	L2_deep_proteome	moderate, inducible	mitochondrial, NF-kB inducible	whole-cell lysate, DIA or PRM	rises sharply on activation
+P08294	SOD3	L4_not_a_lymphocyte_protein	absent or trace	secreted endothelial enzyme, not a lymphocyte protein	use as a plasma-carryover indicator	a wash-quality marker, not an analyte
+P04040	CAT	L2_deep_proteome	moderate	peroxisomal catalase, higher in monocytes than lymphocytes	whole-cell lysate, DIA or PRM	monocyte content of the preparation; erythrocyte carryover
+P07203	GPX1	L2_deep_proteome	moderate	cytosolic glutathione peroxidase	whole-cell lysate, DIA or PRM	erythrocyte carryover; selenium status
+P22352	GPX3	L4_not_a_lymphocyte_protein	absent or trace	kidney-secreted plasma enzyme	use as a plasma-carryover indicator	a wash-quality marker, not an analyte
+P36969	GPX4	L2_deep_proteome	moderate	membrane peroxidase, the ferroptosis gatekeeper	whole-cell lysate, PRM	selenocysteine complicates peptide choice
+Q06830	PRDX1	L1_abundant	high	among the most abundant cytosolic proteins	whole-cell lysate, DIA or PRM	overoxidation state matters more than level
+P32119	PRDX2	L1_abundant	high	abundant cytosolic peroxiredoxin	whole-cell lysate, DIA or PRM	strong erythrocyte carryover; overoxidation state
+P30048	PRDX3	L2_deep_proteome	moderate	mitochondrial peroxiredoxin	whole-cell lysate, DIA or PRM	none
+Q13162	PRDX4	L3_enrichment	low to moderate	ER-resident and secreted, modest in lymphocytes	whole-cell lysate, PRM	none
+P30044	PRDX5	L2_deep_proteome	moderate	mitochondrial and peroxisomal	whole-cell lysate, DIA or PRM	none
+P30041	PRDX6	L2_deep_proteome	moderate to high	1-Cys peroxiredoxin	whole-cell lysate, DIA or PRM	erythrocyte and platelet carryover
+P10599	TXN	L1_abundant	high	abundant cytosolic thioredoxin	whole-cell lysate, DIA or PRM	redox state matters more than level
+Q16881	TXNRD1	L2_deep_proteome	moderate	selenoenzyme	whole-cell lysate, PRM	selenocysteine complicates peptide choice
+Q9H3M7	TXNIP	L2_deep_proteome	moderate to high in quiescent cells	high in resting lymphocytes, falls sharply on activation	whole-cell lysate, DIA or PRM	one of the sharpest quiescence markers; glucose-responsive
+P00390	GSR	L2_deep_proteome	moderate	glutathione reductase	whole-cell lysate, DIA or PRM	erythrocyte carryover
+P09211	GSTP1	L1_abundant	high	abundant cytosolic transferase	whole-cell lysate, DIA or PRM	none
+P35754	GLRX	L2_deep_proteome	moderate	cytosolic glutaredoxin	whole-cell lysate, DIA or PRM	erythrocyte carryover
+Q9BYN0	SRXN1	L3_enrichment	low	repairs peroxiredoxin overoxidation	whole-cell lysate, PRM	low copy number
+P09601	HMOX1	L3_enrichment	low in lymphocytes	predominantly a monocyte and macrophage response	whole-cell lysate, PRM	monocyte content dominates the signal
+P15559	NQO1	L3_enrichment	low in lymphocytes	NRF2 target, modest in lymphoid cells	whole-cell lysate, PRM	the P187S polymorphism abolishes the protein in some donors
+Q99497	PARK7	L1_abundant	high	abundant cytosolic redox sensor	whole-cell lysate, DIA or PRM	erythrocyte carryover; oxidation of Cys106 is the informative feature
+P49908	SELENOP	L4_not_a_lymphocyte_protein	absent or trace	hepatically secreted plasma selenium transporter	use as a plasma-carryover indicator	a wash-quality marker, not an analyte
+Q16236	NFE2L2	L4_stimulation_required	very low at baseline	constitutively degraded until oxidative stress stabilises it	PRM after oxidant challenge	level reports stabilisation, not synthesis
+Q14145	KEAP1	L3_enrichment	low to moderate	the NRF2 repressor, constitutive	whole-cell lysate, PRM	none
+P11413	G6PD	L1_abundant	high	the NADPH source for all glutathione recycling	whole-cell lysate, DIA or PRM	erythrocyte carryover; common deficiency variants
+P00450	CP	L4_not_a_lymphocyte_protein	absent or trace	hepatically secreted plasma ferroxidase	use as a plasma-carryover indicator	a wash-quality marker, not an analyte
+P00738	HP	L4_not_a_lymphocyte_protein	absent or trace	hepatically secreted plasma protein	use as a plasma-carryover indicator	a wash-quality marker, not an analyte
+P02790	HPX	L4_not_a_lymphocyte_protein	absent or trace	hepatically secreted plasma protein	use as a plasma-carryover indicator	a wash-quality marker, not an analyte
+P05164	MPO	L4_not_a_lymphocyte_protein	absent in pure lymphocytes	a neutrophil azurophil granule protein	use as a granulocyte-contamination indicator	the single most useful purity marker for this preparation
+P0DMV8	HSPA1A	L1_abundant	high, stress-inducible	abundant chaperone	whole-cell lysate, DIA or PRM	induced by the isolation procedure itself
+P07900	HSP90AA1	L1_abundant	high	abundant chaperone, client of many DDR kinases	whole-cell lysate, DIA or PRM	induced by handling stress
+Q13263	TRIM28	L1_abundant	high	KAP1 is an abundant ATM substrate; pS824 is a tractable DDR readout	whole-cell lysate for total, phospho-enrichment for pS824	pS824 needs phospho-enrichment
+P15918	RAG1	L4_not_a_lymphocyte_protein	absent in mature peripheral cells	expressed in developing thymocytes and bone marrow B cells only	thymus, marrow or leukaemic blasts, not peripheral blood	would confound a study in lymphoid tissue or in acute lymphoblastic leukaemia
+P55895	RAG2	L4_not_a_lymphocyte_protein	absent in mature peripheral cells	expressed in developing lymphocytes only	thymus, marrow or leukaemic blasts	same as RAG1
+P04053	DNTT	L4_not_a_lymphocyte_protein	absent in mature peripheral cells	terminal transferase, a developing-lymphocyte enzyme	thymus, marrow or leukaemic blasts	a standard acute lymphoblastic leukaemia marker
+Q9GZX7	AICDA	L4_stimulation_required	absent in resting peripheral B cells	AID is induced in germinal-centre and activated B cells	stimulate B cells with CD40L and IL-4, then PRM	in tonsil or lymph node this becomes a real source of programmed damage
+P31941	APOBEC3A	L3_enrichment	low, myeloid-biased	a genuine source of genomic uracil, monocyte-biased	whole-cell lysate, PRM	monocyte content; near-identical to the APOBEC3B catalytic domain
+Q9UH17	APOBEC3B	L3_enrichment	low	a genuine source of genomic uracil and mutagenesis	whole-cell lysate, PRM	shares its catalytic domain with APOBEC3A, check peptide uniqueness
+Q9HC16	APOBEC3G	L2_deep_proteome	moderate	well expressed in peripheral blood lymphocytes	whole-cell lysate, PRM	family members share extensive sequence
+Q00059	TFAM	L2_deep_proteome	moderate	packages mitochondrial DNA; the mtDNA damage counterpart	whole-cell lysate, PRM	tracks mitochondrial content, which varies with activation
+P54098	POLG	L3_enrichment	low	the sole mitochondrial replicative polymerase	whole-cell lysate, PRM	none

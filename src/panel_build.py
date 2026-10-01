@@ -1,4 +1,16 @@
-"""Build a DNA-damage / oxidative-stress / DNA-repair plasma MS panel.
+"""Build a DNA-damage / oxidative-stress / DNA-repair LC-MS/MS panel.
+
+Runs for one biological matrix at a time:
+
+    python3 src/panel_build.py lymphocyte     (default)
+    python3 src/panel_build.py plasma
+
+The target list and the peptide chemistry are the same for both. What differs
+is the evidence layer: whether each protein is realistically measurable in
+that matrix, at what level, with what assay and against what confounder.
+A nuclear repair enzyme that is invisible in plasma is often straightforward
+in a lymphocyte lysate, and a secreted plasma protein is a contamination
+marker in a cell preparation rather than an analyte.
 
 Inputs
 ------
@@ -7,14 +19,15 @@ data/human_swissprot.fasta.gz  the 20,525 human entries of UniProtKB/Swiss-Prot,
                Each header is >ACC1|ACC2|... protein name; accessions after the
                first are sequence-identical entries that no peptide separates.
                Rebuild with src/fetch_swissprot.py.
-data/panel_targets.tsv       curated target list (accession, gene, category)
-data/plasma_evidence.tsv     curated plasma-detectability evidence per protein
+data/panel_targets.tsv            curated target list (accession, gene, category)
+data/<matrix>_evidence.tsv        measurability evidence per protein
 
-Outputs
--------
-results/panel_proteins.tsv   one row per protein, with digestion statistics
-results/panel_peptides.tsv   candidate quantifier peptides, ranked
-results/panel_qc.tsv         checks that must all pass
+Outputs, all prefixed with the matrix name
+------------------------------------------
+results/<matrix>_panel_proteins.tsv   one row per protein with digestion stats
+results/<matrix>_panel_peptides.tsv   candidate quantifier peptides, ranked
+results/<matrix>_prm_transitions.tsv  transitions for the measurable tiers
+results/<matrix>_panel_qc.tsv         checks that must all pass
 """
 from __future__ import annotations
 
@@ -22,6 +35,7 @@ import csv
 import gzip
 import os
 import re
+import sys
 from collections import Counter, defaultdict
 
 # --- monoisotopic residue masses (Unimod / IUPAC, Da) -----------------------
@@ -48,6 +62,21 @@ KD = {
 }
 
 HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+# Each matrix names its evidence file and which tier prefixes mark a protein
+# as realistically measurable there.
+MATRICES = {
+    'lymphocyte': {
+        'evidence': 'lymphocyte_evidence.tsv',
+        'measurable': ('L1', 'L2'),
+        'label': 'isolated peripheral blood lymphocytes',
+    },
+    'plasma': {
+        'evidence': 'plasma_evidence.tsv',
+        'measurable': ('T1', 'T2'),
+        'label': 'plasma',
+    },
+}
 
 
 def path(*p):
@@ -177,7 +206,7 @@ def heavy_shift(pep: str) -> float:
     return 0.0
 
 
-def build_transitions(pep_rows, prot_by_acc):
+def build_transitions(pep_rows, measurable):
     """PRM transition list for the proteins that are realistically measurable.
 
     Reports the six most informative fragments per peptide, preferring y ions
@@ -185,8 +214,7 @@ def build_transitions(pep_rows, prot_by_acc):
     """
     rows = []
     for d in pep_rows:
-        tier = d['plasma_evidence_tier']
-        if not tier.startswith(('T1', 'T2')) or d['rank'] > 2:
+        if not d['evidence_tier'].startswith(measurable) or d['rank'] > 2:
             continue
         pep = d['peptide']
         if 'U' in pep:
@@ -251,15 +279,17 @@ def load_targets():
     return rows
 
 
-def load_evidence():
+def load_evidence(matrix: str):
     ev = {}
-    with open(path('data', 'plasma_evidence.tsv')) as fh:
+    with open(path('data', MATRICES[matrix]['evidence'])) as fh:
         for r in csv.DictReader(fh, delimiter='\t'):
             ev[r['accession']] = r
     return ev
 
 
-def main():
+def main(matrix: str = 'lymphocyte'):
+    cfg = MATRICES[matrix]
+    measurable = cfg['measurable']
     human, meta = load_proteome()
     acc2oid = {}
     for oid, (accs, _name) in meta.items():
@@ -272,7 +302,7 @@ def main():
         raise SystemExit(f'accessions absent from the proteome: {missing}')
     tgt = {r['accession']: (acc2oid[r['accession']],
                             human[acc2oid[r['accession']]]) for r in targets}
-    evidence = load_evidence()
+    evidence = load_evidence(matrix)
 
     # ---- peptide uniqueness over the whole human Swiss-Prot proteome -------
     # A peptide is proteotypic only if it occurs in no other human protein,
@@ -374,13 +404,13 @@ def main():
             pep_rows.append(d)
         ev = evidence.get(acc, {})
         for d in keep:
-            d['plasma_evidence_tier'] = ev.get('tier', 'unassessed')
+            d['evidence_tier'] = ev.get('tier', 'unassessed')
         prot_rows.append({
             'accession': acc, 'gene': gene, 'protein_name': r['protein_name'],
             'category': r['category'], 'length': len(seq),
-            'plasma_evidence_tier': ev.get('tier', 'unassessed'),
-            'expected_plasma_level': ev.get('expected_level', ''),
-            'plasma_evidence_basis': ev.get('basis', ''),
+            'evidence_tier': ev.get('tier', 'unassessed'),
+            'expected_level': ev.get('expected_level', ''),
+            'evidence_basis': ev.get('basis', ''),
             'recommended_assay': ev.get('assay', ''),
             'confounder': ev.get('confounder', ''),
             'tryptic_peptides_7_30aa': n_obs,
@@ -396,40 +426,46 @@ def main():
             'top_peptide_mz_2plus': keep[0]['mz_2plus'] if keep else '',
         })
 
-    with open(path('results', 'panel_proteins.tsv'), 'w', newline='') as fh:
+    with open(path('results', f'{matrix}_panel_proteins.tsv'), 'w',
+              newline='') as fh:
         w = csv.DictWriter(fh, fieldnames=list(prot_rows[0]), delimiter='\t')
         w.writeheader()
         w.writerows(prot_rows)
-    cols = ['accession', 'gene', 'category', 'plasma_evidence_tier', 'rank',
+    cols = ['accession', 'gene', 'category', 'evidence_tier', 'rank',
             'peptide', 'start', 'end', 'length', 'monoisotopic_mass',
             'mz_2plus', 'mz_3plus', 'gravy',
             'proteotypic_in_human_swissprot', 'quantification_scope',
             'indistinguishable_accessions', 'n_human_proteins_sharing',
             'shared_with', 'liabilities', 'score']
-    with open(path('results', 'panel_peptides.tsv'), 'w', newline='') as fh:
+    with open(path('results', f'{matrix}_panel_peptides.tsv'), 'w',
+              newline='') as fh:
         w = csv.DictWriter(fh, fieldnames=cols, delimiter='\t', extrasaction='ignore')
         w.writeheader()
         w.writerows(pep_rows)
 
-    trans = build_transitions(pep_rows, {r['accession']: r for r in prot_rows})
+    trans = build_transitions(pep_rows, measurable)
     tcols = ['gene', 'accession', 'peptide', 'quantification_scope',
              'precursor_charge', 'precursor_mz_light', 'precursor_mz_heavy',
              'heavy_label', 'product_ion', 'product_charge', 'product_mz']
-    with open(path('results', 'prm_transition_list.tsv'), 'w', newline='') as fh:
+    with open(path('results', f'{matrix}_prm_transitions.tsv'), 'w',
+              newline='') as fh:
         w = csv.DictWriter(fh, fieldnames=tcols, delimiter='\t')
         w.writeheader()
         w.writerows(trans)
 
     globals()['TRANS'] = trans
-    qc = run_qc(targets, tgt, human, pep_owner, seq_groups, prot_rows, pep_rows)
-    with open(path('results', 'panel_qc.tsv'), 'w', newline='') as fh:
+    qc = run_qc(targets, tgt, human, pep_owner, seq_groups, prot_rows,
+                pep_rows, measurable)
+    with open(path('results', f'{matrix}_panel_qc.tsv'), 'w',
+              newline='') as fh:
         w = csv.writer(fh, delimiter='\t')
         w.writerow(['check', 'result', 'detail'])
         w.writerows(qc)
     return prot_rows, pep_rows, qc
 
 
-def run_qc(targets, tgt, human, pep_owner, seq_groups, prot_rows, pep_rows):
+def run_qc(targets, tgt, human, pep_owner, seq_groups, prot_rows, pep_rows,
+           measurable):
     """Checks that must pass before the panel is used."""
     out = []
 
@@ -478,7 +514,7 @@ def run_qc(targets, tgt, human, pep_owner, seq_groups, prot_rows, pep_rows):
 
     # every protein with any peptide reported should have at least one
     tierless = [r['accession'] for r in prot_rows
-                if r['plasma_evidence_tier'] == 'unassessed']
+                if r['evidence_tier'] == 'unassessed']
     add('all_proteins_have_evidence_tier', not tierless,
         f'{len(tierless)} unassessed')
 
@@ -491,10 +527,10 @@ def run_qc(targets, tgt, human, pep_owner, seq_groups, prot_rows, pep_rows):
     # peptide is unique to one histone gene product; those are reported as
     # family-level by design rather than silently called protein-specific.
     t12 = [r for r in prot_rows
-           if r['plasma_evidence_tier'].startswith(('T1', 'T2'))]
+           if r['evidence_tier'].startswith(measurable)]
     ok12 = [r for r in t12
             if r['top_peptide_scope'] in ('protein_specific', 'family_level')]
-    add('tier1_2_lead_peptide_scope_resolved',
+    add('measurable_tier_lead_peptide_scope_resolved',
         len(ok12) == len(t12),
         f'{len(ok12)} of {len(t12)}; '
         f'{sum(1 for r in t12 if r["top_peptide_scope"] == "protein_specific")} '
@@ -513,7 +549,7 @@ def run_qc(targets, tgt, human, pep_owner, seq_groups, prot_rows, pep_rows):
     # No lead peptide for a measurable-tier protein may carry selenocysteine,
     # which digests and ionises unpredictably.
     sec = [r['gene'] for r in prot_rows
-           if r['plasma_evidence_tier'].startswith(('T1', 'T2'))
+           if r['evidence_tier'].startswith(measurable)
            and 'U' in r['top_peptide']]
     add('no_selenocysteine_in_measurable_tier_lead', not sec,
         f'{len(sec)}: {",".join(sec)}' if sec else '0')
@@ -533,7 +569,11 @@ def run_qc(targets, tgt, human, pep_owner, seq_groups, prot_rows, pep_rows):
 
 
 if __name__ == '__main__':
-    prot, pep, qc = main()
+    which = sys.argv[1] if len(sys.argv) > 1 else 'lymphocyte'
+    if which not in MATRICES:
+        raise SystemExit(f'matrix must be one of {sorted(MATRICES)}')
+    prot, pep, qc = main(which)
+    print(f'matrix: {which} ({MATRICES[which]["label"]})')
     print(f'{len(prot)} proteins, {len(pep)} candidate peptides')
     for row in qc:
         print(f'  {row[1]:4}  {row[0]:38} {row[2]}')

@@ -117,3 +117,13 @@ P02790	HPX	Hemopexin	oxidative_stress	462
 P05164	MPO	Myeloperoxidase	oxidative_stress	745
 P0DMV8	HSPA1A	Heat shock 70 kDa protein 1A	stress_chaperone	641
 P07900	HSP90AA1	Heat shock protein HSP 90-alpha	stress_chaperone	732
+Q13263	TRIM28	Transcription intermediary factor 1-beta	DDR_signalling	835
+P15918	RAG1	V(D)J recombination-activating protein 1	lymphocyte_programmed_breaks	1043
+P55895	RAG2	V(D)J recombination-activating protein 2	lymphocyte_programmed_breaks	527
+P04053	DNTT	DNA nucleotidylexotransferase	lymphocyte_programmed_breaks	509
+Q9GZX7	AICDA	Single-stranded DNA cytosine deaminase	lymphocyte_deaminase	198
+P31941	APOBEC3A	DNA dC->dU-editing enzyme APOBEC-3A	lymphocyte_deaminase	199
+Q9UH17	APOBEC3B	DNA dC->dU-editing enzyme APOBEC-3B	lymphocyte_deaminase	382
+Q9HC16	APOBEC3G	DNA dC->dU-editing enzyme APOBEC-3G	lymphocyte_deaminase	384
+Q00059	TFAM	Transcription factor A, mitochondrial	mtDNA_maintenance	246
+P54098	POLG	DNA polymerase subunit gamma-1	mtDNA_maintenance	1239

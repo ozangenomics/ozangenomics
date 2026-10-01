@@ -117,3 +117,13 @@ P02790	HPX	T1_abundant_plasma	0.5-1 mg/mL	classical plasma heme scavenger	neat p
 P05164	MPO	T2_detected_plasma	10-100 ng/mL	established cardiovascular and neutrophil-activation marker	depleted plasma PRM or immunoassay	neutrophil activation, heparin raises level
 P0DMV8	HSPA1A	T2_detected_plasma	1-20 ng/mL	serum HSP70 immunoassays established	depleted plasma PRM	near-identical paralogue HSPA1B, shared peptides
 P07900	HSP90AA1	T2_detected_plasma	1-50 ng/mL	serum HSP90-alpha immunoassays established in oncology	depleted plasma PRM or immunoassay	close paralogue HSP90AB1, shared peptides
+Q13263	TRIM28	T4_intracellular	not established in plasma	abundant nuclear ATM substrate, no free-plasma report	PBMC lysate	none
+P15918	RAG1	T4_intracellular	not established in plasma	nuclear, developing lymphocytes only	thymus or marrow lysate	none
+P55895	RAG2	T4_intracellular	not established in plasma	nuclear, developing lymphocytes only	thymus or marrow lysate	none
+P04053	DNTT	T4_intracellular	not established in plasma	nuclear, developing lymphocytes only	thymus or marrow lysate	none
+Q9GZX7	AICDA	T4_intracellular	not established in plasma	nuclear and cytoplasmic, activated B cells only	activated B-cell lysate	none
+P31941	APOBEC3A	T4_intracellular	not established in plasma	cytosolic and nuclear deaminase	PBMC lysate	none
+Q9UH17	APOBEC3B	T4_intracellular	not established in plasma	nuclear deaminase	PBMC lysate	none
+Q9HC16	APOBEC3G	T4_intracellular	not established in plasma	cytosolic deaminase	PBMC lysate	none
+Q00059	TFAM	T4_intracellular	not established in plasma	mitochondrial nucleoid protein	PBMC lysate	none
+P54098	POLG	T4_intracellular	not established in plasma	mitochondrial polymerase	PBMC lysate	none

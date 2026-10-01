@@ -1,4 +1,7 @@
-"""Independent validation of the panel build.
+"""Independent validation of a panel build.
+
+    python3 src/validate.py lymphocyte     (default)
+    python3 src/validate.py plasma
 
 Re-derives every reported quantity by a second route and compares:
   * peptide masses recomputed with pyteomics
@@ -6,7 +9,8 @@ Re-derives every reported quantity by a second route and compares:
   * peptide coordinates re-read from the sequence database
   * proteotypicity re-tested by brute-force substring search
 
-Run after src/panel_build.py. Exits non-zero if any comparison fails.
+Run after src/panel_build.py for the same matrix. Exits non-zero on any
+disagreement.
 """
 from __future__ import annotations
 
@@ -16,7 +20,7 @@ import re
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from panel_build import AA, CARBAMIDOMETHYL, PROTON, path
+from panel_build import AA, CARBAMIDOMETHYL, MATRICES, PROTON, path
 
 try:
     from pyteomics import mass as pyt_mass
@@ -45,7 +49,7 @@ def panel_sites(s: str) -> set[int]:
             if a in 'KR' and not (i + 1 < len(s) and s[i + 1] == 'P')}
 
 
-def main() -> int:
+def main(matrix: str = 'lymphocyte') -> int:
     from panel_build import load_proteome, load_targets
     human, meta = load_proteome()
     acc2oid = {}
@@ -55,7 +59,7 @@ def main() -> int:
     tgt = {r['accession']: (acc2oid[r['accession']],
                             human[acc2oid[r['accession']]])
            for r in load_targets()}
-    with open(path('results', 'panel_peptides.tsv')) as fh:
+    with open(path('results', f'{matrix}_panel_peptides.tsv')) as fh:
         peps = list(csv.DictReader(fh, delimiter='\t'))
 
     fails = []
@@ -120,7 +124,7 @@ def main() -> int:
         fails.append(f'{bad} peptides called proteotypic are not')
 
     # 5. fragment ions and heavy-label shifts in the transition list
-    tpath = path('results', 'prm_transition_list.tsv')
+    tpath = path('results', f'{matrix}_prm_transitions.tsv')
     if pyt_mass is not None and os.path.exists(tpath):
         with open(tpath) as fh:
             trans = list(csv.DictReader(fh, delimiter='\t'))
@@ -160,4 +164,8 @@ def main() -> int:
 
 
 if __name__ == '__main__':
-    raise SystemExit(main())
+    which = sys.argv[1] if len(sys.argv) > 1 else 'lymphocyte'
+    if which not in MATRICES:
+        raise SystemExit(f'matrix must be one of {sorted(MATRICES)}')
+    print(f'validating: {which}')
+    raise SystemExit(main(which))
