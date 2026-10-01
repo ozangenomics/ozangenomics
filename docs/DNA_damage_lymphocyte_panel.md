@@ -238,7 +238,14 @@ of an unrelated protein is still ambiguous under a semi-tryptic search.
 ```bash
 python3 src/panel_build.py lymphocyte && python3 src/validate.py lymphocyte
 python3 src/panel_build.py plasma     && python3 src/validate.py plasma
+python3 src/build_workbook.py         # the Excel workbook
 ```
+
+The workbook carries no formulas, only values. LibreOffice could not be run in
+the build environment, so a formula could not be recalculated and would have
+read back as blank to pandas and most previewers; the tier counts on its
+Overview sheet are therefore fixed at build time, and filtering the All markers
+sheet on peptide rank 1 reproduces them.
 
 Both must exit cleanly. `src/validate.py` recomputes every peptide mass and
 fragment ion with pyteomics, re-reads every coordinate from the sequence
@@ -280,3 +287,4 @@ proteomics, not values measured here.
 | `results/lymphocyte_panel_qc.tsv` | The 13 internal checks |
 | `results/lymphocyte_marker_list.tsv` | **The flat marker list**: every protein with its top three peptides, tier, m/z, scope and confounder |
 | `results/lymphocyte_phospho_markers.tsv` | Canonical DDR phosphosites, verified against the sequence, with phospho precursor m/z and a verdict on tryptic suitability |
+| `results/DNA_damage_lymphocyte_panel.xlsx` | **The whole panel as one Excel workbook**, six sheets, built by `src/build_workbook.py` |
